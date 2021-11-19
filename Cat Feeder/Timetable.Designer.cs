@@ -48,7 +48,6 @@ namespace Cat_Feeder
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
@@ -65,7 +64,10 @@ namespace Cat_Feeder
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.splitContainer8 = new System.Windows.Forms.SplitContainer();
             this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -94,6 +96,10 @@ namespace Cat_Feeder
             this.splitContainer7.Panel1.SuspendLayout();
             this.splitContainer7.Panel2.SuspendLayout();
             this.splitContainer7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
+            this.splitContainer8.Panel1.SuspendLayout();
+            this.splitContainer8.Panel2.SuspendLayout();
+            this.splitContainer8.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -237,6 +243,7 @@ namespace Cat_Feeder
             // splitContainer4
             // 
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.IsSplitterFixed = true;
             this.splitContainer4.Location = new System.Drawing.Point(0, 0);
             this.splitContainer4.Name = "splitContainer4";
             this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -312,17 +319,6 @@ namespace Cat_Feeder
             this.splitContainer6.SplitterDistance = 158;
             this.splitContainer6.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 76);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button13
             // 
             this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -355,7 +351,7 @@ namespace Cat_Feeder
             // 
             // splitContainer5.Panel2
             // 
-            this.splitContainer5.Panel2.Controls.Add(this.button14);
+            this.splitContainer5.Panel2.Controls.Add(this.splitContainer8);
             this.splitContainer5.Size = new System.Drawing.Size(246, 387);
             this.splitContainer5.SplitterDistance = 332;
             this.splitContainer5.TabIndex = 0;
@@ -494,17 +490,55 @@ namespace Cat_Feeder
             this.vScrollBar2.Size = new System.Drawing.Size(31, 332);
             this.vScrollBar2.TabIndex = 35;
             // 
+            // splitContainer8
+            // 
+            this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer8.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer8.Name = "splitContainer8";
+            // 
+            // splitContainer8.Panel1
+            // 
+            this.splitContainer8.Panel1.Controls.Add(this.button15);
+            // 
+            // splitContainer8.Panel2
+            // 
+            this.splitContainer8.Panel2.Controls.Add(this.button14);
+            this.splitContainer8.Size = new System.Drawing.Size(246, 51);
+            this.splitContainer8.SplitterDistance = 124;
+            this.splitContainer8.TabIndex = 0;
+            // 
             // button14
             // 
-            this.button14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button14.Location = new System.Drawing.Point(0, 0);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(208, 51);
-            this.button14.TabIndex = 3;
-            this.button14.Text = "EXPORT";
+            this.button14.Size = new System.Drawing.Size(118, 51);
+            this.button14.TabIndex = 4;
+            this.button14.Text = "IMPORT";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button15.Location = new System.Drawing.Point(0, 0);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(124, 51);
+            this.button15.TabIndex = 4;
+            this.button15.Text = "EXPORT";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 76);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "SAVE";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Timetable
             // 
@@ -546,6 +580,10 @@ namespace Cat_Feeder
             this.splitContainer7.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
             this.splitContainer7.ResumeLayout(false);
+            this.splitContainer8.Panel1.ResumeLayout(false);
+            this.splitContainer8.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
+            this.splitContainer8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -571,7 +609,6 @@ namespace Cat_Feeder
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.SplitContainer splitContainer6;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.SplitContainer splitContainer5;
         private System.Windows.Forms.TextBox textBox4;
@@ -588,6 +625,9 @@ namespace Cat_Feeder
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.VScrollBar vScrollBar2;
+        private System.Windows.Forms.SplitContainer splitContainer8;
+        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -248,9 +248,9 @@ namespace Cat_Feeder
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(273, -8);
+            this.vScrollBar1.Location = new System.Drawing.Point(273, 7);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(30, 333);
+            this.vScrollBar1.Size = new System.Drawing.Size(30, 318);
             this.vScrollBar1.TabIndex = 22;
             // 
             // textBox6
