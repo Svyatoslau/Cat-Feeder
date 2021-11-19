@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FirstPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +64,29 @@
     <Compile Include="Feed.Designer.cs">
       <DependentUpon>Feed.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogsForm.Designer.cs">
+      <DependentUpon>LogsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeMarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeMarkForm.Designer.cs">
+      <DependentUpon>MakeMarkForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MonitorFeedAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MonitorFeedAdmin.Designer.cs">
       <DependentUpon>MonitorFeedAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Timetable.cs">
       <SubType>Form</SubType>
@@ -82,6 +106,12 @@
     <Compile Include="TimetableChoiseUser.Designer.cs">
       <DependentUpon>TimetableChoiseUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserLogsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogsForm.designer.cs">
+      <DependentUpon>UserLogsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,14 +120,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarningForm.Designer.cs">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feed.resx">
       <DependentUpon>Feed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FirstPage.resx">
       <DependentUpon>FirstPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogsForm.resx">
+      <DependentUpon>LogsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeMarkForm.resx">
+      <DependentUpon>MakeMarkForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MonitorFeedAdmin.resx">
       <DependentUpon>MonitorFeedAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Timetable.resx">
       <DependentUpon>Timetable.cs</DependentUpon>
@@ -107,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TimetableChoiseUser.resx">
       <DependentUpon>TimetableChoiseUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogsForm.resx">
+      <DependentUpon>UserLogsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserMainPage.resx">
       <DependentUpon>UserMainPage.cs</DependentUpon>
@@ -121,6 +172,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WarningForm.resx">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

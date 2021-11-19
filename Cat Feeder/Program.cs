@@ -22,7 +22,12 @@ namespace Cat_Feeder
             Application.Run(new TimetableAdmin());
             Application.Run(new UserMainPage()); 
             Application.Run(new MonitorFeedAdmin()); 
-            Application.Run(new TimetableChoiseUser());
+            Application.Run(new AdminPage());
+            Application.Run(new LogsForm());
+            Application.Run(new MakeMarkForm());
+            Application.Run(new RegForm());
+            Application.Run(new UserLogsForm());
+            Application.Run(new WarningForm());
         }
     }
 }
