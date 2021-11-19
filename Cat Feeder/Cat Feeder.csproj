@@ -58,6 +58,30 @@
     <Compile Include="Feed.Designer.cs">
       <DependentUpon>Feed.cs</DependentUpon>
     </Compile>
+    <Compile Include="MonitorFeedAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonitorFeedAdmin.Designer.cs">
+      <DependentUpon>MonitorFeedAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timetable.Designer.cs">
+      <DependentUpon>Timetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimetableAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimetableAdmin.Designer.cs">
+      <DependentUpon>TimetableAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimetableChoiseUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimetableChoiseUser.Designer.cs">
+      <DependentUpon>TimetableChoiseUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +95,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FirstPage.resx">
       <DependentUpon>FirstPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitorFeedAdmin.resx">
+      <DependentUpon>MonitorFeedAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timetable.resx">
+      <DependentUpon>Timetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimetableAdmin.resx">
+      <DependentUpon>TimetableAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimetableChoiseUser.resx">
+      <DependentUpon>TimetableChoiseUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserMainPage.resx">
       <DependentUpon>UserMainPage.cs</DependentUpon>
@@ -99,6 +135,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\Feed2.png" />
     <Content Include="images\Feet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

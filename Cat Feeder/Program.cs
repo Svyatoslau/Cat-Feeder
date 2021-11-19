@@ -17,6 +17,12 @@ namespace Cat_Feeder
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FirstPage());
+            Application.Run(new Feed());
+            Application.Run(new Timetable());
+            Application.Run(new TimetableAdmin());
+            Application.Run(new UserMainPage()); 
+            Application.Run(new MonitorFeedAdmin()); 
+            Application.Run(new TimetableChoiseUser());
         }
     }
 }
