@@ -50,6 +50,7 @@ namespace Cat_Feeder
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -69,6 +70,7 @@ namespace Cat_Feeder
             this.splitContainer5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.Panel2.SuspendLayout();
             this.splitContainer4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -229,6 +231,10 @@ namespace Cat_Feeder
             this.splitContainer4.Panel1.Controls.Add(this.textBox3);
             this.splitContainer4.Panel1.Controls.Add(this.textBox2);
             this.splitContainer4.Panel1.Controls.Add(this.textBox1);
+            // 
+            // splitContainer4.Panel2
+            // 
+            this.splitContainer4.Panel2.Controls.Add(this.button1);
             this.splitContainer4.Size = new System.Drawing.Size(315, 427);
             this.splitContainer4.SplitterDistance = 352;
             this.splitContainer4.TabIndex = 0;
@@ -314,6 +320,17 @@ namespace Cat_Feeder
             this.textBox1.TabIndex = 16;
             this.textBox1.Text = "РАСПИСАНИЕ 1:";
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(315, 71);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "SAVE";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Feed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,6 +359,7 @@ namespace Cat_Feeder
             this.splitContainer5.ResumeLayout(false);
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel1.PerformLayout();
+            this.splitContainer4.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
             this.splitContainer4.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -371,5 +389,6 @@ namespace Cat_Feeder
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button1;
     }
 }
