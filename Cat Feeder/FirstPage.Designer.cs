@@ -97,6 +97,7 @@ namespace Cat_Feeder
             this.radioButtonUser.TabStop = true;
             this.radioButtonUser.Text = "User";
             this.radioButtonUser.UseVisualStyleBackColor = true;
+            this.radioButtonUser.CheckedChanged += new System.EventHandler(this.radioButtonUser_CheckedChanged);
             // 
             // radioButtonAdmin
             // 

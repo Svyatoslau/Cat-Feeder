@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cat Feeder", "Cat Feeder\Cat Feeder.csproj", "{813995E5-1772-4C65-A15A-B05F75C1B03C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cat Feeder View", "Cat Feeder\Cat Feeder View.csproj", "{813995E5-1772-4C65-A15A-B05F75C1B03C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presenter", "Presenter\Presenter.csproj", "{A400EB3E-A968-41A8-A3C1-AC51CB782B44}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E19A842B-48E2-4AC9-89F0-209A57A8B316}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulation", "Simulation\Simulation.csproj", "{D0F38FA1-F262-4A58-A429-1695222A8A8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OflineFeeder", "Simulation\OflineFeeder.csproj", "{D0F38FA1-F262-4A58-A429-1695222A8A8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

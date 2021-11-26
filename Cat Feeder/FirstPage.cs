@@ -12,6 +12,7 @@ namespace Cat_Feeder
 {
     public partial class FirstPage : Form
     {
+        riofdsp<G> EXIT;
         public FirstPage()
         {
             InitializeComponent();
@@ -50,6 +51,11 @@ namespace Cat_Feeder
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
 
+        }
+
+        private void radioButtonUser_CheckedChanged(object sender, EventArgs e)
+        {
+            View.tetre
         }
     }
 }

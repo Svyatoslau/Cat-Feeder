@@ -8,5 +8,10 @@ namespace Presenter
         {
             Console.WriteLine("Hello World!");
         }
+
+        {
+            
+        }
+
     }
 }
