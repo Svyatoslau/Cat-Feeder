@@ -30,14 +30,14 @@ namespace Cat_Feeder
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -66,6 +66,18 @@ namespace Cat_Feeder
             this.splitContainer1.SplitterDistance = 45;
             this.splitContainer1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.label1.Size = new System.Drawing.Size(232, 45);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Feeders";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -87,52 +99,14 @@ namespace Cat_Feeder
             this.splitContainer2.SplitterDistance = 193;
             this.splitContainer2.TabIndex = 0;
             // 
-            // vScrollBar1
+            // button5
             // 
-            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vScrollBar1.Location = new System.Drawing.Point(0, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(35, 226);
-            this.vScrollBar1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.label1.Size = new System.Drawing.Size(232, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Feeders";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "СУХОЙ КОРМ";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 57);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "НА ПРАЗДНИК";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(12, 96);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 33);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "ДИЕТА";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button5.Location = new System.Drawing.Point(12, 174);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(167, 33);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "КОРМУШКА 4";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -140,17 +114,46 @@ namespace Cat_Feeder
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(167, 33);
             this.button4.TabIndex = 3;
-            this.button4.Text = "НЕ ДИЕТА";
+            this.button4.Text = "КОРМУШКА 3";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // button3
             // 
-            this.button5.Location = new System.Drawing.Point(12, 174);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(167, 33);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "ЛЕЧЕНИЕ";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(12, 96);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(167, 33);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "КОРМУШКА 3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 57);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(167, 33);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "КОРМУШКА 2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 33);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "КОРМУШКА 1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.vScrollBar1.Location = new System.Drawing.Point(0, 0);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(35, 226);
+            this.vScrollBar1.TabIndex = 0;
             // 
             // TimetableChoiseUser
             // 
