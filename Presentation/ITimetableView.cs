@@ -8,6 +8,9 @@ namespace Presentation
 {
     public interface ITimetableView : IView
     {
+        string textOfTimeTables { get; }
+        string Title_OfTimetables { get; }
+
         event Action ChooseTimetable;
         event Action ExportTimetable;
         event Action ImportTimetable;
