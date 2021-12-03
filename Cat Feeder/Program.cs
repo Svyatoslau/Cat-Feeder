@@ -23,7 +23,23 @@ namespace Cat_Feeder
             Ninject.StandardKernel kernel = new StandardKernel();
             kernel.Bind<ApplicationContext>().ToConstant(new ApplicationContext());
             kernel.Bind<IAdminPageView>().To<AdminPageView>();
-            
+            kernel.Bind<IFeederChoiseUserView>().To<FeederChoiseUserView>();
+            kernel.Bind<IFeedVeiw>().To<FeedView>();
+            kernel.Bind<IFirstPageView>().To<FirstPageView>();
+            kernel.Bind<ILogsFormView>().To<LogsFormView>();
+            kernel.Bind<IMakeMarkFormView>().To<MakeMarkFormView>();
+            kernel.Bind<IMonitorFeedAdminView>().To<MonitorFeedAdminView>();
+            kernel.Bind<IRegFormView>().To<RegFormView>();
+            kernel.Bind<ITimetableAdminView>().To<TimetableAdminView>();
+            kernel.Bind<ITimetableView>().To<TimetableView>();
+            kernel.Bind<IUserLogsFormVeiw>().To<UserLogsFormView>();
+            kernel.Bind<IUserMainPageView>().To<UserMainPageView>();
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            //kernel.Get<FirstPageView>().Run();
+            //Application.Run(kernel.Get<ApplicationContext>);
         }
     }
 }
