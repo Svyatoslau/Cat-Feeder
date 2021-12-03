@@ -9,30 +9,18 @@ namespace Model
         private int weight;
         private DateTime time;
 
+        public int Weight { get => weight; set => weight = value; }
+        public DateTime Time { get => time; set => time = value; }
+
         public TumpleTimetable(int weight, DateTime time)
         {
-            this.weight = weight;
-            this.time = time;
+            this.Weight = weight;
+            this.Time = time;
         }
-        public void SetTime(DateTime time)
-        {
-            this.time = time;
-        }
-        public void SetWeight(int weight)
-        {
-            this.weight = weight;
-        }
-        public DateTime GetTime()
-        {
-            return this.time;
-        }
-        public int GetWeight()
-        {
-            return this.weight;
-        }
+
         public void ShowDateTime()
         {
-            Console.WriteLine($"Текущая дата {this.time}"); ;
+            Console.WriteLine($"Текущая дата {this.Time}"); ;
         }
     }
 }
