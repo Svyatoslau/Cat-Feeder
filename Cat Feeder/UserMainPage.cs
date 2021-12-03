@@ -11,7 +11,7 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class UserMainPage : Form, IUserMainPageVeiw
+    public partial class UserMainPage : Form, IUserMainPageView
     {
         public UserMainPage()
         {

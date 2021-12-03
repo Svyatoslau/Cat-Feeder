@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public interface IUserMainPageVeiw : IView
+    public interface IUserMainPageView : IView
     {
         event Action ShowMakeMarkFormView;
         event Action ShowLogsFormView;

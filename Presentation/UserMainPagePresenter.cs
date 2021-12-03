@@ -10,7 +10,7 @@ namespace Presentation
     class UserMainPagePresenter
     {
         private readonly IKernel _kernel;
-        private IUserMainPageVeiw _veiw;
+        private IUserMainPageView _veiw;
 
         private void ShowMakeMarkFormView()
         {

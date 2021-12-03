@@ -44,9 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAdminPageView.cs" />
+    <Compile Include="IFeedVeiw.cs" />
+    <Compile Include="ILogsFormView.cs" />
     <Compile Include="IMakeMarkFormView.cs" />
-    <Compile Include="Interface1.cs" />
-    <Compile Include="IUserMainPageVeiw.cs" />
+    <Compile Include="IFirstPageView.cs" />
+    <Compile Include="IMonitorFeedAdminView.cs" />
+    <Compile Include="IRegFormView.cs" />
+    <Compile Include="ITimetableAdminView.cs" />
+    <Compile Include="ITimetableChoiseUserView.cs" />
+    <Compile Include="ITimetableView.cs" />
+    <Compile Include="IUserLogsFormVeiw.cs" />
+    <Compile Include="IUserMainPageView.cs" />
     <Compile Include="IView.cs" />
     <Compile Include="MakeMarkFormPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
