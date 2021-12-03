@@ -8,5 +8,9 @@ namespace Presentation
 {
     interface IAdminPageView: IView
     {
+        event Action<string> ClickToAddUser;
+        event Action<string> MonitorFeeders;
+        event Action<string> ShowAdminLogs;
+        event Action<string> WatchAllShedules;
     }
 }

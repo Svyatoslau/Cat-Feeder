@@ -46,5 +46,30 @@ namespace Cat_Feeder
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExportTimetableButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImportTimetableButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ChooseFeedButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

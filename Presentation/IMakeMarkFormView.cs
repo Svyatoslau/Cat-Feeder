@@ -10,6 +10,8 @@ namespace Presentation
     {
         string Note { get; }
 
-        event Action 
+        event Action ChoiseFeeder;
+        event Action MakeNoteToFeeder;
+        event Action MakeNoteByHand;
     }
 }
