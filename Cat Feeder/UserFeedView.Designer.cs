@@ -244,6 +244,7 @@ namespace Cat_Feeder
             this.textBoxTimetable.Size = new System.Drawing.Size(259, 282);
             this.textBoxTimetable.TabIndex = 17;
             this.textBoxTimetable.Text = "200 г в 9:00";
+            this.textBoxTimetable.TextChanged += new System.EventHandler(this.textBoxTimetable_TextChanged);
             // 
             // textBoxNameTimetable
             // 
@@ -296,7 +297,7 @@ namespace Cat_Feeder
             this.chooseExistTimetableButton.UseVisualStyleBackColor = true;
             this.chooseExistTimetableButton.Click += new System.EventHandler(this.chooseExistTimetableButton_Click);
             // 
-            // FeedView
+            // UserFeedView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -304,7 +305,7 @@ namespace Cat_Feeder
             this.Controls.Add(this.splitContainer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FeedView";
+            this.Name = "UserFeedView";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FeedView_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
