@@ -24,7 +24,11 @@ namespace Model
             Console.WriteLine($"Название расписания: {table.Name}");
             Console.WriteLine($"Вес корма: {table.Data[0].Weight}");
             Console.WriteLine($"Время создания расписания: {table.Data[0].Time}");
-            
+
+            //проверка работы Log
+            Log log = new Log("Open door", DateTime.Now);
+            Console.WriteLine($"Название события: {log.Occasion}");
+            Console.WriteLine($"Время события: {log.Time}");
         }
     }
 }
