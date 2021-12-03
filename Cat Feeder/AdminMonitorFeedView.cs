@@ -11,7 +11,7 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class AdminMonitorFeedView : Form, IMonitorFeedAdminView
+    public partial class AdminMonitorFeedView : Form, IAdminMonitorFeedView
     {
         public string name => throw new NotImplementedException();
 

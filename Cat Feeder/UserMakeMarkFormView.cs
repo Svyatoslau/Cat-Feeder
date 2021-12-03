@@ -12,7 +12,7 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class UserMakeMarkFormView : Form, IMakeMarkFormView
+    public partial class UserMakeMarkFormView : Form, IUserMakeMarkFormView
     {
         public string Note => throw new NotImplementedException();
 

@@ -11,7 +11,7 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class UserFeedView : Form, IFeedVeiw
+    public partial class UserFeedView : Form, IUserFeedView
     {
         public string timetableName => textBoxNameTimetable.Text;
 

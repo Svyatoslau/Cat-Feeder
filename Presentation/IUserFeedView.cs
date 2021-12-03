@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public interface ITimetableView : IView
+    public interface IUserFeedView : IView
     {
-        event Action ChooseTimetable;
-        event Action ExportTimetable;
-        event Action ImportTimetable;
+        string timetableName { get; }
+        string timetable { get; }
+
         event Action SaveTimetable;
-        event Action ChooseFeed;
+        event Action ShowExistTimetable;
+        
     }
 }

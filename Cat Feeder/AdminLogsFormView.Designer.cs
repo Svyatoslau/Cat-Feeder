@@ -58,7 +58,7 @@ namespace Cat_Feeder
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -84,16 +84,17 @@ namespace Cat_Feeder
             this.splitContainer1.Panel2.Controls.Add(this.ShowAllLogsButton);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.vScrollBar3);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 224;
+            this.splitContainer1.Size = new System.Drawing.Size(600, 366);
+            this.splitContainer1.SplitterDistance = 168;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(3, 415);
-            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button11.Location = new System.Drawing.Point(2, 337);
+            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(197, 32);
+            this.button11.Size = new System.Drawing.Size(148, 26);
             this.button11.TabIndex = 13;
             this.button11.Text = "Лог1 Подьзователь1";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -101,10 +102,10 @@ namespace Cat_Feeder
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(3, 378);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button10.Location = new System.Drawing.Point(2, 307);
+            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(197, 32);
+            this.button10.Size = new System.Drawing.Size(148, 26);
             this.button10.TabIndex = 12;
             this.button10.Text = "Лог1 Подьзователь1";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -112,10 +113,10 @@ namespace Cat_Feeder
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(3, 340);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.Location = new System.Drawing.Point(2, 276);
+            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(197, 32);
+            this.button9.Size = new System.Drawing.Size(148, 26);
             this.button9.TabIndex = 11;
             this.button9.Text = "Лог1 Подьзователь1";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,10 +124,10 @@ namespace Cat_Feeder
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(3, 263);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Location = new System.Drawing.Point(2, 214);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(197, 32);
+            this.button8.Size = new System.Drawing.Size(148, 26);
             this.button8.TabIndex = 10;
             this.button8.Text = "Лог1 Подьзователь1";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,10 +135,10 @@ namespace Cat_Feeder
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(3, 302);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button7.Location = new System.Drawing.Point(2, 245);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(197, 32);
+            this.button7.Size = new System.Drawing.Size(148, 26);
             this.button7.TabIndex = 9;
             this.button7.Text = "Лог1 Подьзователь1";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -145,10 +146,10 @@ namespace Cat_Feeder
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(3, 226);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(2, 184);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(197, 32);
+            this.button6.Size = new System.Drawing.Size(148, 26);
             this.button6.TabIndex = 8;
             this.button6.Text = "Лог1 Подьзователь1";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -156,10 +157,10 @@ namespace Cat_Feeder
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(3, 188);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(2, 153);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(197, 32);
+            this.button5.Size = new System.Drawing.Size(148, 26);
             this.button5.TabIndex = 7;
             this.button5.Text = "Лог1 Подьзователь1";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,10 +168,10 @@ namespace Cat_Feeder
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(3, 150);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(2, 122);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(197, 32);
+            this.button4.Size = new System.Drawing.Size(148, 26);
             this.button4.TabIndex = 6;
             this.button4.Text = "Лог1 Подьзователь1";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,10 +179,10 @@ namespace Cat_Feeder
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 112);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(2, 91);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 32);
+            this.button3.Size = new System.Drawing.Size(148, 26);
             this.button3.TabIndex = 5;
             this.button3.Text = "Лог1 Подьзователь1";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,10 +190,10 @@ namespace Cat_Feeder
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 74);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(2, 60);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 32);
+            this.button2.Size = new System.Drawing.Size(148, 26);
             this.button2.TabIndex = 4;
             this.button2.Text = "Лог1 Подьзователь1";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -200,10 +201,10 @@ namespace Cat_Feeder
             // 
             // ShowLogButton
             // 
-            this.ShowLogButton.Location = new System.Drawing.Point(3, 36);
-            this.ShowLogButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ShowLogButton.Location = new System.Drawing.Point(2, 29);
+            this.ShowLogButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ShowLogButton.Name = "ShowLogButton";
-            this.ShowLogButton.Size = new System.Drawing.Size(197, 32);
+            this.ShowLogButton.Size = new System.Drawing.Size(148, 26);
             this.ShowLogButton.TabIndex = 3;
             this.ShowLogButton.Text = "Лог1 Подьзователь1";
             this.ShowLogButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -212,16 +213,16 @@ namespace Cat_Feeder
             // 
             // vScrollBar2
             // 
-            this.vScrollBar2.Location = new System.Drawing.Point(204, 33);
+            this.vScrollBar2.Location = new System.Drawing.Point(153, 27);
             this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(21, 409);
+            this.vScrollBar2.Size = new System.Drawing.Size(21, 332);
             this.vScrollBar2.TabIndex = 2;
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(237, 33);
+            this.vScrollBar1.Location = new System.Drawing.Point(178, 27);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(29, 417);
+            this.vScrollBar1.Size = new System.Drawing.Size(29, 339);
             this.vScrollBar1.TabIndex = 1;
             // 
             // label1
@@ -230,18 +231,19 @@ namespace Cat_Feeder
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 33);
+            this.label1.Size = new System.Drawing.Size(168, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Админ логи";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ExportButton
             // 
-            this.ExportButton.Location = new System.Drawing.Point(299, 414);
-            this.ExportButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ExportButton.Location = new System.Drawing.Point(224, 336);
+            this.ExportButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ExportButton.Name = "ExportButton";
-            this.ExportButton.Size = new System.Drawing.Size(260, 32);
+            this.ExportButton.Size = new System.Drawing.Size(195, 26);
             this.ExportButton.TabIndex = 15;
             this.ExportButton.Text = "Экспортировать";
             this.ExportButton.UseVisualStyleBackColor = true;
@@ -249,10 +251,10 @@ namespace Cat_Feeder
             // 
             // ShowAllLogsButton
             // 
-            this.ShowAllLogsButton.Location = new System.Drawing.Point(8, 414);
-            this.ShowAllLogsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ShowAllLogsButton.Location = new System.Drawing.Point(6, 336);
+            this.ShowAllLogsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ShowAllLogsButton.Name = "ShowAllLogsButton";
-            this.ShowAllLogsButton.Size = new System.Drawing.Size(260, 32);
+            this.ShowAllLogsButton.Size = new System.Drawing.Size(195, 26);
             this.ShowAllLogsButton.TabIndex = 14;
             this.ShowAllLogsButton.Text = "Показать все логи";
             this.ShowAllLogsButton.UseVisualStyleBackColor = true;
@@ -260,30 +262,31 @@ namespace Cat_Feeder
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(3, 2);
+            this.label2.Location = new System.Drawing.Point(2, 2);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(536, 409);
+            this.label2.Size = new System.Drawing.Size(402, 332);
             this.label2.TabIndex = 4;
             this.label2.Text = "Текст лога";
             // 
             // vScrollBar3
             // 
-            this.vScrollBar3.Location = new System.Drawing.Point(541, 2);
+            this.vScrollBar3.Location = new System.Drawing.Point(406, 2);
             this.vScrollBar3.Name = "vScrollBar3";
-            this.vScrollBar3.Size = new System.Drawing.Size(21, 409);
+            this.vScrollBar3.Size = new System.Drawing.Size(21, 332);
             this.vScrollBar3.TabIndex = 3;
             // 
-            // LogsFormView
+            // AdminLogsFormView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.Name = "LogsFormView";
+            this.Name = "AdminLogsFormView";
             this.Text = "LogsForm";
-            //this.Load += new System.EventHandler(this.LogsFormView_Load);
+            this.Load += new System.EventHandler(this.AdminLogsFormView_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

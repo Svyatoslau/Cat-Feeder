@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public interface ITimetableAdminView : IView
+    public interface IAdminTimetableView : IView
     {
         event Action<int> TimetableСhoose;      // Параметр это номер расписания
         event Action TimetableExportAdmin;

@@ -11,17 +11,21 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class AdminLogsFormView : Form, ILogsFormView
+    public partial class AdminLogsFormView : Form, IAdminLogsFormView
     {
         public string textLog;
+
+        public event Action ChooseUser;
+        public event Action ChooseLog;
+        public event Action PrintAllLogs;
+        public event Action ExportLogs;
+
         public AdminLogsFormView()
         {
             InitializeComponent();
         }
 
-        public event Action ShowAllLogs;
-        public event Action ExportLogs;
-        public event Action<string> ChooseLog;
+        
 
         private void ShowAllLogsButton_Click(object sender, EventArgs e)
         {
@@ -38,6 +42,11 @@ namespace Cat_Feeder
             textLog = ShowLogButton.Text;
             //MessageBox.Show(textLog);
             ChooseLog.Invoke(textLog);
+        }
+
+        private void AdminLogsFormView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

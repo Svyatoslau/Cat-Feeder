@@ -11,17 +11,16 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class UserLogsFormView : Form, IUserLogsFormVeiw
+    public partial class UserLogsFormView : Form, IUserLogsFormView
     {
         public UserLogsFormView()
         {
             InitializeComponent();
         }
 
-        public event Action ChooseUser;
-        public event Action ChooseLog;
-        public event Action PrintAllLogs;
+        public event Action ShowAllLogs;
         public event Action ExportLogs;
+        public event Action<string> ChooseLog;
 
         private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
         {

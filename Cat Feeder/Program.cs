@@ -21,16 +21,16 @@ namespace Cat_Feeder
             Ninject.StandardKernel kernel = new StandardKernel();
             kernel.Bind<ApplicationContext>().ToConstant(new ApplicationContext());
             kernel.Bind<IAdminPageView>().To<AdminPageView>();
-            kernel.Bind<IFeederChoiseUserView>().To<UserFeederChoiseView>();
-            kernel.Bind<IFeedVeiw>().To<UserFeedView>();
+            kernel.Bind<IUserFeederChoiseView>().To<UserFeederChoiseView>();
+            kernel.Bind<IUserFeedView>().To<UserFeedView>();
             kernel.Bind<IFirstPageView>().To<FirstPageView>();
-            kernel.Bind<ILogsFormView>().To<AdminLogsFormView>();
-            kernel.Bind<IMakeMarkFormView>().To<UserMakeMarkFormView>();
-            kernel.Bind<IMonitorFeedAdminView>().To<AdminMonitorFeedView>();
-            kernel.Bind<IRegFormView>().To<AdminRegFormView>();
-            kernel.Bind<ITimetableAdminView>().To<AdminTimetableView>();
-            kernel.Bind<ITimetableView>().To<UserTimetableView>();
-            kernel.Bind<IUserLogsFormVeiw>().To<UserLogsFormView>();
+            kernel.Bind<IAdminLogsFormView>().To<AdminLogsFormView>();
+            kernel.Bind<IUserMakeMarkFormView>().To<UserMakeMarkFormView>();
+            kernel.Bind<IAdminMonitorFeedView>().To<AdminMonitorFeedView>();
+            kernel.Bind<IAdminRegFormView>().To<AdminRegFormView>();
+            kernel.Bind<IAdminTimetableView>().To<AdminTimetableView>();
+            kernel.Bind<IUserTimetableView>().To<UserTimetableView>();
+            kernel.Bind<IUserLogsFormView2>().To<UserLogsFormView>();
             kernel.Bind<IUserMainPageView>().To<UserMainPageView>();
 
             Application.EnableVisualStyles();

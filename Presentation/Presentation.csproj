@@ -45,16 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAdminPageView.cs" />
-    <Compile Include="IFeedVeiw.cs" />
-    <Compile Include="ILogsFormView.cs" />
-    <Compile Include="IMakeMarkFormView.cs" />
+    <Compile Include="IUserFeedView.cs" />
+    <Compile Include="IUserLogsFormView.cs" />
+    <Compile Include="IUserMakeMarkFormView.cs" />
     <Compile Include="IFirstPageView.cs" />
-    <Compile Include="IMonitorFeedAdminView.cs" />
-    <Compile Include="IRegFormView.cs" />
-    <Compile Include="ITimetableAdminView.cs" />
-    <Compile Include="IFeederChoiseUserView.cs" />
-    <Compile Include="ITimetableView.cs" />
-    <Compile Include="IUserLogsFormVeiw.cs" />
+    <Compile Include="IAdminMonitorFeedView.cs" />
+    <Compile Include="IAdminRegFormView.cs" />
+    <Compile Include="IAdminTimetableView.cs" />
+    <Compile Include="IUserFeederChoiseView.cs" />
+    <Compile Include="IUserTimetableView.cs" />
+    <Compile Include="IAdminLogsFormView.cs" />
     <Compile Include="IUserMainPageView.cs" />
     <Compile Include="IView.cs" />
     <Compile Include="MakeMarkFormPresenter.cs" />
