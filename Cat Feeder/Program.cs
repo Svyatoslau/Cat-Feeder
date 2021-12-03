@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ninject;
 using Presentation;
-using View;
 
 
 
