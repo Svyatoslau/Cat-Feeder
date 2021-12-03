@@ -8,5 +8,11 @@ namespace Presentation
 {
     interface IFeedVeiw : IView
     {
+        string timetableName { get; }
+        string timetable { get; }
+
+        event Action SaveTimetable;
+        event Action ChooseExistFeeder;
+        
     }
 }
