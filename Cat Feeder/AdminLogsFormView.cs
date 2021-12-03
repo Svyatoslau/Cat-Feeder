@@ -29,24 +29,78 @@ namespace Cat_Feeder
 
         private void ShowAllLogsButton_Click(object sender, EventArgs e)
         {
-            
+            PrintAllLogs?.Invoke();
         }
 
         private void ExportButton_Click(object sender, EventArgs e)
         {
-            ExportLogs.Invoke();
+            ExportLogs?.Invoke();
         }
 
         private void ShowLogButton_Click(object sender, EventArgs e)
         {
-            textLog = ShowLogButton.Text;
-            //MessageBox.Show(textLog);
+            
           
         }
 
         private void AdminLogsFormView_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void logButton9_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void userUpDown_SelectedItemChanged(object sender, EventArgs e)
+        {
+            ChooseUser?.Invoke();
+        }
+
+        private void logButton1_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void logButton2_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void logButton3_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void logButton4_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void logButton5_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void logButton6_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void logButton7_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void logButton8_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
+        }
+
+        private void logButton10_Click(object sender, EventArgs e)
+        {
+            ChooseLog?.Invoke();
         }
     }
 }
