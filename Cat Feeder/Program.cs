@@ -27,7 +27,7 @@ namespace Cat_Feeder
             Application.Run(new MakeMarkForm());
             Application.Run(new RegForm());
             Application.Run(new UserLogsForm());
-            Application.Run(new WarningForm());
+            //Application.Run(new WarningForm());
         }
     }
 }
