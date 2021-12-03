@@ -21,19 +21,27 @@ namespace Cat_Feeder
         [STAThread]
         static void Main()
         {
+            
+            Ninject.StandardKernel kernel = new StandardKernel();
+            kernel.Bind<ApplicationContext>().ToConstant(new ApplicationContext());
+            kernel.Bind<IAdminPageView>().To<AdminPageView>();
+            kernel.Bind<IFeederChoiseUserView>().To<FeederChoiseUserView>();
+            kernel.Bind<IFeedVeiw>().To<FeedView>();
+            kernel.Bind<IFirstPageView>().To<FirstPageView>();
+            kernel.Bind<ILogsFormView>().To<LogsFormView>();
+            kernel.Bind<IMakeMarkFormView>().To<MakeMarkFormView>();
+            kernel.Bind<IMonitorFeedAdminView>().To<MonitorFeedAdminView>();
+            kernel.Bind<IRegFormView>().To<RegFormView>();
+            kernel.Bind<ITimetableAdminView>().To<TimetableAdminView>();
+            kernel.Bind<ITimetableView>().To<TimetableView>();
+            kernel.Bind<IUserLogsFormVeiw>().To<UserLogsFormView>();
+            kernel.Bind<IUserMainPageView>().To<UserMainPageView>();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FirstPage());
-            //Application.Run(new Feed());
-            //Application.Run(new Timetable());
-            //Application.Run(new TimetableAdmin());
-            //Application.Run(new UserMainPage()); 
-            //Application.Run(new MonitorFeedAdmin()); 
-            //Application.Run(new AdminPage());
-            //Application.Run(new LogsForm());
-            //Application.Run(new MakeMarkForm());
-            //Application.Run(new RegForm());
-            //Application.Run(new UserLogsForm());
+
+            //kernel.Get<FirstPageView>().Run();
+            //Application.Run(kernel.Get<ApplicationContext>);
         }
     }
 }
