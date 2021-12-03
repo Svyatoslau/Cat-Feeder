@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public class MakeMarkFormPresenter
+    class AdminTimetablePresenter
     {
-        private IUserMakeMarkFormView:
-
     }
 }

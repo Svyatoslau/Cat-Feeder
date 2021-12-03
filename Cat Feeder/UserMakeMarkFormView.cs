@@ -14,8 +14,7 @@ namespace Cat_Feeder
 {
     public partial class UserMakeMarkFormView : Form, IUserMakeMarkFormView
     {
-        public string Note => throw new NotImplementedException();
-        //public string Note => InfoKarmushkaField.Text;        //Альтернативно         ЧЕРНЕЦКИЙ   ВЛАДИМИР
+        public string Note => InfoKarmushkaField.Text;        //Альтернативно         ЧЕРНЕЦКИЙ   ВЛАДИМИР
         public UserMakeMarkFormView()
         {
             InitializeComponent();
