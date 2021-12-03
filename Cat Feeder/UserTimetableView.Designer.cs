@@ -54,8 +54,8 @@ namespace Cat_Feeder
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBoxOfTimeTables = new System.Windows.Forms.TextBox();
-            this.textBox_OfTimetables = new System.Windows.Forms.TextBox();
+            this.TextBoxOfTimeTables = new System.Windows.Forms.TextBox();
+            this.TitleBoxOfTimetables = new System.Windows.Forms.TextBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
             this.SaveButton = new System.Windows.Forms.Button();
@@ -140,6 +140,7 @@ namespace Cat_Feeder
             this.label1.TabIndex = 0;
             this.label1.Text = "Timetables";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // splitContainer5
             // 
@@ -372,8 +373,8 @@ namespace Cat_Feeder
             this.splitContainer3.Panel1.Controls.Add(this.textBox10);
             this.splitContainer3.Panel1.Controls.Add(this.textBox11);
             this.splitContainer3.Panel1.Controls.Add(this.textBox12);
-            this.splitContainer3.Panel1.Controls.Add(this.textBoxOfTimeTables);
-            this.splitContainer3.Panel1.Controls.Add(this.textBox_OfTimetables);
+            this.splitContainer3.Panel1.Controls.Add(this.TextBoxOfTimeTables);
+            this.splitContainer3.Panel1.Controls.Add(this.TitleBoxOfTimetables);
             // 
             // splitContainer3.Panel2
             // 
@@ -406,24 +407,24 @@ namespace Cat_Feeder
             this.textBox12.Size = new System.Drawing.Size(259, 30);
             this.textBox12.TabIndex = 46;
             // 
-            // textBoxOfTimeTables
+            // TextBoxOfTimeTables
             // 
-            this.textBoxOfTimeTables.Location = new System.Drawing.Point(14, 58);
-            this.textBoxOfTimeTables.Multiline = true;
-            this.textBoxOfTimeTables.Name = "textBoxOfTimeTables";
-            this.textBoxOfTimeTables.Size = new System.Drawing.Size(271, 296);
-            this.textBoxOfTimeTables.TabIndex = 37;
-            this.textBoxOfTimeTables.Text = "200 г в 9:00";
-            this.textBoxOfTimeTables.TextChanged += new System.EventHandler(this.textBoxOfTimeTables_TextChanged);
+            this.TextBoxOfTimeTables.Location = new System.Drawing.Point(14, 58);
+            this.TextBoxOfTimeTables.Multiline = true;
+            this.TextBoxOfTimeTables.Name = "TextBoxOfTimeTables";
+            this.TextBoxOfTimeTables.Size = new System.Drawing.Size(271, 296);
+            this.TextBoxOfTimeTables.TabIndex = 37;
+            this.TextBoxOfTimeTables.Text = "200 г в 9:00";
+            this.TextBoxOfTimeTables.TextChanged += new System.EventHandler(this.textBoxOfTimeTables_TextChanged);
             // 
-            // textBox_OfTimetables
+            // TitleBoxOfTimetables
             // 
-            this.textBox_OfTimetables.Location = new System.Drawing.Point(14, 14);
-            this.textBox_OfTimetables.Multiline = true;
-            this.textBox_OfTimetables.Name = "textBox_OfTimetables";
-            this.textBox_OfTimetables.Size = new System.Drawing.Size(259, 30);
-            this.textBox_OfTimetables.TabIndex = 36;
-            this.textBox_OfTimetables.Text = "РАСПИСАНИЕ 1:";
+            this.TitleBoxOfTimetables.Location = new System.Drawing.Point(14, 14);
+            this.TitleBoxOfTimetables.Multiline = true;
+            this.TitleBoxOfTimetables.Name = "TitleBoxOfTimetables";
+            this.TitleBoxOfTimetables.Size = new System.Drawing.Size(259, 30);
+            this.TitleBoxOfTimetables.TabIndex = 36;
+            this.TitleBoxOfTimetables.Text = "РАСПИСАНИЕ 1:";
             // 
             // vScrollBar1
             // 
@@ -447,7 +448,7 @@ namespace Cat_Feeder
             // 
             this.splitContainer6.Panel2.Controls.Add(this.ChooseFeedButton);
             this.splitContainer6.Size = new System.Drawing.Size(329, 77);
-            this.splitContainer6.SplitterDistance = 157;
+            this.splitContainer6.SplitterDistance = 156;
             this.splitContainer6.TabIndex = 0;
             // 
             // SaveButton
@@ -456,7 +457,7 @@ namespace Cat_Feeder
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SaveButton.Location = new System.Drawing.Point(0, 0);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(157, 77);
+            this.SaveButton.Size = new System.Drawing.Size(156, 77);
             this.SaveButton.TabIndex = 3;
             this.SaveButton.Text = "SAVE";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -468,13 +469,13 @@ namespace Cat_Feeder
             this.ChooseFeedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChooseFeedButton.Location = new System.Drawing.Point(0, 0);
             this.ChooseFeedButton.Name = "ChooseFeedButton";
-            this.ChooseFeedButton.Size = new System.Drawing.Size(168, 77);
+            this.ChooseFeedButton.Size = new System.Drawing.Size(169, 77);
             this.ChooseFeedButton.TabIndex = 2;
             this.ChooseFeedButton.Text = "CHOOSE FEED";
             this.ChooseFeedButton.UseVisualStyleBackColor = true;
             this.ChooseFeedButton.Click += new System.EventHandler(this.ChooseFeedButton_Click);
             // 
-            // TimetableView
+            // UserTimetableView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -482,7 +483,7 @@ namespace Cat_Feeder
             this.Controls.Add(this.splitContainer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "TimetableView";
+            this.Name = "UserTimetableView";
             this.Text = "Timetable";
             this.Load += new System.EventHandler(this.Timetable_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -532,8 +533,8 @@ namespace Cat_Feeder
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBoxOfTimeTables;
-        private System.Windows.Forms.TextBox textBox_OfTimetables;
+        private System.Windows.Forms.TextBox TextBoxOfTimeTables;
+        private System.Windows.Forms.TextBox TitleBoxOfTimetables;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.SplitContainer splitContainer6;
         private System.Windows.Forms.Button ChooseFeedButton;

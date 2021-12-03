@@ -64,5 +64,10 @@ namespace Cat_Feeder
         {
             ShowExistTimetable?.Invoke();
         }
+
+        private void textBoxTimetable_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
