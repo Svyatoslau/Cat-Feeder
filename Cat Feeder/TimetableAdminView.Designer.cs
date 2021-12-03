@@ -47,18 +47,12 @@ namespace Cat_Feeder
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.TextOfTimetableAdmin_TextInput = new System.Windows.Forms.Label();
+            this.NumberOtTimetableAdmin_TextOutput = new System.Windows.Forms.Label();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.ExportTimetableAdmin_Button = new System.Windows.Forms.Button();
+            this.ImportTimetableAdmin_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -166,8 +160,9 @@ namespace Cat_Feeder
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(202, 30);
             this.button10.TabIndex = 12;
-            this.button10.Text = "РАСПИСАНИЕ2";
+            this.button10.Text = "РАСПИСАНИЕ 11";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.TimetableAdmin_Button11_Click);
             // 
             // button11
             // 
@@ -175,8 +170,9 @@ namespace Cat_Feeder
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(202, 30);
             this.button11.TabIndex = 11;
-            this.button11.Text = "РАСПИСАНИЕ10";
+            this.button11.Text = "РАСПИСАНИЕ 10";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.TimetableAdmin_Button10_Click);
             // 
             // button12
             // 
@@ -184,8 +180,9 @@ namespace Cat_Feeder
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(202, 30);
             this.button12.TabIndex = 10;
-            this.button12.Text = "РАСПИСАНИЕ9";
+            this.button12.Text = "РАСПИСАНИЕ 9";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.TimetableAdmin_Button9_Click);
             // 
             // button6
             // 
@@ -193,8 +190,9 @@ namespace Cat_Feeder
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(202, 30);
             this.button6.TabIndex = 9;
-            this.button6.Text = "РАСПИСАНИЕ8";
+            this.button6.Text = "РАСПИСАНИЕ 8";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.TimetableAdmin_Button8_Click);
             // 
             // button7
             // 
@@ -202,8 +200,9 @@ namespace Cat_Feeder
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(202, 30);
             this.button7.TabIndex = 8;
-            this.button7.Text = "РАСПИСАНИЕ7";
+            this.button7.Text = "РАСПИСАНИЕ 7";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.TimetableAdmin_Button7_Click);
             // 
             // button8
             // 
@@ -211,8 +210,9 @@ namespace Cat_Feeder
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(202, 30);
             this.button8.TabIndex = 7;
-            this.button8.Text = "РАСПИСАНИЕ6";
+            this.button8.Text = "РАСПИСАНИЕ 6";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.TimetableAdmin_Button6_Click);
             // 
             // button9
             // 
@@ -220,8 +220,9 @@ namespace Cat_Feeder
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(202, 30);
             this.button9.TabIndex = 6;
-            this.button9.Text = "РАСПИСАНИЕ5";
+            this.button9.Text = "РАСПИСАНИЕ 5";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.TimetableAdmin_Button5_Click);
             // 
             // button5
             // 
@@ -229,8 +230,9 @@ namespace Cat_Feeder
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(202, 30);
             this.button5.TabIndex = 5;
-            this.button5.Text = "РАСПИСАНИЕ4";
+            this.button5.Text = "РАСПИСАНИЕ 4";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.TimetableAdmin_Button4_Click);
             // 
             // button4
             // 
@@ -238,8 +240,9 @@ namespace Cat_Feeder
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(202, 30);
             this.button4.TabIndex = 4;
-            this.button4.Text = "РАСПИСАНИЕ3";
+            this.button4.Text = "РАСПИСАНИЕ 3";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.TimetableAdmin_Button3_Click);
             // 
             // button3
             // 
@@ -247,8 +250,9 @@ namespace Cat_Feeder
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(202, 30);
             this.button3.TabIndex = 3;
-            this.button3.Text = "РАСПИСАНИЕ2";
+            this.button3.Text = "РАСПИСАНИЕ 2";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.TimetableAdmin_Button2_Click);
             // 
             // button2
             // 
@@ -256,9 +260,9 @@ namespace Cat_Feeder
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(202, 30);
             this.button2.TabIndex = 2;
-            this.button2.Text = "РАСПИСАНИЕ1";
+            this.button2.Text = "РАСПИСАНИЕ 1";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.TimetableAdmin_Button1_Click);
             // 
             // vScrollBar2
             // 
@@ -294,14 +298,8 @@ namespace Cat_Feeder
             // 
             // splitContainer3.Panel1
             // 
-            this.splitContainer3.Panel1.Controls.Add(this.label8);
-            this.splitContainer3.Panel1.Controls.Add(this.label9);
-            this.splitContainer3.Panel1.Controls.Add(this.label7);
-            this.splitContainer3.Panel1.Controls.Add(this.label6);
-            this.splitContainer3.Panel1.Controls.Add(this.label5);
-            this.splitContainer3.Panel1.Controls.Add(this.label4);
-            this.splitContainer3.Panel1.Controls.Add(this.label3);
-            this.splitContainer3.Panel1.Controls.Add(this.label2);
+            this.splitContainer3.Panel1.Controls.Add(this.TextOfTimetableAdmin_TextInput);
+            this.splitContainer3.Panel1.Controls.Add(this.NumberOtTimetableAdmin_TextOutput);
             this.splitContainer3.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer3_Panel1_Paint);
             // 
             // splitContainer3.Panel2
@@ -311,89 +309,26 @@ namespace Cat_Feeder
             this.splitContainer3.SplitterDistance = 279;
             this.splitContainer3.TabIndex = 0;
             // 
-            // label8
+            // TextOfTimetableAdmin_TextInput
             // 
-            this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Location = new System.Drawing.Point(17, 360);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(247, 33);
-            this.label8.TabIndex = 52;
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TextOfTimetableAdmin_TextInput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TextOfTimetableAdmin_TextInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextOfTimetableAdmin_TextInput.Location = new System.Drawing.Point(17, 69);
+            this.TextOfTimetableAdmin_TextInput.Name = "TextOfTimetableAdmin_TextInput";
+            this.TextOfTimetableAdmin_TextInput.Size = new System.Drawing.Size(247, 320);
+            this.TextOfTimetableAdmin_TextInput.TabIndex = 48;
+            this.TextOfTimetableAdmin_TextInput.Text = "9:00 200гр";
             // 
-            // label9
+            // NumberOtTimetableAdmin_TextOutput
             // 
-            this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.Location = new System.Drawing.Point(17, 311);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(247, 33);
-            this.label9.TabIndex = 51;
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Location = new System.Drawing.Point(17, 259);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(247, 33);
-            this.label7.TabIndex = 50;
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(17, 210);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(247, 33);
-            this.label6.TabIndex = 49;
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(17, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(247, 33);
-            this.label5.TabIndex = 48;
-            this.label5.Text = "9:00 200гр";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(17, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(247, 33);
-            this.label4.TabIndex = 47;
-            this.label4.Text = "13:00 300гр";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(17, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(247, 33);
-            this.label3.TabIndex = 46;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(17, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 33);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "РАСПИСАНИ1:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.NumberOtTimetableAdmin_TextOutput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.NumberOtTimetableAdmin_TextOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NumberOtTimetableAdmin_TextOutput.Location = new System.Drawing.Point(17, 23);
+            this.NumberOtTimetableAdmin_TextOutput.Name = "NumberOtTimetableAdmin_TextOutput";
+            this.NumberOtTimetableAdmin_TextOutput.Size = new System.Drawing.Size(247, 33);
+            this.NumberOtTimetableAdmin_TextOutput.TabIndex = 45;
+            this.NumberOtTimetableAdmin_TextOutput.Text = "РАСПИСАНИ1:";
+            this.NumberOtTimetableAdmin_TextOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // vScrollBar1
             // 
@@ -411,38 +346,40 @@ namespace Cat_Feeder
             // 
             // splitContainer5.Panel1
             // 
-            this.splitContainer5.Panel1.Controls.Add(this.button1);
+            this.splitContainer5.Panel1.Controls.Add(this.ExportTimetableAdmin_Button);
             // 
             // splitContainer5.Panel2
             // 
-            this.splitContainer5.Panel2.Controls.Add(this.button13);
+            this.splitContainer5.Panel2.Controls.Add(this.ImportTimetableAdmin_Button);
             this.splitContainer5.Size = new System.Drawing.Size(319, 60);
             this.splitContainer5.SplitterDistance = 156;
             this.splitContainer5.TabIndex = 0;
             // 
-            // button1
+            // ExportTimetableAdmin_Button
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 60);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "EXPORT";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ExportTimetableAdmin_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ExportTimetableAdmin_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExportTimetableAdmin_Button.Location = new System.Drawing.Point(0, 0);
+            this.ExportTimetableAdmin_Button.Name = "ExportTimetableAdmin_Button";
+            this.ExportTimetableAdmin_Button.Size = new System.Drawing.Size(156, 60);
+            this.ExportTimetableAdmin_Button.TabIndex = 4;
+            this.ExportTimetableAdmin_Button.Text = "EXPORT";
+            this.ExportTimetableAdmin_Button.UseVisualStyleBackColor = true;
+            this.ExportTimetableAdmin_Button.Click += new System.EventHandler(this.ExportTimetableAdmin_Button_Click);
             // 
-            // button13
+            // ImportTimetableAdmin_Button
             // 
-            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button13.Location = new System.Drawing.Point(0, 0);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(159, 60);
-            this.button13.TabIndex = 4;
-            this.button13.Text = "Import";
-            this.button13.UseVisualStyleBackColor = true;
+            this.ImportTimetableAdmin_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImportTimetableAdmin_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ImportTimetableAdmin_Button.Location = new System.Drawing.Point(0, 0);
+            this.ImportTimetableAdmin_Button.Name = "ImportTimetableAdmin_Button";
+            this.ImportTimetableAdmin_Button.Size = new System.Drawing.Size(159, 60);
+            this.ImportTimetableAdmin_Button.TabIndex = 4;
+            this.ImportTimetableAdmin_Button.Text = "Import";
+            this.ImportTimetableAdmin_Button.UseVisualStyleBackColor = true;
+            this.ImportTimetableAdmin_Button.Click += new System.EventHandler(this.ImportTimetableAdmin_Button_Click);
             // 
-            // TimetableAdmin
+            // TimetableAdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -450,7 +387,7 @@ namespace Cat_Feeder
             this.Controls.Add(this.splitContainer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "TimetableAdmin";
+            this.Name = "TimetableAdminView";
             this.Text = "TimetablesAdmin";
             this.Load += new System.EventHandler(this.TimetableAdmin_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -502,16 +439,10 @@ namespace Cat_Feeder
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.VScrollBar vScrollBar2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label NumberOtTimetableAdmin_TextOutput;
         private System.Windows.Forms.SplitContainer splitContainer5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button ExportTimetableAdmin_Button;
+        private System.Windows.Forms.Button ImportTimetableAdmin_Button;
+        private System.Windows.Forms.Label TextOfTimetableAdmin_TextInput;
     }
 }
