@@ -12,7 +12,7 @@ namespace Cat_Feeder
 {
     public partial class FirstPage : Form
     {
-        riofdsp<G> EXIT;
+        //riofdsp<G> EXIT;
         public FirstPage()
         {
             InitializeComponent();
@@ -55,7 +55,7 @@ namespace Cat_Feeder
 
         private void radioButtonUser_CheckedChanged(object sender, EventArgs e)
         {
-            View.tetre
+            //View.tetre
         }
     }
 }
