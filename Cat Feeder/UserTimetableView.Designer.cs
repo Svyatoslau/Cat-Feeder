@@ -213,7 +213,6 @@ namespace Cat_Feeder
             this.Timetable_Button9.TabIndex = 10;
             this.Timetable_Button9.Text = "РАСПИСАНИЕ 9";
             this.Timetable_Button9.UseVisualStyleBackColor = true;
-            this.Timetable_Button9.Click += new System.EventHandler(this.Timetable_Button9_Click);
             // 
             // Timetable_Button8
             // 
@@ -223,7 +222,6 @@ namespace Cat_Feeder
             this.Timetable_Button8.TabIndex = 9;
             this.Timetable_Button8.Text = "РАСПИСАНИЕ 8";
             this.Timetable_Button8.UseVisualStyleBackColor = true;
-            this.Timetable_Button8.Click += new System.EventHandler(this.Timetable_Button8_Click);
             // 
             // Timetable_Button7
             // 
@@ -233,7 +231,6 @@ namespace Cat_Feeder
             this.Timetable_Button7.TabIndex = 8;
             this.Timetable_Button7.Text = "РАСПИСАНИЕ 7";
             this.Timetable_Button7.UseVisualStyleBackColor = true;
-            this.Timetable_Button7.Click += new System.EventHandler(this.Timetable_Button7_Click);
             // 
             // Timetable_Button6
             // 
@@ -243,7 +240,6 @@ namespace Cat_Feeder
             this.Timetable_Button6.TabIndex = 7;
             this.Timetable_Button6.Text = "РАСПИСАНИЕ 6";
             this.Timetable_Button6.UseVisualStyleBackColor = true;
-            this.Timetable_Button6.Click += new System.EventHandler(this.Timetable_Button6_Click);
             // 
             // Timetable_Button5
             // 
@@ -253,7 +249,6 @@ namespace Cat_Feeder
             this.Timetable_Button5.TabIndex = 6;
             this.Timetable_Button5.Text = "РАСПИСАНИЕ 5";
             this.Timetable_Button5.UseVisualStyleBackColor = true;
-            this.Timetable_Button5.Click += new System.EventHandler(this.Timetable_Button5_Click);
             // 
             // Timetable_Button4
             // 
@@ -263,7 +258,6 @@ namespace Cat_Feeder
             this.Timetable_Button4.TabIndex = 5;
             this.Timetable_Button4.Text = "РАСПИСАНИЕ 4";
             this.Timetable_Button4.UseVisualStyleBackColor = true;
-            this.Timetable_Button4.Click += new System.EventHandler(this.Timetable_Button4_Click);
             // 
             // Timetable_Button3
             // 
@@ -273,7 +267,6 @@ namespace Cat_Feeder
             this.Timetable_Button3.TabIndex = 4;
             this.Timetable_Button3.Text = "РАСПИСАНИЕ 3";
             this.Timetable_Button3.UseVisualStyleBackColor = true;
-            this.Timetable_Button3.Click += new System.EventHandler(this.Timetable_Button3_Click);
             // 
             // Timetable_Button2
             // 
@@ -283,7 +276,6 @@ namespace Cat_Feeder
             this.Timetable_Button2.TabIndex = 3;
             this.Timetable_Button2.Text = "РАСПИСАНИЕ 2";
             this.Timetable_Button2.UseVisualStyleBackColor = true;
-            this.Timetable_Button2.Click += new System.EventHandler(this.Timetable_Button2_Click);
             // 
             // Timetable_Button1
             // 
