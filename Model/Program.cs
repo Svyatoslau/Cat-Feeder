@@ -6,9 +6,7 @@ namespace Model
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            TumpleTimetable test = new TumpleTimetable(20, DateTime.Now);
-            test.ShowDateTime();
+           
         }
     }
 }
