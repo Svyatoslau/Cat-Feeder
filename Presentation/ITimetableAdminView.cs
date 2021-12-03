@@ -8,5 +8,9 @@ namespace Presentation
 {
     public interface ITimetableAdminView : IView
     {
+        event Action TimetableСhoose;
+        event Action TimetableExportAdmin;
+        event Action TimetableImportAdmin;
+        event Action<string> TimetableText;
     }
 }

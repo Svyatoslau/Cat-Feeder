@@ -24,17 +24,7 @@ namespace Cat_Feeder
 
         private void label1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            //Это заголовок текста  Timetables Admin над списком расписаний НЕ ЗНАЮ КТО СДЕЛАЛ НА НЕГО ДЕЙСТВИЕ И ЗАЧЕМ????????????
         }
 
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
@@ -42,7 +32,67 @@ namespace Cat_Feeder
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ExportTimetableAdmin_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImportTimetableAdmin_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimetableAdmin_Button11_Click(object sender, EventArgs e)
         {
 
         }
