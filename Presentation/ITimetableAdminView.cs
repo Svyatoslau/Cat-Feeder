@@ -8,7 +8,7 @@ namespace Presentation
 {
     public interface ITimetableAdminView : IView
     {
-        event Action TimetableСhoose;
+        event Action<int> TimetableСhoose;      // Параметр это номер расписания
         event Action TimetableExportAdmin;
         event Action TimetableImportAdmin;
         event Action<string> TimetableText;
