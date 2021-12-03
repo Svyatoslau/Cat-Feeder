@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public interface ITimetableView : IView
+    public interface IUserTimetableView : IView
     {
         string TextOfTimeTables { get; }
         string TitleOfTimetables { get; }

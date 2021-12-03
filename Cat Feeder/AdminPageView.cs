@@ -33,14 +33,24 @@ namespace Cat_Feeder
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void monitorFeederButton_Click(object sender, EventArgs e)
         {
-
+            ShowAdminMonitorFeedView?.Invoke();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void regButton_Click_1(object sender, EventArgs e)
         {
+            ShowAdminRegFormView?.Invoke();
+        }
 
+        private void logButton_Click(object sender, EventArgs e)
+        {
+            ShowAdminLogsFormView?.Invoke();
+        }
+
+        private void timtableButton_Click(object sender, EventArgs e)
+        {
+            ShowAdminTimetableView?.Invoke();
         }
     }
 }

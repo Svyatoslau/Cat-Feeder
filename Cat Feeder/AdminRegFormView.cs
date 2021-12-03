@@ -12,7 +12,7 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class AdminRegFormView : Form, IRegFormView
+    public partial class AdminRegFormView : Form, IAdminRegFormView
     {
         public string password => PasswordBox.Text;
         public string login => loginBox.Text;

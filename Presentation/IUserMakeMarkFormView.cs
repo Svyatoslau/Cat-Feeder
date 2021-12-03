@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public interface IMonitorFeedAdminView : IView
+    public interface IUserMakeMarkFormView : IView
     {
-        string name { get; }
-        string typeOfFeeder { get; }
+        string Note { get; }
 
         event Action ChoiseFeeder;
-        event Action ChoiseUser;
-
+        event Action MakeNoteToFeeder;
+        event Action MakeNoteByHand;
     }
 }

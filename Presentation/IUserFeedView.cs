@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public interface IFeedVeiw : IView
+    public interface IUserFeedView : IView
     {
         string timetableName { get; }
         string timetable { get; }

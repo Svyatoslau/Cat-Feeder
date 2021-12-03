@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public interface IUserLogsFormVeiw : IView
+    public interface IUserLogsFormView : IView
     {
-        event Action ChooseUser;
-        event Action ChooseLog;
-        event Action PrintAllLogs;
+        event Action ShowAllLogs;
         event Action ExportLogs;
+        event Action<string> ChooseLog;
     }
 }

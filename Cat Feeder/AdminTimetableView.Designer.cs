@@ -43,7 +43,6 @@ namespace Cat_Feeder
             this.TimetableAdmin_Button4 = new System.Windows.Forms.Button();
             this.TimetableAdmin_Button3 = new System.Windows.Forms.Button();
             this.TimetableAdmin_Button2 = new System.Windows.Forms.Button();
-            this.TimetableAdmin_Button1 = new System.Windows.Forms.Button();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -53,6 +52,7 @@ namespace Cat_Feeder
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.ExportTimetableAdmin_Button = new System.Windows.Forms.Button();
             this.ImportTimetableAdmin_Button = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -254,16 +254,6 @@ namespace Cat_Feeder
             this.TimetableAdmin_Button2.UseVisualStyleBackColor = true;
             this.TimetableAdmin_Button2.Click += new System.EventHandler(this.TimetableAdmin_Button2_Click);
             // 
-            // TimetableAdmin_Button1
-            // 
-            this.TimetableAdmin_Button1.Location = new System.Drawing.Point(12, 15);
-            this.TimetableAdmin_Button1.Name = "TimetableAdmin_Button1";
-            this.TimetableAdmin_Button1.Size = new System.Drawing.Size(202, 30);
-            this.TimetableAdmin_Button1.TabIndex = 2;
-            this.TimetableAdmin_Button1.Text = "РАСПИСАНИЕ 1";
-            this.TimetableAdmin_Button1.UseVisualStyleBackColor = true;
-            this.TimetableAdmin_Button1.Click += new System.EventHandler(this.TimetableAdmin_Button1_Click);
-            // 
             // vScrollBar2
             // 
             this.vScrollBar2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -380,7 +370,17 @@ namespace Cat_Feeder
             this.ImportTimetableAdmin_Button.UseVisualStyleBackColor = true;
             this.ImportTimetableAdmin_Button.Click += new System.EventHandler(this.ImportTimetableAdmin_Button_Click);
             // 
-            // TimetableAdminView
+            // TimetableAdmin_Button1
+            // 
+            this.TimetableAdmin_Button1.Location = new System.Drawing.Point(12, 15);
+            this.TimetableAdmin_Button1.Name = "TimetableAdmin_Button1";
+            this.TimetableAdmin_Button1.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button1.TabIndex = 2;
+            this.TimetableAdmin_Button1.Text = "РАСПИСАНИЕ 1";
+            this.TimetableAdmin_Button1.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button1.Click += new System.EventHandler(this.TimetableAdmin_Button1_Click);
+            // 
+            // AdminTimetableView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -388,7 +388,7 @@ namespace Cat_Feeder
             this.Controls.Add(this.splitContainer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "TimetableAdminView";
+            this.Name = "AdminTimetableView";
             this.Text = "TimetablesAdmin";
             this.Load += new System.EventHandler(this.TimetableAdmin_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -438,12 +438,12 @@ namespace Cat_Feeder
         private System.Windows.Forms.Button TimetableAdmin_Button4;
         private System.Windows.Forms.Button TimetableAdmin_Button3;
         private System.Windows.Forms.Button TimetableAdmin_Button2;
-        private System.Windows.Forms.Button TimetableAdmin_Button1;
         private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Label NumberOtTimetableAdmin_TextOutput;
         private System.Windows.Forms.SplitContainer splitContainer5;
         private System.Windows.Forms.Button ExportTimetableAdmin_Button;
         private System.Windows.Forms.Button ImportTimetableAdmin_Button;
         private System.Windows.Forms.Label TextOfTimetableAdmin_TextInput;
+        private System.Windows.Forms.Button TimetableAdmin_Button1;
     }
 }
