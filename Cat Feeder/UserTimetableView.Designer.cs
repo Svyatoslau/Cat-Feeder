@@ -54,8 +54,8 @@ namespace Cat_Feeder
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBoxOfTimeTables = new System.Windows.Forms.TextBox();
-            this.TitleBox_OfTimetables = new System.Windows.Forms.TextBox();
+            this.TextBoxOfTimeTables = new System.Windows.Forms.TextBox();
+            this.TitleBoxOfTimetables = new System.Windows.Forms.TextBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
             this.SaveButton = new System.Windows.Forms.Button();
@@ -372,8 +372,8 @@ namespace Cat_Feeder
             this.splitContainer3.Panel1.Controls.Add(this.textBox10);
             this.splitContainer3.Panel1.Controls.Add(this.textBox11);
             this.splitContainer3.Panel1.Controls.Add(this.textBox12);
-            this.splitContainer3.Panel1.Controls.Add(this.textBoxOfTimeTables);
-            this.splitContainer3.Panel1.Controls.Add(this.TitleBox_OfTimetables);
+            this.splitContainer3.Panel1.Controls.Add(this.TextBoxOfTimeTables);
+            this.splitContainer3.Panel1.Controls.Add(this.TitleBoxOfTimetables);
             // 
             // splitContainer3.Panel2
             // 
@@ -406,24 +406,24 @@ namespace Cat_Feeder
             this.textBox12.Size = new System.Drawing.Size(259, 30);
             this.textBox12.TabIndex = 46;
             // 
-            // textBoxOfTimeTables
+            // TextBoxOfTimeTables
             // 
-            this.textBoxOfTimeTables.Location = new System.Drawing.Point(14, 58);
-            this.textBoxOfTimeTables.Multiline = true;
-            this.textBoxOfTimeTables.Name = "textBoxOfTimeTables";
-            this.textBoxOfTimeTables.Size = new System.Drawing.Size(271, 296);
-            this.textBoxOfTimeTables.TabIndex = 37;
-            this.textBoxOfTimeTables.Text = "200 г в 9:00";
-            this.textBoxOfTimeTables.TextChanged += new System.EventHandler(this.textBoxOfTimeTables_TextChanged);
+            this.TextBoxOfTimeTables.Location = new System.Drawing.Point(14, 58);
+            this.TextBoxOfTimeTables.Multiline = true;
+            this.TextBoxOfTimeTables.Name = "TextBoxOfTimeTables";
+            this.TextBoxOfTimeTables.Size = new System.Drawing.Size(271, 296);
+            this.TextBoxOfTimeTables.TabIndex = 37;
+            this.TextBoxOfTimeTables.Text = "200 г в 9:00";
+            this.TextBoxOfTimeTables.TextChanged += new System.EventHandler(this.textBoxOfTimeTables_TextChanged);
             // 
-            // TitleBox_OfTimetables
+            // TitleBoxOfTimetables
             // 
-            this.TitleBox_OfTimetables.Location = new System.Drawing.Point(14, 14);
-            this.TitleBox_OfTimetables.Multiline = true;
-            this.TitleBox_OfTimetables.Name = "TitleBox_OfTimetables";
-            this.TitleBox_OfTimetables.Size = new System.Drawing.Size(259, 30);
-            this.TitleBox_OfTimetables.TabIndex = 36;
-            this.TitleBox_OfTimetables.Text = "РАСПИСАНИЕ 1:";
+            this.TitleBoxOfTimetables.Location = new System.Drawing.Point(14, 14);
+            this.TitleBoxOfTimetables.Multiline = true;
+            this.TitleBoxOfTimetables.Name = "TitleBoxOfTimetables";
+            this.TitleBoxOfTimetables.Size = new System.Drawing.Size(259, 30);
+            this.TitleBoxOfTimetables.TabIndex = 36;
+            this.TitleBoxOfTimetables.Text = "РАСПИСАНИЕ 1:";
             // 
             // vScrollBar1
             // 
@@ -532,8 +532,8 @@ namespace Cat_Feeder
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBoxOfTimeTables;
-        private System.Windows.Forms.TextBox TitleBox_OfTimetables;
+        private System.Windows.Forms.TextBox TextBoxOfTimeTables;
+        private System.Windows.Forms.TextBox TitleBoxOfTimetables;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.SplitContainer splitContainer6;
         private System.Windows.Forms.Button ChooseFeedButton;

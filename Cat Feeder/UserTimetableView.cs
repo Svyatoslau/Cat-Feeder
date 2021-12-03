@@ -13,17 +13,19 @@ namespace Cat_Feeder
 {
     public partial class UserTimetableView : Form, ITimetableView
     {
-        public UserTimetableView()
-        {
-            InitializeComponent();
-        }
+        public string TitleOfTimeTables => TitleBoxOfTimetables.Text;
+        public string TextOfTimeTables => TextBoxOfTimeTables.Text;
 
         public event Action ChooseTimetable;
         public event Action ExportTimetable;
         public event Action ImportTimetable;
         public event Action SaveTimetable;
         public event Action ChooseFeed;
-
+        public UserTimetableView()
+        {
+            InitializeComponent();
+        }
+        
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -121,7 +123,7 @@ namespace Cat_Feeder
 
         private void textBoxOfTimeTables_TextChanged(object sender, EventArgs e)
         {
-            textBoxOfTimeTables.Text;
+            //TextBoxOfTimeTables.Text;
         }
     }
 }
