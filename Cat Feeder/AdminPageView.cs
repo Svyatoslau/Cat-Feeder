@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace Cat_Feeder
 {
-    public partial class UserLogsForm : Form
+    public partial class AdminPageView : Form
     {
-        public UserLogsForm()
+        public AdminPageView()
         {
             InitializeComponent();
         }
 
-        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
 
         }

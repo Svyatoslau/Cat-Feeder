@@ -1,7 +1,7 @@
 ﻿
 namespace Cat_Feeder
 {
-    partial class AdminPage
+    partial class AdminPageView
     {
         /// <summary>
         /// Required designer variable.

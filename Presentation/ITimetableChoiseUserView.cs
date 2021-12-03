@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    internal interface ITimetableChoiseUserView
+    interface ITimetableChoiseUserView : IView
     {
         event Action<string> FeedСhoose;
     }

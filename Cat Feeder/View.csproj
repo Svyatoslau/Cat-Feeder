@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject">
+      <HintPath>..\..\DnDInitiativeTracker\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,115 +49,115 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminPage.cs">
+    <Compile Include="AdminPageView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPage.designer.cs">
-      <DependentUpon>AdminPage.cs</DependentUpon>
+    <Compile Include="AdminPageView.designer.cs">
+      <DependentUpon>AdminPageView.cs</DependentUpon>
     </Compile>
-    <Compile Include="FirstPage.cs">
+    <Compile Include="FirstPageView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FirstPage.Designer.cs">
-      <DependentUpon>FirstPage.cs</DependentUpon>
+    <Compile Include="FirstPageView.Designer.cs">
+      <DependentUpon>FirstPageView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Feed.cs">
+    <Compile Include="FeedView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Feed.Designer.cs">
-      <DependentUpon>Feed.cs</DependentUpon>
+    <Compile Include="FeedView.Designer.cs">
+      <DependentUpon>FeedView.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogsForm.cs">
+    <Compile Include="LogsFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogsForm.Designer.cs">
-      <DependentUpon>LogsForm.cs</DependentUpon>
+    <Compile Include="LogsFormView.Designer.cs">
+      <DependentUpon>LogsFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="MakeMarkForm.cs">
+    <Compile Include="MakeMarkFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MakeMarkForm.Designer.cs">
-      <DependentUpon>MakeMarkForm.cs</DependentUpon>
+    <Compile Include="MakeMarkFormView.Designer.cs">
+      <DependentUpon>MakeMarkFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="MonitorFeedAdmin.cs">
+    <Compile Include="MonitorFeedAdminView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MonitorFeedAdmin.Designer.cs">
-      <DependentUpon>MonitorFeedAdmin.cs</DependentUpon>
+    <Compile Include="MonitorFeedAdminView.Designer.cs">
+      <DependentUpon>MonitorFeedAdminView.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegForm.cs">
+    <Compile Include="RegFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegForm.Designer.cs">
-      <DependentUpon>RegForm.cs</DependentUpon>
+    <Compile Include="RegFormView.Designer.cs">
+      <DependentUpon>RegFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Timetable.cs">
+    <Compile Include="TimetableView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Timetable.Designer.cs">
-      <DependentUpon>Timetable.cs</DependentUpon>
+    <Compile Include="TimetableView.Designer.cs">
+      <DependentUpon>TimetableView.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimetableAdmin.cs">
+    <Compile Include="TimetableAdminView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimetableAdmin.Designer.cs">
-      <DependentUpon>TimetableAdmin.cs</DependentUpon>
+    <Compile Include="TimetableAdminView.Designer.cs">
+      <DependentUpon>TimetableAdminView.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimetableChoiseUser.cs">
+    <Compile Include="TimetableChoiseUserView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimetableChoiseUser.Designer.cs">
-      <DependentUpon>TimetableChoiseUser.cs</DependentUpon>
+    <Compile Include="TimetableChoiseUserView.Designer.cs">
+      <DependentUpon>TimetableChoiseUserView.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserLogsForm.cs">
+    <Compile Include="UserLogsFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserLogsForm.designer.cs">
-      <DependentUpon>UserLogsForm.cs</DependentUpon>
+    <Compile Include="UserLogsFormView.designer.cs">
+      <DependentUpon>UserLogsFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserMainPage.cs">
+    <Compile Include="UserMainPageView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserMainPage.Designer.cs">
-      <DependentUpon>UserMainPage.cs</DependentUpon>
+    <Compile Include="UserMainPageView.Designer.cs">
+      <DependentUpon>UserMainPageView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdminPage.resx">
-      <DependentUpon>AdminPage.cs</DependentUpon>
+    <EmbeddedResource Include="AdminPageView.resx">
+      <DependentUpon>AdminPageView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Feed.resx">
-      <DependentUpon>Feed.cs</DependentUpon>
+    <EmbeddedResource Include="FeedView.resx">
+      <DependentUpon>FeedView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FirstPage.resx">
-      <DependentUpon>FirstPage.cs</DependentUpon>
+    <EmbeddedResource Include="FirstPageView.resx">
+      <DependentUpon>FirstPageView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogsForm.resx">
-      <DependentUpon>LogsForm.cs</DependentUpon>
+    <EmbeddedResource Include="LogsFormView.resx">
+      <DependentUpon>LogsFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MakeMarkForm.resx">
-      <DependentUpon>MakeMarkForm.cs</DependentUpon>
+    <EmbeddedResource Include="MakeMarkFormView.resx">
+      <DependentUpon>MakeMarkFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MonitorFeedAdmin.resx">
-      <DependentUpon>MonitorFeedAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="MonitorFeedAdminView.resx">
+      <DependentUpon>MonitorFeedAdminView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegForm.resx">
-      <DependentUpon>RegForm.cs</DependentUpon>
+    <EmbeddedResource Include="RegFormView.resx">
+      <DependentUpon>RegFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Timetable.resx">
-      <DependentUpon>Timetable.cs</DependentUpon>
+    <EmbeddedResource Include="TimetableView.resx">
+      <DependentUpon>TimetableView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimetableAdmin.resx">
-      <DependentUpon>TimetableAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="TimetableAdminView.resx">
+      <DependentUpon>TimetableAdminView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimetableChoiseUser.resx">
-      <DependentUpon>TimetableChoiseUser.cs</DependentUpon>
+    <EmbeddedResource Include="TimetableChoiseUserView.resx">
+      <DependentUpon>TimetableChoiseUserView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserLogsForm.resx">
-      <DependentUpon>UserLogsForm.cs</DependentUpon>
+    <EmbeddedResource Include="UserLogsFormView.resx">
+      <DependentUpon>UserLogsFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserMainPage.resx">
-      <DependentUpon>UserMainPage.cs</DependentUpon>
+    <EmbeddedResource Include="UserMainPageView.resx">
+      <DependentUpon>UserMainPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

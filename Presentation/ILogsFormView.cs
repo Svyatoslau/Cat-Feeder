@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    class MakeMarkFormPresenter
+    interface ILogsFormView : IView
     {
-        private IMakeMarkFormView:
-
     }
 }

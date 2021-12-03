@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    internal interface ITimetableView
+    interface ITimetableView : IView
     {
 
     }

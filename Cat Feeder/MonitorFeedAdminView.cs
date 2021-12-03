@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cat_Feeder
 {
-    public partial class MonitorFeedAdmin : Form
+    public partial class MonitorFeedAdminView : Form
     {
-        public MonitorFeedAdmin()
+        public MonitorFeedAdminView()
         {
             InitializeComponent();
         }

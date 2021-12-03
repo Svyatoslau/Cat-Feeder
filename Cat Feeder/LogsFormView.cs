@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cat_Feeder
 {
-    public partial class LogsForm : Form
+    public partial class LogsFormView : Form
     {
-        public LogsForm()
+        public LogsFormView()
         {
             InitializeComponent();
         }

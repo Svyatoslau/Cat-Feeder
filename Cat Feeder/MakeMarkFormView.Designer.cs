@@ -1,7 +1,7 @@
 ﻿
 namespace Cat_Feeder
 {
-    partial class MakeMarkForm
+    partial class MakeMarkFormView
     {
         /// <summary>
         /// Required designer variable.
