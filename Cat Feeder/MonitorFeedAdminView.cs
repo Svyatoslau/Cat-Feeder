@@ -7,15 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class MonitorFeedAdminView : Form
+    public partial class MonitorFeedAdminView : Form, IMonitorFeedAdminView
     {
+        public string name => throw new NotImplementedException();
+
+        public string typeOfFeeder => throw new NotImplementedException();
+
         public MonitorFeedAdminView()
         {
             InitializeComponent();
         }
+
+        public event Action ChoiseFeeder;
+        public event Action ChoiseUser;
 
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -53,6 +61,11 @@ namespace Cat_Feeder
         }
 
         private void splitContainer12_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MonitorFeedAdminView_Load(object sender, EventArgs e)
         {
 
         }

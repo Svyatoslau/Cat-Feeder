@@ -7,15 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class AdminPageView : Form
+    public partial class AdminPageView : Form, IAdminPageView
     {
         public AdminPageView()
         {
             InitializeComponent();
         }
+
+        public event Action<string> ClickToAddUser;
+        public event Action<string> MonitorFeeders;
+        public event Action<string> ShowAdminLogs;
+        public event Action<string> WatchAllShedules;
 
         private void button1_Click(object sender, EventArgs e)
         {

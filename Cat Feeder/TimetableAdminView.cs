@@ -7,15 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class TimetableAdminView : Form
+    public partial class TimetableAdminView : Form, ITimetableAdminView
     {
         public TimetableAdminView()
         {
             InitializeComponent();
         }
+
+        public event Action TimetableСhoose;
+        public event Action TimetableExportAdmin;
+        public event Action TimetableImportAdmin;
+        public event Action<string> TimetableText;
 
         private void TimetableAdmin_Load(object sender, EventArgs e)
         {

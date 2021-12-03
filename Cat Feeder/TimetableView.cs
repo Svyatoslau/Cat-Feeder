@@ -7,15 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class TimetableView : Form
+    public partial class TimetableView : Form, ITimetableView
     {
         public TimetableView()
         {
             InitializeComponent();
         }
+
+        public event Action<string> ChooseTimetable;
+        public event Action<string> ExportTimetable;
+        public event Action<string> ImportTimetable;
+        public event Action<string> SaveTimetable;
+        public event Action<string> ChooseFeed;
 
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -39,7 +46,7 @@ namespace Cat_Feeder
 
         private void Timetable_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button14_Click(object sender, EventArgs e)

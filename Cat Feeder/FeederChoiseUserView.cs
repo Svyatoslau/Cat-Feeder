@@ -7,15 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class FeederChoiseUserView : Form
+    public partial class FeederChoiseUserView : Form, IFeederChoiseUserView
     {
         public FeederChoiseUserView()
         {
             InitializeComponent();
         }
+
+        public event Action ChoiseFeeder;
 
         private void Feeder_1_Button_Click(object sender, EventArgs e)
         {
@@ -43,6 +46,11 @@ namespace Cat_Feeder
         }
 
         private void MenuFeeders_ChoiserUser_ScrollBar_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void FeederChoiseUserView_Load(object sender, EventArgs e)
         {
 
         }

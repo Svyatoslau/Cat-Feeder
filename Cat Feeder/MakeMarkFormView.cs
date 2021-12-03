@@ -9,14 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Presentation;
 
+
 namespace Cat_Feeder
 {
-    public partial class MakeMarkFormView : Form
+    public partial class MakeMarkFormView : Form, IMakeMarkFormView
     {
+        public string Note => throw new NotImplementedException();
+
         public MakeMarkFormView()
         {
             InitializeComponent();
         }
+
+        public event Action ChoiseFeeder;
+        public event Action MakeNoteToFeeder;
+        public event Action MakeNoteByHand;
 
         private void button12_Click(object sender, EventArgs e)
         {

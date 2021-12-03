@@ -158,7 +158,7 @@ namespace Cat_Feeder
             this.MenuFeeders_ChoiserUser_ScrollBar.TabIndex = 0;
             this.MenuFeeders_ChoiserUser_ScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.MenuFeeders_ChoiserUser_ScrollBar_Scroll);
             // 
-            // TimetableChoiseUser
+            // FeederChoiseUserView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,8 +166,9 @@ namespace Cat_Feeder
             this.Controls.Add(this.splitContainer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "TimetableChoiseUser";
+            this.Name = "FeederChoiseUserView";
             this.Text = "TimetableChoiseUser";
+            this.Load += new System.EventHandler(this.FeederChoiseUserView_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

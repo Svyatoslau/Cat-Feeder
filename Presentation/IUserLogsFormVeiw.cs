@@ -8,5 +8,9 @@ namespace Presentation
 {
     public interface IUserLogsFormVeiw : IView
     {
+        event Action ChooseUser;
+        event Action ChooseLog;
+        event Action PrintAllLogs;
+        event Action ExportLogs;
     }
 }
