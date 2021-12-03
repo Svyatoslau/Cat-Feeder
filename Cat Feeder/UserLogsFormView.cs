@@ -31,5 +31,21 @@ namespace Cat_Feeder
         {
 
         }
+
+        private void ShowAllLogsButton_Click(object sender, EventArgs e)
+        {
+            ShowAllLogs.Invoke();
+        }
+
+        private void ExportLogButton_Click(object sender, EventArgs e)
+        {
+            ExportLogs.Invoke();
+        }
+
+        private void LogButton_Click(object sender, EventArgs e)
+        {
+            string textLog = LogButton.Text;
+            ChooseLog.Invoke(textLog);
+        }
     }
 }
