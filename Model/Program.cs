@@ -1,4 +1,6 @@
 ﻿using System;
+using Model.Ententity;
+
 
 namespace Model
 {
