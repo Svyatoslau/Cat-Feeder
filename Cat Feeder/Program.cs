@@ -27,11 +27,11 @@ namespace Cat_Feeder
             kernel.Bind<IFeederChoiseUserView>().To<FeederChoiseUserView>();
             kernel.Bind<IFeedVeiw>().To<FeedView>();
             kernel.Bind<IFirstPageView>().To<FirstPageView>();
-            kernel.Bind<ILogsFormView>().To<LogsFormView>();
+            kernel.Bind<ILogsFormView>().To<AdminLogsFormView>();
             kernel.Bind<IMakeMarkFormView>().To<MakeMarkFormView>();
-            kernel.Bind<IMonitorFeedAdminView>().To<MonitorFeedAdminView>();
-            kernel.Bind<IRegFormView>().To<RegFormView>();
-            kernel.Bind<ITimetableAdminView>().To<TimetableAdminView>();
+            kernel.Bind<IMonitorFeedAdminView>().To<AdminMonitorFeedView>();
+            kernel.Bind<IRegFormView>().To<AdminRegFormView>();
+            kernel.Bind<ITimetableAdminView>().To<AdminTimetableView>();
             kernel.Bind<ITimetableView>().To<TimetableView>();
             kernel.Bind<IUserLogsFormVeiw>().To<UserLogsFormView>();
             kernel.Bind<IUserMainPageView>().To<UserMainPageView>();

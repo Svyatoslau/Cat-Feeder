@@ -18,10 +18,10 @@ namespace Cat_Feeder
             InitializeComponent();
         }
 
-        public event Action<string> ClickToAddUser;
-        public event Action<string> MonitorFeeders;
-        public event Action<string> ShowAdminLogs;
-        public event Action<string> WatchAllShedules;
+        public event Action ShowAdminRegFormView;
+        public event Action ShowAdminMonitorFeedView;
+        public event Action ShowAdminLogsFormView;
+        public event Action ShowAdminTimetableView;
 
         private void button1_Click(object sender, EventArgs e)
         {
