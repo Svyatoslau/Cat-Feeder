@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    interface IMakeMarkFormView: IView
+    internal interface ITimetableChoiseUserView
     {
-        string Note { get; }
-
-        event Action 
+        event Action<string> FeedСhoose;
     }
 }
