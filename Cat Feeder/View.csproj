@@ -183,5 +183,11 @@
     <Content Include="images\Feed2.png" />
     <Content Include="images\Feet.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Presentation\Presentation.csproj">
+      <Project>{798c91af-623f-4361-914d-87d8489c90e5}</Project>
+      <Name>Presentation</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

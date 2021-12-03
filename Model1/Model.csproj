@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1390155A-A729-4326-BC53-36CBDFAAC8B4}</ProjectGuid>
+    <ProjectGuid>{64F3214A-D2C2-4BED-8FDE-4A250701D34C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DAL</RootNamespace>
-    <AssemblyName>DAL</AssemblyName>
+    <RootNamespace>Model1</RootNamespace>
+    <AssemblyName>Model1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,13 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Ententity\Admin.cs" />
+    <Compile Include="Ententity\Customer.cs" />
+    <Compile Include="Ententity\Feeder.cs" />
+    <Compile Include="Ententity\Log.cs" />
+    <Compile Include="Ententity\Note.cs" />
+    <Compile Include="Ententity\Timetable.cs" />
+    <Compile Include="Ententity\TumpleTimetable.cs" />
+    <Compile Include="Ententity\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Model1\Model.csproj">
-      <Project>{64f3214a-d2c2-4bed-8fde-4a250701d34c}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

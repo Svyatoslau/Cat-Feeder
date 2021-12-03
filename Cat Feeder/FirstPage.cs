@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class FirstPage : Form
+    public partial class FirstPage : Form, IFirstPageView
     {
         //riofdsp<G> EXIT;
         public FirstPage()
