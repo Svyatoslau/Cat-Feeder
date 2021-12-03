@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class RegFormView : Form
+    public partial class RegFormView : Form, IRegFormView
     {
-        string password, login;
+        public string password => PasswordBox.Text;
+        public string login => loginBox.Text;
         public RegFormView()
         {
             InitializeComponent();
@@ -20,13 +22,12 @@ namespace Cat_Feeder
 
         private void loginBox_TextChanged(object sender, EventArgs e)
         {
-            login = loginBox.Text;
+            
         }
 
         private void PasswordBox_TextChanged(object sender, EventArgs e)
         {
             PasswordBox.MaxLength = 8;
-            password = PasswordBox.Text;
         }
 
         private void RegForm_Load(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace Cat_Feeder
             } else
             {
                 MessageBox.Show($"Пользователь зарегестрирован\nlogin: {login}\npassword: {password}");
+
             }
         }
     }

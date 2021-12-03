@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Presentation
+namespace Model1
 {
-    interface ITimetableView : IView
+    class ICustomerService
     {
-
     }
 }

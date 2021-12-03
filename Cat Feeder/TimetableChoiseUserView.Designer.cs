@@ -32,12 +32,12 @@ namespace Cat_Feeder
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.Feeder_5_Button = new System.Windows.Forms.Button();
+            this.Feeder_4_Button = new System.Windows.Forms.Button();
+            this.Feeder_3_Button = new System.Windows.Forms.Button();
+            this.Feeder_2_Button = new System.Windows.Forms.Button();
+            this.Feeder_1_Button = new System.Windows.Forms.Button();
+            this.MenuFeeders_ChoiserUser_ScrollBar = new System.Windows.Forms.VScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -86,74 +86,77 @@ namespace Cat_Feeder
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.button5);
-            this.splitContainer2.Panel1.Controls.Add(this.button4);
-            this.splitContainer2.Panel1.Controls.Add(this.button3);
-            this.splitContainer2.Panel1.Controls.Add(this.button2);
-            this.splitContainer2.Panel1.Controls.Add(this.button1);
+            this.splitContainer2.Panel1.Controls.Add(this.Feeder_5_Button);
+            this.splitContainer2.Panel1.Controls.Add(this.Feeder_4_Button);
+            this.splitContainer2.Panel1.Controls.Add(this.Feeder_3_Button);
+            this.splitContainer2.Panel1.Controls.Add(this.Feeder_2_Button);
+            this.splitContainer2.Panel1.Controls.Add(this.Feeder_1_Button);
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.vScrollBar1);
+            this.splitContainer2.Panel2.Controls.Add(this.MenuFeeders_ChoiserUser_ScrollBar);
             this.splitContainer2.Size = new System.Drawing.Size(232, 226);
             this.splitContainer2.SplitterDistance = 193;
             this.splitContainer2.TabIndex = 0;
             // 
-            // button5
+            // Feeder_5_Button
             // 
-            this.button5.Location = new System.Drawing.Point(12, 174);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(167, 33);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "КОРМУШКА 4";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Feeder_5_Button.Location = new System.Drawing.Point(12, 174);
+            this.Feeder_5_Button.Name = "Feeder_5_Button";
+            this.Feeder_5_Button.Size = new System.Drawing.Size(167, 33);
+            this.Feeder_5_Button.TabIndex = 4;
+            this.Feeder_5_Button.Text = "КОРМУШКА 5";
+            this.Feeder_5_Button.UseVisualStyleBackColor = true;
+            this.Feeder_5_Button.Click += new System.EventHandler(this.Feeder_5_Button_Click);
             // 
-            // button4
+            // Feeder_4_Button
             // 
-            this.button4.Location = new System.Drawing.Point(12, 135);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(167, 33);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "КОРМУШКА 3";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Feeder_4_Button.Location = new System.Drawing.Point(12, 135);
+            this.Feeder_4_Button.Name = "Feeder_4_Button";
+            this.Feeder_4_Button.Size = new System.Drawing.Size(167, 33);
+            this.Feeder_4_Button.TabIndex = 3;
+            this.Feeder_4_Button.Text = "КОРМУШКА 4";
+            this.Feeder_4_Button.UseVisualStyleBackColor = true;
+            this.Feeder_4_Button.Click += new System.EventHandler(this.Feeder_4_Button_Click);
             // 
-            // button3
+            // Feeder_3_Button
             // 
-            this.button3.Location = new System.Drawing.Point(12, 96);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 33);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "КОРМУШКА 3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Feeder_3_Button.Location = new System.Drawing.Point(12, 96);
+            this.Feeder_3_Button.Name = "Feeder_3_Button";
+            this.Feeder_3_Button.Size = new System.Drawing.Size(167, 33);
+            this.Feeder_3_Button.TabIndex = 2;
+            this.Feeder_3_Button.Text = "КОРМУШКА 3";
+            this.Feeder_3_Button.UseVisualStyleBackColor = true;
+            this.Feeder_3_Button.Click += new System.EventHandler(this.Feeder_3_Button_Click);
             // 
-            // button2
+            // Feeder_2_Button
             // 
-            this.button2.Location = new System.Drawing.Point(12, 57);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "КОРМУШКА 2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Feeder_2_Button.Location = new System.Drawing.Point(12, 57);
+            this.Feeder_2_Button.Name = "Feeder_2_Button";
+            this.Feeder_2_Button.Size = new System.Drawing.Size(167, 33);
+            this.Feeder_2_Button.TabIndex = 1;
+            this.Feeder_2_Button.Text = "КОРМУШКА 2";
+            this.Feeder_2_Button.UseVisualStyleBackColor = true;
+            this.Feeder_2_Button.Click += new System.EventHandler(this.Feeder_2_Button_Click);
             // 
-            // button1
+            // Feeder_1_Button
             // 
-            this.button1.Location = new System.Drawing.Point(12, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "КОРМУШКА 1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Feeder_1_Button.Location = new System.Drawing.Point(12, 18);
+            this.Feeder_1_Button.Name = "Feeder_1_Button";
+            this.Feeder_1_Button.Size = new System.Drawing.Size(167, 33);
+            this.Feeder_1_Button.TabIndex = 0;
+            this.Feeder_1_Button.Text = "КОРМУШКА 1";
+            this.Feeder_1_Button.UseVisualStyleBackColor = true;
+            this.Feeder_1_Button.Click += new System.EventHandler(this.Feeder_1_Button_Click);
             // 
-            // vScrollBar1
+            // MenuFeeders_ChoiserUser_ScrollBar
             // 
-            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vScrollBar1.Location = new System.Drawing.Point(0, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(35, 226);
-            this.vScrollBar1.TabIndex = 0;
+            this.MenuFeeders_ChoiserUser_ScrollBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MenuFeeders_ChoiserUser_ScrollBar.Location = new System.Drawing.Point(0, 0);
+            this.MenuFeeders_ChoiserUser_ScrollBar.Name = "MenuFeeders_ChoiserUser_ScrollBar";
+            this.MenuFeeders_ChoiserUser_ScrollBar.Size = new System.Drawing.Size(35, 226);
+            this.MenuFeeders_ChoiserUser_ScrollBar.TabIndex = 0;
+            this.MenuFeeders_ChoiserUser_ScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.MenuFeeders_ChoiserUser_ScrollBar_Scroll);
             // 
             // TimetableChoiseUser
             // 
@@ -182,11 +185,11 @@ namespace Cat_Feeder
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.Button Feeder_5_Button;
+        private System.Windows.Forms.Button Feeder_4_Button;
+        private System.Windows.Forms.Button Feeder_3_Button;
+        private System.Windows.Forms.Button Feeder_2_Button;
+        private System.Windows.Forms.Button Feeder_1_Button;
+        private System.Windows.Forms.VScrollBar MenuFeeders_ChoiserUser_ScrollBar;
     }
 }

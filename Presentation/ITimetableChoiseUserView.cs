@@ -8,5 +8,6 @@ namespace Presentation
 {
     interface ITimetableChoiseUserView : IView
     {
+        event Action<string> FeedСhoose;
     }
 }
