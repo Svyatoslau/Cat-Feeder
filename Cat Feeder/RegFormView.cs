@@ -17,13 +17,11 @@ namespace Cat_Feeder
         public string password => PasswordBox.Text;
         public string login => loginBox.Text;
 
-        public event Action AddUser;
+        public event Action<string, string> AddUser;
         public RegFormView()
         {
             InitializeComponent();
         }
-
-        public event Action<string> AddUser;
 
         private void loginBox_TextChanged(object sender, EventArgs e)
         {
@@ -52,10 +50,8 @@ namespace Cat_Feeder
             {
                 MessageBox.Show("Длинна пароля должна быть 8 символов");
             } else
-            {
-                //думаю нужно просто передать объект с полями password & login
-                
-                AddUser?.Invoke();
+            {                
+                AddUser?.Invoke(password, login);
                 MessageBox.Show($"Пользователь зарегестрирован\nlogin: {login}\npassword: {password}");
 
             }
