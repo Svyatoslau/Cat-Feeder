@@ -25,6 +25,11 @@ namespace Cat_Feeder
         public event Action TimetableImportAdmin;
         public event Action<string> TimetableText;
 
+        public event Action TimetableСhoose;
+        public event Action TimetableExportAdmin;
+        public event Action TimetableImportAdmin;
+        public event Action<string> TimetableText;
+
         private void TimetableAdmin_Load(object sender, EventArgs e)
         {
 

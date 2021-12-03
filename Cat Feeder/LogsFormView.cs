@@ -7,19 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class LogsFormView : Form
+    public partial class LogsFormView : Form, ILogsFormView
     {
+        public string textLog;
         public LogsFormView()
         {
             InitializeComponent();
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
+        public event Action ShowAllLogs;
+        public event Action ExportLogs;
+        public event Action<string> ChooseLog;
 
+        private void ShowAllLogsButton_Click(object sender, EventArgs e)
+        {
+            ShowAllLogs.Invoke();
+        }
+
+        private void ExportButton_Click(object sender, EventArgs e)
+        {
+            ExportLogs.Invoke();
+        }
+
+        private void ShowLogButton_Click(object sender, EventArgs e)
+        {
+            textLog = ShowLogButton.Text;
+            //MessageBox.Show(textLog);
+            ChooseLog.Invoke(textLog);
         }
     }
 }

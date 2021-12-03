@@ -14,6 +14,13 @@ namespace Cat_Feeder
     public partial class FirstPageView : Form, IFirstPageView
     {
         string login, password, status = "no status";
+
+        public event Action<string> EnterCustomer;
+
+        string IFirstPageView.password => throw new NotImplementedException();
+
+        string IFirstPageView.login => throw new NotImplementedException();
+
         public FirstPageView()
         {
             InitializeComponent();
