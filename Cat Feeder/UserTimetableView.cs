@@ -13,7 +13,7 @@ namespace Cat_Feeder
 {
     public partial class UserTimetableView : Form, ITimetableView
     {
-        public string TitleOfTimeTables => TitleBoxOfTimetables.Text;
+        public string TitleOfTimetables => TitleBoxOfTimetables.Text;
         public string TextOfTimeTables => TextBoxOfTimeTables.Text;
 
         public event Action ChooseTimetable;
