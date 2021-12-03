@@ -40,67 +40,72 @@ namespace Cat_Feeder
 
         private void ExportTimetableAdmin_Button_Click(object sender, EventArgs e)
         {
-            //AddInitiative?.Invoke();
+            TimetableExportAdmin?.Invoke();
         }
 
         private void ImportTimetableAdmin_Button_Click(object sender, EventArgs e)
         {
-
+            TimetableImportAdmin?.Invoke();
         }
 
         private void TimetableAdmin_Button1_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button2_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button3_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button4_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button5_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button6_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button7_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button8_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button9_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button10_Click(object sender, EventArgs e)
         {
-
+            TimetableСhoose?.Invoke();
         }
 
         private void TimetableAdmin_Button11_Click(object sender, EventArgs e)
         {
+            TimetableСhoose?.Invoke();
+        }
 
+        private void TextOfTimetableAdmin_TextInput_Click(object sender, EventArgs e)
+        {
+            //TimetableText?.Invoke();
         }
     }
 }

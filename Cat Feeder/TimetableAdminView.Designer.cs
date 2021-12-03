@@ -318,6 +318,7 @@ namespace Cat_Feeder
             this.TextOfTimetableAdmin_TextInput.Size = new System.Drawing.Size(247, 320);
             this.TextOfTimetableAdmin_TextInput.TabIndex = 48;
             this.TextOfTimetableAdmin_TextInput.Text = "9:00 200гр";
+            this.TextOfTimetableAdmin_TextInput.Click += new System.EventHandler(this.TextOfTimetableAdmin_TextInput_Click);
             // 
             // NumberOtTimetableAdmin_TextOutput
             // 

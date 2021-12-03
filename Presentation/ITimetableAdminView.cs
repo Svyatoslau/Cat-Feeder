@@ -12,5 +12,6 @@ namespace Presentation
         event Action TimetableExportAdmin;
         event Action TimetableImportAdmin;
         event Action<string> TimetableText;
+       // event Action TimetableText;//ВЫВОД РАСПИСАНИЯ ДЛЯ АДМИНА
     }
 }
