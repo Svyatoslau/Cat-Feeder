@@ -45,7 +45,6 @@ namespace Cat_Feeder
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -56,12 +55,11 @@ namespace Cat_Feeder
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.domainUpDown1);
             this.splitContainer1.Panel1.Controls.Add(this.button10);
             this.splitContainer1.Panel1.Controls.Add(this.button9);
             this.splitContainer1.Panel1.Controls.Add(this.button8);
@@ -87,8 +85,8 @@ namespace Cat_Feeder
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(2, 330);
-            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button10.Location = new System.Drawing.Point(3, 299);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(177, 26);
             this.button10.TabIndex = 11;
@@ -98,8 +96,8 @@ namespace Cat_Feeder
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(2, 299);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Location = new System.Drawing.Point(3, 272);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(177, 26);
             this.button9.TabIndex = 10;
@@ -109,8 +107,8 @@ namespace Cat_Feeder
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(2, 268);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Location = new System.Drawing.Point(2, 242);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(177, 26);
             this.button8.TabIndex = 9;
@@ -120,8 +118,8 @@ namespace Cat_Feeder
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(2, 237);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Location = new System.Drawing.Point(3, 212);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(177, 26);
             this.button7.TabIndex = 8;
@@ -131,8 +129,8 @@ namespace Cat_Feeder
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(2, 206);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Location = new System.Drawing.Point(2, 182);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(177, 26);
             this.button6.TabIndex = 7;
@@ -142,8 +140,8 @@ namespace Cat_Feeder
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(2, 176);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Location = new System.Drawing.Point(2, 152);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(177, 26);
             this.button5.TabIndex = 6;
@@ -153,8 +151,8 @@ namespace Cat_Feeder
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(2, 145);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(3, 122);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(177, 26);
             this.button4.TabIndex = 5;
@@ -164,8 +162,8 @@ namespace Cat_Feeder
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(2, 114);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(3, 92);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(177, 26);
             this.button3.TabIndex = 4;
@@ -175,8 +173,8 @@ namespace Cat_Feeder
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(2, 83);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(3, 62);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 26);
             this.button2.TabIndex = 3;
@@ -222,7 +220,7 @@ namespace Cat_Feeder
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(197, 330);
-            this.button12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button12.Margin = new System.Windows.Forms.Padding(2);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(191, 26);
             this.button12.TabIndex = 4;
@@ -232,20 +230,12 @@ namespace Cat_Feeder
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(2, 330);
-            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button11.Margin = new System.Windows.Forms.Padding(2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(191, 26);
             this.button11.TabIndex = 3;
             this.button11.Text = "Показать все логи";
             this.button11.UseVisualStyleBackColor = true;
-            // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Location = new System.Drawing.Point(12, 58);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(150, 20);
-            this.domainUpDown1.TabIndex = 12;
-            this.domainUpDown1.Text = "domainUpDown1";
             // 
             // UserLogsFormView
             // 
@@ -253,7 +243,7 @@ namespace Cat_Feeder
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "UserLogsFormView";
             this.Text = "UserLogsForm";
@@ -284,6 +274,5 @@ namespace Cat_Feeder
         private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
     }
 }
