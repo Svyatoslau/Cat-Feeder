@@ -8,5 +8,6 @@ namespace Presentation
 {
     interface ITimetableView : IView
     {
+
     }
 }

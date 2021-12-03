@@ -17,17 +17,32 @@ namespace Cat_Feeder
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Feeder_1_Button_Click(object sender, EventArgs e)
+        {
+            //AddInitiative?.Invoke();
+        }
+
+        private void Feeder_2_Button_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Feeder_3_Button_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Feeder_4_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Feeder_5_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuFeeders_ChoiserUser_ScrollBar_Scroll(object sender, ScrollEventArgs e)
         {
 
         }
