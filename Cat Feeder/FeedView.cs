@@ -13,9 +13,9 @@ namespace Cat_Feeder
 {
     public partial class FeedView : Form, IFeedVeiw
     {
-        public string timetableName => throw new NotImplementedException();
+        public string timetableName => textBoxNameTimetable.Text;
 
-        public string timetable => throw new NotImplementedException();
+        public string timetable => textBoxTimetable.Text;
 
         public FeedView()
         {
@@ -23,7 +23,7 @@ namespace Cat_Feeder
         }
 
         public event Action SaveTimetable;
-        public event Action ChooseExistTimetable;
+        public event Action ShowExistTimetable;
 
         private void splitContainer2_SplitterMoved(object sender, SplitterEventArgs e)
         {
@@ -52,17 +52,17 @@ namespace Cat_Feeder
 
         private void textBoxNameTimetable_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void saveTimetableButton_Click(object sender, EventArgs e)
         {
-
+            SaveTimetable?.Invoke();
         }
 
         private void chooseExistTimetableButton_Click(object sender, EventArgs e)
         {
-
+            ShowExistTimetable?.Invoke();
         }
     }
 }
