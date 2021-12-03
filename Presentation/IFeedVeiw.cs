@@ -12,7 +12,7 @@ namespace Presentation
         string timetable { get; }
 
         event Action SaveTimetable;
-        event Action ChooseExistTimetable;
+        event Action ShowExistTimetable;
         
     }
 }

@@ -37,20 +37,18 @@ namespace Cat_Feeder
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(11, 273);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Location = new System.Drawing.Point(8, 222);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(773, 78);
+            this.button5.Size = new System.Drawing.Size(580, 63);
             this.button5.TabIndex = 12;
             this.button5.Text = "Расписания";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(11, 103);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Location = new System.Drawing.Point(8, 84);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(773, 78);
+            this.button4.Size = new System.Drawing.Size(580, 63);
             this.button4.TabIndex = 13;
             this.button4.Text = "Мониторинг кормушек";
             this.button4.UseVisualStyleBackColor = true;
@@ -58,20 +56,18 @@ namespace Cat_Feeder
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(11, 188);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(8, 153);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(773, 78);
+            this.button3.Size = new System.Drawing.Size(580, 63);
             this.button3.TabIndex = 14;
             this.button3.Text = "Логи";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(11, 18);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(8, 15);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(773, 78);
+            this.button1.Size = new System.Drawing.Size(580, 63);
             this.button1.TabIndex = 15;
             this.button1.Text = "Зарегистрировать пользователя";
             this.button1.UseVisualStyleBackColor = true;
@@ -79,14 +75,14 @@ namespace Cat_Feeder
             // 
             // AdminPageView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 370);
+            this.ClientSize = new System.Drawing.Size(597, 301);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button5);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "AdminPageView";
             this.Text = "AdminPage";

@@ -54,7 +54,7 @@ namespace Cat_Feeder
         
         private void createNoteButton_Click(object sender, EventArgs e)
         {
-            ShowFeedVeiw?.Invoke();
+            ShowMakeMarkFormView?.Invoke();
         }
 
         private void note1_Click(object sender, EventArgs e)
@@ -69,27 +69,32 @@ namespace Cat_Feeder
 
         private void logButton_Click(object sender, EventArgs e)
         {
-
+            ShowLogsFormView?.Invoke();
         }
 
         private void timetableButton_Click(object sender, EventArgs e)
         {
-
+            ShowTimetableView?.Invoke();
         }
 
         private void feeder2_Click(object sender, EventArgs e)
         {
-
+            ShowFeedVeiw?.Invoke();
         }
 
         private void feeder4_Click(object sender, EventArgs e)
         {
-
+            ShowFeedVeiw?.Invoke();
         }
 
         private void feeder3_Click(object sender, EventArgs e)
         {
+            ShowFeedVeiw?.Invoke();
+        }
 
+        private void feeder1_Click(object sender, EventArgs e)
+        {
+            ShowFeedVeiw?.Invoke();
         }
     }
 }

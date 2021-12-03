@@ -178,6 +178,7 @@ namespace Cat_Feeder
             this.feeder1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.feeder1.TabIndex = 23;
             this.feeder1.TabStop = false;
+            this.feeder1.Click += new System.EventHandler(this.feeder1_Click);
             // 
             // feeder4
             // 
@@ -212,13 +213,13 @@ namespace Cat_Feeder
             this.feeder2.TabStop = false;
             this.feeder2.Click += new System.EventHandler(this.feeder2_Click);
             // 
-            // UserMainPage
+            // UserMainPageView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "UserMainPage";
+            this.Name = "UserMainPageView";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.UserMainPage_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
