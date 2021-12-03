@@ -9,7 +9,6 @@ using Model;
 using Model.Entity;
 using Model.Service;
 using Presentation;
-using View;
 
 namespace Cat_Feeder
 {
