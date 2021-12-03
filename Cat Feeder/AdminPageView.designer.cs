@@ -29,60 +29,62 @@ namespace Cat_Feeder
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.timtableButton = new System.Windows.Forms.Button();
+            this.monitorFeederButton = new System.Windows.Forms.Button();
+            this.logButton = new System.Windows.Forms.Button();
+            this.regButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button5
+            // timtableButton
             // 
-            this.button5.Location = new System.Drawing.Point(8, 222);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(580, 63);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Расписания";
-            this.button5.UseVisualStyleBackColor = true;
+            this.timtableButton.Location = new System.Drawing.Point(8, 222);
+            this.timtableButton.Name = "timtableButton";
+            this.timtableButton.Size = new System.Drawing.Size(580, 63);
+            this.timtableButton.TabIndex = 12;
+            this.timtableButton.Text = "Расписания";
+            this.timtableButton.UseVisualStyleBackColor = true;
+            this.timtableButton.Click += new System.EventHandler(this.timtableButton_Click);
             // 
-            // button4
+            // monitorFeederButton
             // 
-            this.button4.Location = new System.Drawing.Point(8, 84);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(580, 63);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Мониторинг кормушек";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.monitorFeederButton.Location = new System.Drawing.Point(8, 84);
+            this.monitorFeederButton.Name = "monitorFeederButton";
+            this.monitorFeederButton.Size = new System.Drawing.Size(580, 63);
+            this.monitorFeederButton.TabIndex = 13;
+            this.monitorFeederButton.Text = "Мониторинг кормушек";
+            this.monitorFeederButton.UseVisualStyleBackColor = true;
+            this.monitorFeederButton.Click += new System.EventHandler(this.monitorFeederButton_Click);
             // 
-            // button3
+            // logButton
             // 
-            this.button3.Location = new System.Drawing.Point(8, 153);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(580, 63);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Логи";
-            this.button3.UseVisualStyleBackColor = true;
+            this.logButton.Location = new System.Drawing.Point(8, 153);
+            this.logButton.Name = "logButton";
+            this.logButton.Size = new System.Drawing.Size(580, 63);
+            this.logButton.TabIndex = 14;
+            this.logButton.Text = "Логи";
+            this.logButton.UseVisualStyleBackColor = true;
+            this.logButton.Click += new System.EventHandler(this.logButton_Click);
             // 
-            // button1
+            // regButton
             // 
-            this.button1.Location = new System.Drawing.Point(8, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(580, 63);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Зарегистрировать пользователя";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.regButton.Location = new System.Drawing.Point(8, 15);
+            this.regButton.Name = "regButton";
+            this.regButton.Size = new System.Drawing.Size(580, 63);
+            this.regButton.TabIndex = 15;
+            this.regButton.Text = "Зарегистрировать пользователя";
+            this.regButton.UseVisualStyleBackColor = true;
+            this.regButton.Click += new System.EventHandler(this.regButton_Click_1);
             // 
             // AdminPageView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 301);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.regButton);
+            this.Controls.Add(this.logButton);
+            this.Controls.Add(this.monitorFeederButton);
+            this.Controls.Add(this.timtableButton);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AdminPageView";
             this.Text = "AdminPage";
@@ -92,9 +94,9 @@ namespace Cat_Feeder
         }
 
         #endregion
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button timtableButton;
+        private System.Windows.Forms.Button monitorFeederButton;
+        private System.Windows.Forms.Button logButton;
+        private System.Windows.Forms.Button regButton;
     }
 }

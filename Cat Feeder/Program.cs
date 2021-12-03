@@ -30,7 +30,7 @@ namespace Cat_Feeder
             kernel.Bind<IAdminRegFormView>().To<AdminRegFormView>();
             kernel.Bind<IAdminTimetableView>().To<AdminTimetableView>();
             kernel.Bind<IUserTimetableView>().To<UserTimetableView>();
-            kernel.Bind<IUserLogsFormView2>().To<UserLogsFormView>();
+            kernel.Bind<IUserLogsFormView>().To<UserLogsFormView>();
             kernel.Bind<IUserMainPageView>().To<UserMainPageView>();
 
             Application.EnableVisualStyles();

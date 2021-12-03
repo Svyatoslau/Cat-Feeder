@@ -29,7 +29,7 @@ namespace Cat_Feeder
 
         private void ShowAllLogsButton_Click(object sender, EventArgs e)
         {
-            ShowAllLogs.Invoke();
+            
         }
 
         private void ExportButton_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace Cat_Feeder
         {
             textLog = ShowLogButton.Text;
             //MessageBox.Show(textLog);
-            ChooseLog.Invoke(textLog);
+          
         }
 
         private void AdminLogsFormView_Load(object sender, EventArgs e)
