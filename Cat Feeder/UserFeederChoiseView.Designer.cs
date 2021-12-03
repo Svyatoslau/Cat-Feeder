@@ -1,7 +1,7 @@
 ﻿
 namespace Cat_Feeder
 {
-    partial class FeederChoiseUserView
+    partial class UserFeederChoiseView
     {
         /// <summary>
         /// Required designer variable.

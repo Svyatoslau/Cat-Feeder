@@ -12,11 +12,11 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class MakeMarkFormView : Form, IMakeMarkFormView
+    public partial class UserMakeMarkFormView : Form, IMakeMarkFormView
     {
         public string Note => throw new NotImplementedException();
 
-        public MakeMarkFormView()
+        public UserMakeMarkFormView()
         {
             InitializeComponent();
         }

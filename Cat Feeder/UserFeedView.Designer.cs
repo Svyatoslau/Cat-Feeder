@@ -1,7 +1,7 @@
 ﻿
 namespace Cat_Feeder
 {
-    partial class FeedView
+    partial class UserFeedView
     {
         /// <summary>
         /// Required designer variable.
