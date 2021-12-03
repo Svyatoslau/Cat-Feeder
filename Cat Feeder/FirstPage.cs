@@ -31,7 +31,10 @@ namespace Cat_Feeder
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(status == "no status" || password.Length != 8 || login.Length < 2 || login.Length >= 15)
+            if (status == "no status" && PasswordBox.Text.Length == 0 && loginBox.Text.Length ==0)
+            {
+                MessageBox.Show($"Вы не ввели данные");
+            } else if(status == "no status" || password.Length != 8 || login.Length < 2 || login.Length > 15)
             {
                 MessageBox.Show($"Проверьте корректность введеных данных\nLogin(от 2 до 15 символов)\nPassword(8 символов)\nUser/Admin");
             } else
