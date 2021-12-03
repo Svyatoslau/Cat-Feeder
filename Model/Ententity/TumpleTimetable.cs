@@ -18,9 +18,5 @@ namespace Model.Ententity
             this.Time = time;
         }
 
-        public void ShowDateTime()
-        {
-            Console.WriteLine($"Текущая дата {this.Time}"); ;
-        }
     }
 }
