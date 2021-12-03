@@ -8,5 +8,8 @@ namespace Presentation
 {
     interface IRegFormView : IView
     {
+        string password { get; }
+        string login { get; }
+        event Action<string> AddUser;
     }
 }

@@ -8,6 +8,8 @@ namespace Presentation
 {
     public interface IFirstPageView : IView
     {
-
+        string password { get; }
+        string login { get; }
+        event Action<string> EnterCustomer;
     }
 }
