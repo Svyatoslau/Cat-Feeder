@@ -13,23 +13,31 @@ namespace Cat_Feeder
 {
     public partial class LogsFormView : Form, ILogsFormView
     {
+        public string textLog;
         public LogsFormView()
         {
             InitializeComponent();
         }
 
-        public event Action<string> ShowAllLogs;
-        public event Action<string> ExportLogs;
+        public event Action ShowAllLogs;
+        public event Action ExportLogs;
         public event Action<string> ChooseLog;
 
-        private void button9_Click(object sender, EventArgs e)
+        private void ShowAllLogsButton_Click(object sender, EventArgs e)
         {
-
+            ShowAllLogs.Invoke();
         }
 
-        private void LogsFormView_Load(object sender, EventArgs e)
+        private void ExportButton_Click(object sender, EventArgs e)
         {
+            ExportLogs.Invoke();
+        }
 
+        private void ShowLogButton_Click(object sender, EventArgs e)
+        {
+            textLog = ShowLogButton.Text;
+            //MessageBox.Show(textLog);
+            ChooseLog.Invoke(textLog);
         }
     }
 }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ninject;
+using DAL;
+using Model;
+using Model.Entity;
+using Model.Service;
 using Presentation;
-
-
 
 namespace Cat_Feeder
 {
