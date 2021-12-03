@@ -35,25 +35,25 @@ namespace Cat_Feeder
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timetableButton = new System.Windows.Forms.Button();
+            this.logButton = new System.Windows.Forms.Button();
+            this.createNoteButton = new System.Windows.Forms.Button();
+            this.note4 = new System.Windows.Forms.Label();
+            this.note3 = new System.Windows.Forms.Label();
+            this.note2 = new System.Windows.Forms.Label();
+            this.note1 = new System.Windows.Forms.Label();
+            this.feeder1 = new System.Windows.Forms.PictureBox();
+            this.feeder4 = new System.Windows.Forms.PictureBox();
+            this.feeder3 = new System.Windows.Forms.PictureBox();
+            this.feeder2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeder1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeder4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeder3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeder2)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -82,126 +82,128 @@ namespace Cat_Feeder
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.button4);
-            this.splitContainer1.Panel1.Controls.Add(this.button3);
-            this.splitContainer1.Panel1.Controls.Add(this.button2);
+            this.splitContainer1.Panel1.Controls.Add(this.timetableButton);
+            this.splitContainer1.Panel1.Controls.Add(this.logButton);
+            this.splitContainer1.Panel1.Controls.Add(this.createNoteButton);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.label4);
-            this.splitContainer1.Panel2.Controls.Add(this.label3);
-            this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Controls.Add(this.label1);
-            this.splitContainer1.Panel2.Controls.Add(this.pictureBox4);
-            this.splitContainer1.Panel2.Controls.Add(this.pictureBox3);
-            this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.pictureBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.note4);
+            this.splitContainer1.Panel2.Controls.Add(this.note3);
+            this.splitContainer1.Panel2.Controls.Add(this.note2);
+            this.splitContainer1.Panel2.Controls.Add(this.note1);
+            this.splitContainer1.Panel2.Controls.Add(this.feeder1);
+            this.splitContainer1.Panel2.Controls.Add(this.feeder4);
+            this.splitContainer1.Panel2.Controls.Add(this.feeder3);
+            this.splitContainer1.Panel2.Controls.Add(this.feeder2);
             this.splitContainer1.Size = new System.Drawing.Size(929, 530);
             this.splitContainer1.SplitterDistance = 193;
             this.splitContainer1.TabIndex = 12;
             // 
-            // button4
+            // timetableButton
             // 
-            this.button4.Location = new System.Drawing.Point(12, 160);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(171, 68);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Расписания";
-            this.button4.UseVisualStyleBackColor = true;
+            this.timetableButton.Location = new System.Drawing.Point(12, 160);
+            this.timetableButton.Name = "timetableButton";
+            this.timetableButton.Size = new System.Drawing.Size(171, 68);
+            this.timetableButton.TabIndex = 11;
+            this.timetableButton.Text = "Расписания";
+            this.timetableButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // logButton
             // 
-            this.button3.Location = new System.Drawing.Point(12, 86);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(171, 68);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Логи";
-            this.button3.UseVisualStyleBackColor = true;
+            this.logButton.Location = new System.Drawing.Point(12, 86);
+            this.logButton.Name = "logButton";
+            this.logButton.Size = new System.Drawing.Size(171, 68);
+            this.logButton.TabIndex = 10;
+            this.logButton.Text = "Логи";
+            this.logButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // createNoteButton
             // 
-            this.button2.Location = new System.Drawing.Point(12, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 68);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Создать метку";
-            this.button2.UseVisualStyleBackColor = true;
+            this.createNoteButton.AllowDrop = true;
+            this.createNoteButton.Location = new System.Drawing.Point(12, 12);
+            this.createNoteButton.Name = "createNoteButton";
+            this.createNoteButton.Size = new System.Drawing.Size(171, 68);
+            this.createNoteButton.TabIndex = 9;
+            this.createNoteButton.Text = "Создать метку";
+            this.createNoteButton.UseVisualStyleBackColor = true;
+            this.createNoteButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
+            // note4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(148, 385);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Кормушка4";
+            this.note4.AutoSize = true;
+            this.note4.Location = new System.Drawing.Point(148, 385);
+            this.note4.Name = "note4";
+            this.note4.Size = new System.Drawing.Size(65, 13);
+            this.note4.TabIndex = 27;
+            this.note4.Text = "Кормушка4";
             // 
-            // label3
+            // note3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(370, 275);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Кормушка3";
+            this.note3.AutoSize = true;
+            this.note3.Location = new System.Drawing.Point(370, 275);
+            this.note3.Name = "note3";
+            this.note3.Size = new System.Drawing.Size(65, 13);
+            this.note3.TabIndex = 26;
+            this.note3.Text = "Кормушка3";
             // 
-            // label2
+            // note2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(320, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Кормушка2";
+            this.note2.AutoSize = true;
+            this.note2.Location = new System.Drawing.Point(320, 65);
+            this.note2.Name = "note2";
+            this.note2.Size = new System.Drawing.Size(65, 13);
+            this.note2.TabIndex = 25;
+            this.note2.Text = "Кормушка2";
             // 
-            // label1
+            // note1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(164, 160);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Кормушка1";
+            this.note1.AutoSize = true;
+            this.note1.Location = new System.Drawing.Point(164, 160);
+            this.note1.Name = "note1";
+            this.note1.Size = new System.Drawing.Size(65, 13);
+            this.note1.TabIndex = 24;
+            this.note1.Text = "Кормушка1";
             // 
-            // pictureBox4
+            // feeder1
             // 
-            this.pictureBox4.Image = global::Cat_Feeder.Properties.Resources.Feet;
-            this.pictureBox4.Location = new System.Drawing.Point(235, 160);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(73, 68);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
+            this.feeder1.Image = global::Cat_Feeder.Properties.Resources.Feet;
+            this.feeder1.Location = new System.Drawing.Point(235, 160);
+            this.feeder1.Name = "feeder1";
+            this.feeder1.Size = new System.Drawing.Size(73, 68);
+            this.feeder1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.feeder1.TabIndex = 23;
+            this.feeder1.TabStop = false;
             // 
-            // pictureBox3
+            // feeder4
             // 
-            this.pictureBox3.Image = global::Cat_Feeder.Properties.Resources.Feet;
-            this.pictureBox3.Location = new System.Drawing.Point(219, 375);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(73, 68);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
+            this.feeder4.Image = global::Cat_Feeder.Properties.Resources.Feet;
+            this.feeder4.Location = new System.Drawing.Point(219, 375);
+            this.feeder4.Name = "feeder4";
+            this.feeder4.Size = new System.Drawing.Size(73, 68);
+            this.feeder4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.feeder4.TabIndex = 22;
+            this.feeder4.TabStop = false;
             // 
-            // pictureBox2
+            // feeder3
             // 
-            this.pictureBox2.Image = global::Cat_Feeder.Properties.Resources.Feet;
-            this.pictureBox2.Location = new System.Drawing.Point(441, 265);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 68);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.feeder3.Image = global::Cat_Feeder.Properties.Resources.Feet;
+            this.feeder3.Location = new System.Drawing.Point(441, 265);
+            this.feeder3.Name = "feeder3";
+            this.feeder3.Size = new System.Drawing.Size(73, 68);
+            this.feeder3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.feeder3.TabIndex = 21;
+            this.feeder3.TabStop = false;
             // 
-            // pictureBox1
+            // feeder2
             // 
-            this.pictureBox1.Image = global::Cat_Feeder.Properties.Resources.Feet;
-            this.pictureBox1.Location = new System.Drawing.Point(391, 53);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(73, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
+            this.feeder2.Image = global::Cat_Feeder.Properties.Resources.Feet;
+            this.feeder2.Location = new System.Drawing.Point(391, 53);
+            this.feeder2.Name = "feeder2";
+            this.feeder2.Size = new System.Drawing.Size(73, 68);
+            this.feeder2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.feeder2.TabIndex = 20;
+            this.feeder2.TabStop = false;
             // 
             // UserMainPage
             // 
@@ -217,10 +219,10 @@ namespace Cat_Feeder
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeder1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeder4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeder3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeder2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,16 +234,16 @@ namespace Cat_Feeder
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ImageList imageList3;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button timetableButton;
+        private System.Windows.Forms.Button logButton;
+        private System.Windows.Forms.Button createNoteButton;
+        private System.Windows.Forms.Label note4;
+        private System.Windows.Forms.Label note3;
+        private System.Windows.Forms.Label note2;
+        private System.Windows.Forms.Label note1;
+        private System.Windows.Forms.PictureBox feeder1;
+        private System.Windows.Forms.PictureBox feeder4;
+        private System.Windows.Forms.PictureBox feeder3;
+        private System.Windows.Forms.PictureBox feeder2;
     }
 }
