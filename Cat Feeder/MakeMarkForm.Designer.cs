@@ -52,45 +52,50 @@ namespace Cat_Feeder
             // 
             this.TextOfKormushka.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.TextOfKormushka.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextOfKormushka.Location = new System.Drawing.Point(15, 37);
+            this.TextOfKormushka.Location = new System.Drawing.Point(11, 30);
+            this.TextOfKormushka.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextOfKormushka.Name = "TextOfKormushka";
-            this.TextOfKormushka.Size = new System.Drawing.Size(253, 22);
+            this.TextOfKormushka.Size = new System.Drawing.Size(190, 18);
             this.TextOfKormushka.TabIndex = 0;
             this.TextOfKormushka.Text = "Кормушки";
             this.TextOfKormushka.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Kormushkabutton
             // 
-            this.Kormushkabutton.Location = new System.Drawing.Point(15, 62);
+            this.Kormushkabutton.Location = new System.Drawing.Point(11, 50);
+            this.Kormushkabutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Kormushkabutton.Name = "Kormushkabutton";
-            this.Kormushkabutton.Size = new System.Drawing.Size(253, 28);
+            this.Kormushkabutton.Size = new System.Drawing.Size(190, 23);
             this.Kormushkabutton.TabIndex = 1;
             this.Kormushkabutton.Text = "Кормушка 1";
             this.Kormushkabutton.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 96);
+            this.button1.Location = new System.Drawing.Point(11, 78);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(253, 28);
+            this.button1.Size = new System.Drawing.Size(190, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Кормушка 1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(15, 130);
+            this.button2.Location = new System.Drawing.Point(11, 106);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(253, 28);
+            this.button2.Size = new System.Drawing.Size(190, 23);
             this.button2.TabIndex = 3;
             this.button2.Text = "Кормушка 1";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(15, 164);
+            this.button3.Location = new System.Drawing.Point(11, 133);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(253, 28);
+            this.button3.Size = new System.Drawing.Size(190, 23);
             this.button3.TabIndex = 4;
             this.button3.Text = "Кормушка 1";
             this.button3.UseVisualStyleBackColor = true;
@@ -98,80 +103,88 @@ namespace Cat_Feeder
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(15, 302);
+            this.button4.Location = new System.Drawing.Point(11, 245);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(253, 28);
+            this.button4.Size = new System.Drawing.Size(190, 23);
             this.button4.TabIndex = 5;
             this.button4.Text = "Кормушка 1";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(15, 268);
+            this.button5.Location = new System.Drawing.Point(11, 218);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(253, 28);
+            this.button5.Size = new System.Drawing.Size(190, 23);
             this.button5.TabIndex = 6;
             this.button5.Text = "Кормушка 1";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(15, 234);
+            this.button6.Location = new System.Drawing.Point(11, 190);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(253, 28);
+            this.button6.Size = new System.Drawing.Size(190, 23);
             this.button6.TabIndex = 7;
             this.button6.Text = "Кормушка 1";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(15, 200);
+            this.button7.Location = new System.Drawing.Point(11, 162);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(253, 28);
+            this.button7.Size = new System.Drawing.Size(190, 23);
             this.button7.TabIndex = 8;
             this.button7.Text = "Кормушка 1";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(15, 404);
+            this.button9.Location = new System.Drawing.Point(11, 328);
+            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(253, 28);
+            this.button9.Size = new System.Drawing.Size(190, 23);
             this.button9.TabIndex = 10;
             this.button9.Text = "Кормушка 1";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(15, 370);
+            this.button10.Location = new System.Drawing.Point(11, 301);
+            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(253, 28);
+            this.button10.Size = new System.Drawing.Size(190, 23);
             this.button10.TabIndex = 11;
             this.button10.Text = "Кормушка 1";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(15, 336);
+            this.button11.Location = new System.Drawing.Point(11, 273);
+            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(253, 28);
+            this.button11.Size = new System.Drawing.Size(190, 23);
             this.button11.TabIndex = 12;
             this.button11.Text = "Кормушка 1";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // vScrollBarNuberOfKarmushka
             // 
-            this.vScrollBarNuberOfKarmushka.Location = new System.Drawing.Point(284, 48);
+            this.vScrollBarNuberOfKarmushka.Location = new System.Drawing.Point(213, 39);
             this.vScrollBarNuberOfKarmushka.Name = "vScrollBarNuberOfKarmushka";
-            this.vScrollBarNuberOfKarmushka.Size = new System.Drawing.Size(24, 393);
+            this.vScrollBarNuberOfKarmushka.Size = new System.Drawing.Size(24, 319);
             this.vScrollBarNuberOfKarmushka.TabIndex = 13;
             // 
             // Executebutton
             // 
             this.Executebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Executebutton.Location = new System.Drawing.Point(311, 388);
+            this.Executebutton.Location = new System.Drawing.Point(233, 315);
+            this.Executebutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Executebutton.Name = "Executebutton";
-            this.Executebutton.Size = new System.Drawing.Size(234, 53);
+            this.Executebutton.Size = new System.Drawing.Size(176, 43);
             this.Executebutton.TabIndex = 14;
             this.Executebutton.Text = "Применить";
             this.Executebutton.UseVisualStyleBackColor = true;
@@ -179,9 +192,10 @@ namespace Cat_Feeder
             // Manuallybutton
             // 
             this.Manuallybutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Manuallybutton.Location = new System.Drawing.Point(554, 388);
+            this.Manuallybutton.Location = new System.Drawing.Point(416, 315);
+            this.Manuallybutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Manuallybutton.Name = "Manuallybutton";
-            this.Manuallybutton.Size = new System.Drawing.Size(234, 53);
+            this.Manuallybutton.Size = new System.Drawing.Size(176, 43);
             this.Manuallybutton.TabIndex = 15;
             this.Manuallybutton.Text = "Вручную";
             this.Manuallybutton.UseVisualStyleBackColor = true;
@@ -189,9 +203,10 @@ namespace Cat_Feeder
             // 
             // InfoKarmushkaField
             // 
-            this.InfoKarmushkaField.Location = new System.Drawing.Point(311, 37);
+            this.InfoKarmushkaField.Location = new System.Drawing.Point(233, 30);
+            this.InfoKarmushkaField.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.InfoKarmushkaField.Name = "InfoKarmushkaField";
-            this.InfoKarmushkaField.Size = new System.Drawing.Size(477, 345);
+            this.InfoKarmushkaField.Size = new System.Drawing.Size(358, 280);
             this.InfoKarmushkaField.TabIndex = 16;
             this.InfoKarmushkaField.Text = "Информация для кормушки";
             this.InfoKarmushkaField.Click += new System.EventHandler(this.InfoKarmushkaField_Click);
@@ -199,9 +214,10 @@ namespace Cat_Feeder
             // VerhneiText
             // 
             this.VerhneiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.VerhneiText.Location = new System.Drawing.Point(12, 4);
+            this.VerhneiText.Location = new System.Drawing.Point(9, 3);
+            this.VerhneiText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.VerhneiText.Name = "VerhneiText";
-            this.VerhneiText.Size = new System.Drawing.Size(776, 23);
+            this.VerhneiText.Size = new System.Drawing.Size(582, 19);
             this.VerhneiText.TabIndex = 17;
             this.VerhneiText.Text = "Назначение метки кормушке";
             this.VerhneiText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,9 +225,9 @@ namespace Cat_Feeder
             // 
             // MakeMarkForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.VerhneiText);
             this.Controls.Add(this.InfoKarmushkaField);
             this.Controls.Add(this.Manuallybutton);
@@ -229,9 +245,11 @@ namespace Cat_Feeder
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Kormushkabutton);
             this.Controls.Add(this.TextOfKormushka);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "MakeMarkForm";
             this.Text = "MakeMarkForm";
+            this.Load += new System.EventHandler(this.MakeMarkForm_Load);
             this.ResumeLayout(false);
 
         }

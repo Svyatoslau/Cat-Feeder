@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
@@ -33,6 +34,11 @@ namespace Cat_Feeder
         }
 
         private void InfoKarmushkaField_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MakeMarkForm_Load(object sender, EventArgs e)
         {
 
         }

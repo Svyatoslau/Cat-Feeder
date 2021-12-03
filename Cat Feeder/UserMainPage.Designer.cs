@@ -108,6 +108,7 @@ namespace Cat_Feeder
             this.timetableButton.TabIndex = 11;
             this.timetableButton.Text = "Расписания";
             this.timetableButton.UseVisualStyleBackColor = true;
+            this.timetableButton.Click += new System.EventHandler(this.timetableButton_Click);
             // 
             // logButton
             // 
@@ -117,6 +118,7 @@ namespace Cat_Feeder
             this.logButton.TabIndex = 10;
             this.logButton.Text = "Логи";
             this.logButton.UseVisualStyleBackColor = true;
+            this.logButton.Click += new System.EventHandler(this.logButton_Click);
             // 
             // createNoteButton
             // 
@@ -127,7 +129,7 @@ namespace Cat_Feeder
             this.createNoteButton.TabIndex = 9;
             this.createNoteButton.Text = "Создать метку";
             this.createNoteButton.UseVisualStyleBackColor = true;
-            this.createNoteButton.Click += new System.EventHandler(this.button2_Click);
+            this.createNoteButton.Click += new System.EventHandler(this.createNoteButton_Click);
             // 
             // note4
             // 
@@ -155,6 +157,7 @@ namespace Cat_Feeder
             this.note2.Size = new System.Drawing.Size(65, 13);
             this.note2.TabIndex = 25;
             this.note2.Text = "Кормушка2";
+            this.note2.Click += new System.EventHandler(this.note2_Click);
             // 
             // note1
             // 
@@ -164,6 +167,7 @@ namespace Cat_Feeder
             this.note1.Size = new System.Drawing.Size(65, 13);
             this.note1.TabIndex = 24;
             this.note1.Text = "Кормушка1";
+            this.note1.Click += new System.EventHandler(this.note1_Click);
             // 
             // feeder1
             // 
@@ -184,6 +188,7 @@ namespace Cat_Feeder
             this.feeder4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.feeder4.TabIndex = 22;
             this.feeder4.TabStop = false;
+            this.feeder4.Click += new System.EventHandler(this.feeder4_Click);
             // 
             // feeder3
             // 
@@ -194,6 +199,7 @@ namespace Cat_Feeder
             this.feeder3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.feeder3.TabIndex = 21;
             this.feeder3.TabStop = false;
+            this.feeder3.Click += new System.EventHandler(this.feeder3_Click);
             // 
             // feeder2
             // 
@@ -204,6 +210,7 @@ namespace Cat_Feeder
             this.feeder2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.feeder2.TabIndex = 20;
             this.feeder2.TabStop = false;
+            this.feeder2.Click += new System.EventHandler(this.feeder2_Click);
             // 
             // UserMainPage
             // 
