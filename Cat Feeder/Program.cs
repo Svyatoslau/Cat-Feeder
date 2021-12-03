@@ -16,7 +16,7 @@ namespace Cat_Feeder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new FirstPage());
+            Application.Run(new FirstPage());
             //Application.Run(new Feed());
             //Application.Run(new Timetable());
             //Application.Run(new TimetableAdmin());
