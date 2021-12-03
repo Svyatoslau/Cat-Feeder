@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    interface ITimetableView : IView
+    public interface ITimetableView : IView
     {
         event Action<string> ChooseTimetable;
         event Action<string> ExportTimetable;

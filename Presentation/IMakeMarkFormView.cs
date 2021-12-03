@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    interface IMakeMarkFormView: IView
+    public interface IMakeMarkFormView : IView
     {
         string Note { get; }
 

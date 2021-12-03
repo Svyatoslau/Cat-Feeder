@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    interface IUserLogsFormVeiw : IView
+    public interface IUserLogsFormVeiw : IView
     {
     }
 }

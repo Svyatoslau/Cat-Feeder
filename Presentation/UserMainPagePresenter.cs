@@ -7,7 +7,7 @@ using Ninject;
 
 namespace Presentation
 {
-    class UserMainPagePresenter
+    public class UserMainPagePresenter
     {
         private readonly IKernel _kernel;
         private IUserMainPageView _veiw;

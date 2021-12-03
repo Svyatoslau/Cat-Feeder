@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    interface IAdminPageView: IView
+    public interface IAdminPageView: IView
     {
         event Action<string> ClickToAddUser;
         event Action<string> MonitorFeeders;

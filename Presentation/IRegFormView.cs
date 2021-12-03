@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    interface IRegFormView : IView
+    public interface IRegFormView : IView
     {
         string password { get; }
         string login { get; }

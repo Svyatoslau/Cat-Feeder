@@ -103,11 +103,11 @@
     <Compile Include="TimetableAdminView.Designer.cs">
       <DependentUpon>TimetableAdminView.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimetableChoiseUserView.cs">
+    <Compile Include="FeederChoiseUserView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimetableChoiseUserView.Designer.cs">
-      <DependentUpon>TimetableChoiseUserView.cs</DependentUpon>
+    <Compile Include="FeederChoiseUserView.Designer.cs">
+      <DependentUpon>FeederChoiseUserView.cs</DependentUpon>
     </Compile>
     <Compile Include="UserLogsFormView.cs">
       <SubType>Form</SubType>
@@ -150,8 +150,8 @@
     <EmbeddedResource Include="TimetableAdminView.resx">
       <DependentUpon>TimetableAdminView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimetableChoiseUserView.resx">
-      <DependentUpon>TimetableChoiseUserView.cs</DependentUpon>
+    <EmbeddedResource Include="FeederChoiseUserView.resx">
+      <DependentUpon>FeederChoiseUserView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserLogsFormView.resx">
       <DependentUpon>UserLogsFormView.cs</DependentUpon>

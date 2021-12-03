@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    interface ILogsFormView : IView
+    public interface ILogsFormView : IView
     {
         event Action<string> ShowAllLogs;
         event Action<string> ExportLogs;

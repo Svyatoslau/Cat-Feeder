@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    interface IMonitorFeedAdminView : IView
+    public interface IMonitorFeedAdminView : IView
     {
         string name { get; }
         string typeOfFeeder { get; }
