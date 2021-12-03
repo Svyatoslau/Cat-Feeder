@@ -18,11 +18,11 @@ namespace Cat_Feeder
             InitializeComponent();
         }
 
-        public event Action<string> ChooseTimetable;
-        public event Action<string> ExportTimetable;
-        public event Action<string> ImportTimetable;
-        public event Action<string> SaveTimetable;
-        public event Action<string> ChooseFeed;
+        public event Action ChooseTimetable;
+        public event Action ExportTimetable;
+        public event Action ImportTimetable;
+        public event Action SaveTimetable;
+        public event Action ChooseFeed;
 
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -51,17 +51,7 @@ namespace Cat_Feeder
 
         private void button14_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            // НЕ ЗНАЮ ЗАЧЕМ И ДЛЯ ЧЕГО                                             ЧЕРНЕЦКИЙ   ВЛАДИМИР
         }
 
         private void ExportTimetableButton_Click(object sender, EventArgs e)
@@ -77,6 +67,61 @@ namespace Cat_Feeder
         private void ChooseFeedButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Timetable_Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timetable_Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timetable_Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timetable_Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timetable_Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timetable_Button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timetable_Button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timetable_Button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timetable_Button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SaveTametableButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxOfTimeTables_TextChanged(object sender, EventArgs e)
+        {
+            textBoxOfTimeTables.Text;
         }
     }
 }

@@ -33,17 +33,17 @@ namespace Cat_Feeder
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button11 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button10 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button9 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button8 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button7 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button6 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button5 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button4 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button3 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button2 = new System.Windows.Forms.Button();
+            this.TimetableAdmin_Button1 = new System.Windows.Forms.Button();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -135,17 +135,17 @@ namespace Cat_Feeder
             // 
             // splitContainer7.Panel1
             // 
-            this.splitContainer7.Panel1.Controls.Add(this.button10);
-            this.splitContainer7.Panel1.Controls.Add(this.button11);
-            this.splitContainer7.Panel1.Controls.Add(this.button12);
-            this.splitContainer7.Panel1.Controls.Add(this.button6);
-            this.splitContainer7.Panel1.Controls.Add(this.button7);
-            this.splitContainer7.Panel1.Controls.Add(this.button8);
-            this.splitContainer7.Panel1.Controls.Add(this.button9);
-            this.splitContainer7.Panel1.Controls.Add(this.button5);
-            this.splitContainer7.Panel1.Controls.Add(this.button4);
-            this.splitContainer7.Panel1.Controls.Add(this.button3);
-            this.splitContainer7.Panel1.Controls.Add(this.button2);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button11);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button10);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button9);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button8);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button7);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button6);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button5);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button4);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button3);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button2);
+            this.splitContainer7.Panel1.Controls.Add(this.TimetableAdmin_Button1);
             // 
             // splitContainer7.Panel2
             // 
@@ -154,115 +154,115 @@ namespace Cat_Feeder
             this.splitContainer7.SplitterDistance = 226;
             this.splitContainer7.TabIndex = 3;
             // 
-            // button10
+            // TimetableAdmin_Button11
             // 
-            this.button10.Location = new System.Drawing.Point(12, 375);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(202, 30);
-            this.button10.TabIndex = 12;
-            this.button10.Text = "РАСПИСАНИЕ 11";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.TimetableAdmin_Button11_Click);
+            this.TimetableAdmin_Button11.Location = new System.Drawing.Point(12, 375);
+            this.TimetableAdmin_Button11.Name = "TimetableAdmin_Button11";
+            this.TimetableAdmin_Button11.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button11.TabIndex = 12;
+            this.TimetableAdmin_Button11.Text = "РАСПИСАНИЕ 11";
+            this.TimetableAdmin_Button11.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button11.Click += new System.EventHandler(this.TimetableAdmin_Button11_Click);
             // 
-            // button11
+            // TimetableAdmin_Button10
             // 
-            this.button11.Location = new System.Drawing.Point(12, 339);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(202, 30);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "РАСПИСАНИЕ 10";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.TimetableAdmin_Button10_Click);
+            this.TimetableAdmin_Button10.Location = new System.Drawing.Point(12, 339);
+            this.TimetableAdmin_Button10.Name = "TimetableAdmin_Button10";
+            this.TimetableAdmin_Button10.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button10.TabIndex = 11;
+            this.TimetableAdmin_Button10.Text = "РАСПИСАНИЕ 10";
+            this.TimetableAdmin_Button10.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button10.Click += new System.EventHandler(this.TimetableAdmin_Button10_Click);
             // 
-            // button12
+            // TimetableAdmin_Button9
             // 
-            this.button12.Location = new System.Drawing.Point(12, 303);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(202, 30);
-            this.button12.TabIndex = 10;
-            this.button12.Text = "РАСПИСАНИЕ 9";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.TimetableAdmin_Button9_Click);
+            this.TimetableAdmin_Button9.Location = new System.Drawing.Point(12, 303);
+            this.TimetableAdmin_Button9.Name = "TimetableAdmin_Button9";
+            this.TimetableAdmin_Button9.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button9.TabIndex = 10;
+            this.TimetableAdmin_Button9.Text = "РАСПИСАНИЕ 9";
+            this.TimetableAdmin_Button9.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button9.Click += new System.EventHandler(this.TimetableAdmin_Button9_Click);
             // 
-            // button6
+            // TimetableAdmin_Button8
             // 
-            this.button6.Location = new System.Drawing.Point(12, 267);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(202, 30);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "РАСПИСАНИЕ 8";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.TimetableAdmin_Button8_Click);
+            this.TimetableAdmin_Button8.Location = new System.Drawing.Point(12, 267);
+            this.TimetableAdmin_Button8.Name = "TimetableAdmin_Button8";
+            this.TimetableAdmin_Button8.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button8.TabIndex = 9;
+            this.TimetableAdmin_Button8.Text = "РАСПИСАНИЕ 8";
+            this.TimetableAdmin_Button8.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button8.Click += new System.EventHandler(this.TimetableAdmin_Button8_Click);
             // 
-            // button7
+            // TimetableAdmin_Button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 231);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(202, 30);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "РАСПИСАНИЕ 7";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.TimetableAdmin_Button7_Click);
+            this.TimetableAdmin_Button7.Location = new System.Drawing.Point(12, 231);
+            this.TimetableAdmin_Button7.Name = "TimetableAdmin_Button7";
+            this.TimetableAdmin_Button7.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button7.TabIndex = 8;
+            this.TimetableAdmin_Button7.Text = "РАСПИСАНИЕ 7";
+            this.TimetableAdmin_Button7.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button7.Click += new System.EventHandler(this.TimetableAdmin_Button7_Click);
             // 
-            // button8
+            // TimetableAdmin_Button6
             // 
-            this.button8.Location = new System.Drawing.Point(12, 195);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(202, 30);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "РАСПИСАНИЕ 6";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.TimetableAdmin_Button6_Click);
+            this.TimetableAdmin_Button6.Location = new System.Drawing.Point(12, 195);
+            this.TimetableAdmin_Button6.Name = "TimetableAdmin_Button6";
+            this.TimetableAdmin_Button6.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button6.TabIndex = 7;
+            this.TimetableAdmin_Button6.Text = "РАСПИСАНИЕ 6";
+            this.TimetableAdmin_Button6.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button6.Click += new System.EventHandler(this.TimetableAdmin_Button6_Click);
             // 
-            // button9
+            // TimetableAdmin_Button5
             // 
-            this.button9.Location = new System.Drawing.Point(12, 159);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(202, 30);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "РАСПИСАНИЕ 5";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.TimetableAdmin_Button5_Click);
+            this.TimetableAdmin_Button5.Location = new System.Drawing.Point(12, 159);
+            this.TimetableAdmin_Button5.Name = "TimetableAdmin_Button5";
+            this.TimetableAdmin_Button5.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button5.TabIndex = 6;
+            this.TimetableAdmin_Button5.Text = "РАСПИСАНИЕ 5";
+            this.TimetableAdmin_Button5.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button5.Click += new System.EventHandler(this.TimetableAdmin_Button5_Click);
             // 
-            // button5
+            // TimetableAdmin_Button4
             // 
-            this.button5.Location = new System.Drawing.Point(12, 123);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(202, 30);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "РАСПИСАНИЕ 4";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.TimetableAdmin_Button4_Click);
+            this.TimetableAdmin_Button4.Location = new System.Drawing.Point(12, 123);
+            this.TimetableAdmin_Button4.Name = "TimetableAdmin_Button4";
+            this.TimetableAdmin_Button4.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button4.TabIndex = 5;
+            this.TimetableAdmin_Button4.Text = "РАСПИСАНИЕ 4";
+            this.TimetableAdmin_Button4.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button4.Click += new System.EventHandler(this.TimetableAdmin_Button4_Click);
             // 
-            // button4
+            // TimetableAdmin_Button3
             // 
-            this.button4.Location = new System.Drawing.Point(12, 87);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(202, 30);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "РАСПИСАНИЕ 3";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.TimetableAdmin_Button3_Click);
+            this.TimetableAdmin_Button3.Location = new System.Drawing.Point(12, 87);
+            this.TimetableAdmin_Button3.Name = "TimetableAdmin_Button3";
+            this.TimetableAdmin_Button3.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button3.TabIndex = 4;
+            this.TimetableAdmin_Button3.Text = "РАСПИСАНИЕ 3";
+            this.TimetableAdmin_Button3.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button3.Click += new System.EventHandler(this.TimetableAdmin_Button3_Click);
             // 
-            // button3
+            // TimetableAdmin_Button2
             // 
-            this.button3.Location = new System.Drawing.Point(12, 51);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 30);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "РАСПИСАНИЕ 2";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.TimetableAdmin_Button2_Click);
+            this.TimetableAdmin_Button2.Location = new System.Drawing.Point(12, 51);
+            this.TimetableAdmin_Button2.Name = "TimetableAdmin_Button2";
+            this.TimetableAdmin_Button2.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button2.TabIndex = 3;
+            this.TimetableAdmin_Button2.Text = "РАСПИСАНИЕ 2";
+            this.TimetableAdmin_Button2.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button2.Click += new System.EventHandler(this.TimetableAdmin_Button2_Click);
             // 
-            // button2
+            // TimetableAdmin_Button1
             // 
-            this.button2.Location = new System.Drawing.Point(12, 15);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 30);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "РАСПИСАНИЕ 1";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.TimetableAdmin_Button1_Click);
+            this.TimetableAdmin_Button1.Location = new System.Drawing.Point(12, 15);
+            this.TimetableAdmin_Button1.Name = "TimetableAdmin_Button1";
+            this.TimetableAdmin_Button1.Size = new System.Drawing.Size(202, 30);
+            this.TimetableAdmin_Button1.TabIndex = 2;
+            this.TimetableAdmin_Button1.Text = "РАСПИСАНИЕ 1";
+            this.TimetableAdmin_Button1.UseVisualStyleBackColor = true;
+            this.TimetableAdmin_Button1.Click += new System.EventHandler(this.TimetableAdmin_Button1_Click);
             // 
             // vScrollBar2
             // 
@@ -428,17 +428,17 @@ namespace Cat_Feeder
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.SplitContainer splitContainer7;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button TimetableAdmin_Button11;
+        private System.Windows.Forms.Button TimetableAdmin_Button10;
+        private System.Windows.Forms.Button TimetableAdmin_Button9;
+        private System.Windows.Forms.Button TimetableAdmin_Button8;
+        private System.Windows.Forms.Button TimetableAdmin_Button7;
+        private System.Windows.Forms.Button TimetableAdmin_Button6;
+        private System.Windows.Forms.Button TimetableAdmin_Button5;
+        private System.Windows.Forms.Button TimetableAdmin_Button4;
+        private System.Windows.Forms.Button TimetableAdmin_Button3;
+        private System.Windows.Forms.Button TimetableAdmin_Button2;
+        private System.Windows.Forms.Button TimetableAdmin_Button1;
         private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Label NumberOtTimetableAdmin_TextOutput;
         private System.Windows.Forms.SplitContainer splitContainer5;

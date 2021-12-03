@@ -25,11 +25,6 @@ namespace Cat_Feeder
         public event Action TimetableImportAdmin;
         public event Action<string> TimetableText;
 
-        public event Action TimetableСhoose;
-        public event Action TimetableExportAdmin;
-        public event Action TimetableImportAdmin;
-        public event Action<string> TimetableText;
-
         private void TimetableAdmin_Load(object sender, EventArgs e)
         {
 
@@ -37,7 +32,7 @@ namespace Cat_Feeder
 
         private void label1_Click(object sender, EventArgs e)
         {
-            //Это заголовок текста  Timetables Admin над списком расписаний НЕ ЗНАЮ КТО СДЕЛАЛ НА НЕГО ДЕЙСТВИЕ И ЗАЧЕМ????????????
+            //Это заголовок текста  Timetables Admin над списком расписаний НЕ ЗНАЮ КТО СДЕЛАЛ НА НЕГО ДЕЙСТВИЕ И ЗАЧЕМ????????????      ЧЕРНЕЦКИЙ   ВЛАДИМИР
         }
 
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
@@ -123,7 +118,7 @@ namespace Cat_Feeder
 
         private void TextOfTimetableAdmin_TextInput_Click(object sender, EventArgs e)
         {
-            //TimetableText?.Invoke();
+            //TimetableText?.Invoke();                       ЧЕРНЕЦКИЙ   ВЛАДИМИР
         }
     }
 }

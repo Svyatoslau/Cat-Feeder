@@ -8,10 +8,10 @@ namespace Presentation
 {
     public interface ITimetableView : IView
     {
-        event Action<string> ChooseTimetable;
-        event Action<string> ExportTimetable;
-        event Action<string> ImportTimetable;
-        event Action<string> SaveTimetable;
-        event Action<string> ChooseFeed;
+        event Action ChooseTimetable;
+        event Action ExportTimetable;
+        event Action ImportTimetable;
+        event Action SaveTimetable;
+        event Action ChooseFeed;
     }
 }
