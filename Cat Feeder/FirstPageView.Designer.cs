@@ -29,27 +29,28 @@ namespace Cat_Feeder
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonSignIn = new System.Windows.Forms.Button();
+            this.LogInButton = new System.Windows.Forms.Button();
             this.loginBox = new System.Windows.Forms.TextBox();
             this.PasswordBox = new System.Windows.Forms.TextBox();
             this.labelLogin = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.radioButtonUser = new System.Windows.Forms.RadioButton();
-            this.radioButtonAdmin = new System.Windows.Forms.RadioButton();
+            this.UserRadioButton = new System.Windows.Forms.RadioButton();
+            this.AdminRadioButton = new System.Windows.Forms.RadioButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // buttonSignIn
+            // LogInButton
             // 
-            this.buttonSignIn.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSignIn.Location = new System.Drawing.Point(112, 198);
-            this.buttonSignIn.Name = "buttonSignIn";
-            this.buttonSignIn.Size = new System.Drawing.Size(179, 51);
-            this.buttonSignIn.TabIndex = 1;
-            this.buttonSignIn.Text = "Войти";
-            this.buttonSignIn.UseVisualStyleBackColor = true;
-            this.buttonSignIn.Click += new System.EventHandler(this.button2_Click);
+            this.LogInButton.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LogInButton.Location = new System.Drawing.Point(149, 244);
+            this.LogInButton.Margin = new System.Windows.Forms.Padding(4);
+            this.LogInButton.Name = "LogInButton";
+            this.LogInButton.Size = new System.Drawing.Size(239, 63);
+            this.LogInButton.TabIndex = 1;
+            this.LogInButton.Text = "Войти";
+            this.LogInButton.UseVisualStyleBackColor = true;
+            this.LogInButton.Click += new System.EventHandler(this.LogInButton_Click);
             // 
             // loginBox
             // 
@@ -89,30 +90,31 @@ namespace Cat_Feeder
             this.labelPassword.Text = "Password:";
             this.labelPassword.Click += new System.EventHandler(this.label2_Click);
             // 
-            // radioButtonUser
+            // UserRadioButton
             // 
-            this.radioButtonUser.AllowDrop = true;
-            this.radioButtonUser.AutoSize = true;
-            this.radioButtonUser.Checked = true;
-            this.radioButtonUser.Location = new System.Drawing.Point(130, 162);
-            this.radioButtonUser.Name = "radioButtonUser";
-            this.radioButtonUser.Size = new System.Drawing.Size(47, 17);
-            this.radioButtonUser.TabIndex = 6;
-            this.radioButtonUser.TabStop = true;
-            this.radioButtonUser.Text = "User";
-            this.radioButtonUser.UseVisualStyleBackColor = true;
-            this.radioButtonUser.CheckedChanged += new System.EventHandler(this.radioButtonUser_CheckedChanged);
+            this.UserRadioButton.AutoSize = true;
+            this.UserRadioButton.Checked = true;
+            this.UserRadioButton.Location = new System.Drawing.Point(173, 199);
+            this.UserRadioButton.Margin = new System.Windows.Forms.Padding(4);
+            this.UserRadioButton.Name = "UserRadioButton";
+            this.UserRadioButton.Size = new System.Drawing.Size(59, 21);
+            this.UserRadioButton.TabIndex = 6;
+            this.UserRadioButton.TabStop = true;
+            this.UserRadioButton.Text = "User";
+            this.UserRadioButton.UseVisualStyleBackColor = true;
+            this.UserRadioButton.CheckedChanged += new System.EventHandler(this.UserRadioButton_CheckedChanged);
             // 
-            // radioButtonAdmin
+            // AdminRadioButton
             // 
-            this.radioButtonAdmin.AutoSize = true;
-            this.radioButtonAdmin.Location = new System.Drawing.Point(217, 162);
-            this.radioButtonAdmin.Name = "radioButtonAdmin";
-            this.radioButtonAdmin.Size = new System.Drawing.Size(54, 17);
-            this.radioButtonAdmin.TabIndex = 7;
-            this.radioButtonAdmin.Text = "Admin";
-            this.radioButtonAdmin.UseVisualStyleBackColor = true;
-            this.radioButtonAdmin.CheckedChanged += new System.EventHandler(this.radioButtonAdmin_CheckedChanged);
+            this.AdminRadioButton.AutoSize = true;
+            this.AdminRadioButton.Location = new System.Drawing.Point(289, 199);
+            this.AdminRadioButton.Margin = new System.Windows.Forms.Padding(4);
+            this.AdminRadioButton.Name = "AdminRadioButton";
+            this.AdminRadioButton.Size = new System.Drawing.Size(68, 21);
+            this.AdminRadioButton.TabIndex = 7;
+            this.AdminRadioButton.Text = "Admin";
+            this.AdminRadioButton.UseVisualStyleBackColor = true;
+            this.AdminRadioButton.CheckedChanged += new System.EventHandler(this.AdminRadioButton_CheckedChanged);
             // 
             // label2
             // 
@@ -130,13 +132,14 @@ namespace Cat_Feeder
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 280);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.radioButtonAdmin);
-            this.Controls.Add(this.radioButtonUser);
+            this.Controls.Add(this.AdminRadioButton);
+            this.Controls.Add(this.UserRadioButton);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelLogin);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.loginBox);
-            this.Controls.Add(this.buttonSignIn);
+            this.Controls.Add(this.LogInButton);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FirstPageView";
@@ -150,13 +153,13 @@ namespace Cat_Feeder
 
         #endregion
 
-        private System.Windows.Forms.Button buttonSignIn;
+        private System.Windows.Forms.Button LogInButton;
         private System.Windows.Forms.TextBox loginBox;
         private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.Label labelLogin;
         private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.RadioButton radioButtonUser;
-        private System.Windows.Forms.RadioButton radioButtonAdmin;
+        private System.Windows.Forms.RadioButton UserRadioButton;
+        private System.Windows.Forms.RadioButton AdminRadioButton;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label2;
     }
