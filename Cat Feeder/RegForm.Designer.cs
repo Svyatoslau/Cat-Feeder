@@ -76,6 +76,7 @@ namespace Cat_Feeder
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.Size = new System.Drawing.Size(254, 34);
             this.PasswordBox.TabIndex = 10;
+            this.PasswordBox.TextChanged += new System.EventHandler(this.PasswordBox_TextChanged);
             // 
             // loginBox
             // 
@@ -85,6 +86,7 @@ namespace Cat_Feeder
             this.loginBox.Name = "loginBox";
             this.loginBox.Size = new System.Drawing.Size(254, 31);
             this.loginBox.TabIndex = 9;
+            this.loginBox.TextChanged += new System.EventHandler(this.loginBox_TextChanged);
             // 
             // buttonSignIn
             // 
@@ -96,6 +98,7 @@ namespace Cat_Feeder
             this.buttonSignIn.TabIndex = 8;
             this.buttonSignIn.Text = "Зарегистрировать";
             this.buttonSignIn.UseVisualStyleBackColor = true;
+            this.buttonSignIn.Click += new System.EventHandler(this.buttonSignIn_Click);
             // 
             // RegForm
             // 
