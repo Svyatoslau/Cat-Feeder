@@ -11,9 +11,9 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class TimetableAdminView : Form, ITimetableAdminView
+    public partial class AdminTimetableView : Form, ITimetableAdminView
     {
-        public TimetableAdminView()
+        public AdminTimetableView()
         {
             InitializeComponent();
         }

@@ -11,13 +11,13 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class MonitorFeedAdminView : Form, IMonitorFeedAdminView
+    public partial class AdminMonitorFeedView : Form, IMonitorFeedAdminView
     {
         public string name => throw new NotImplementedException();
 
         public string typeOfFeeder => throw new NotImplementedException();
 
-        public MonitorFeedAdminView()
+        public AdminMonitorFeedView()
         {
             InitializeComponent();
         }

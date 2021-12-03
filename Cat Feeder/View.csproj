@@ -67,11 +67,11 @@
     <Compile Include="FeedView.Designer.cs">
       <DependentUpon>FeedView.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogsFormView.cs">
+    <Compile Include="AdminLogsFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogsFormView.Designer.cs">
-      <DependentUpon>LogsFormView.cs</DependentUpon>
+    <Compile Include="AdminLogsFormView.Designer.cs">
+      <DependentUpon>AdminLogsFormView.cs</DependentUpon>
     </Compile>
     <Compile Include="MakeMarkFormView.cs">
       <SubType>Form</SubType>
@@ -79,17 +79,17 @@
     <Compile Include="MakeMarkFormView.Designer.cs">
       <DependentUpon>MakeMarkFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="MonitorFeedAdminView.cs">
+    <Compile Include="AdminMonitorFeedView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MonitorFeedAdminView.Designer.cs">
-      <DependentUpon>MonitorFeedAdminView.cs</DependentUpon>
+    <Compile Include="AdminMonitorFeedView.Designer.cs">
+      <DependentUpon>AdminMonitorFeedView.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegFormView.cs">
+    <Compile Include="AdminRegFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegFormView.Designer.cs">
-      <DependentUpon>RegFormView.cs</DependentUpon>
+    <Compile Include="AdminRegFormView.Designer.cs">
+      <DependentUpon>AdminRegFormView.cs</DependentUpon>
     </Compile>
     <Compile Include="TimetableView.cs">
       <SubType>Form</SubType>
@@ -97,11 +97,11 @@
     <Compile Include="TimetableView.Designer.cs">
       <DependentUpon>TimetableView.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimetableAdminView.cs">
+    <Compile Include="AdminTimetableView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimetableAdminView.Designer.cs">
-      <DependentUpon>TimetableAdminView.cs</DependentUpon>
+    <Compile Include="AdminTimetableView.Designer.cs">
+      <DependentUpon>AdminTimetableView.cs</DependentUpon>
     </Compile>
     <Compile Include="FeederChoiseUserView.cs">
       <SubType>Form</SubType>
@@ -132,23 +132,23 @@
     <EmbeddedResource Include="FirstPageView.resx">
       <DependentUpon>FirstPageView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogsFormView.resx">
-      <DependentUpon>LogsFormView.cs</DependentUpon>
+    <EmbeddedResource Include="AdminLogsFormView.resx">
+      <DependentUpon>AdminLogsFormView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MakeMarkFormView.resx">
       <DependentUpon>MakeMarkFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MonitorFeedAdminView.resx">
-      <DependentUpon>MonitorFeedAdminView.cs</DependentUpon>
+    <EmbeddedResource Include="AdminMonitorFeedView.resx">
+      <DependentUpon>AdminMonitorFeedView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegFormView.resx">
-      <DependentUpon>RegFormView.cs</DependentUpon>
+    <EmbeddedResource Include="AdminRegFormView.resx">
+      <DependentUpon>AdminRegFormView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimetableView.resx">
       <DependentUpon>TimetableView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimetableAdminView.resx">
-      <DependentUpon>TimetableAdminView.cs</DependentUpon>
+    <EmbeddedResource Include="AdminTimetableView.resx">
+      <DependentUpon>AdminTimetableView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeederChoiseUserView.resx">
       <DependentUpon>FeederChoiseUserView.cs</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿
 namespace Cat_Feeder
 {
-    partial class RegFormView
+    partial class AdminRegFormView
     {
         /// <summary>
         /// Required designer variable.

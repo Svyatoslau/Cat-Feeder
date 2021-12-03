@@ -1,7 +1,7 @@
 ﻿
 namespace Cat_Feeder
 {
-    partial class MonitorFeedAdminView
+    partial class AdminMonitorFeedView
     {
         /// <summary>
         /// Required designer variable.

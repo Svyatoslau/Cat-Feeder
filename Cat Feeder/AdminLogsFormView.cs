@@ -11,10 +11,10 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class LogsFormView : Form, ILogsFormView
+    public partial class AdminLogsFormView : Form, ILogsFormView
     {
         public string textLog;
-        public LogsFormView()
+        public AdminLogsFormView()
         {
             InitializeComponent();
         }
