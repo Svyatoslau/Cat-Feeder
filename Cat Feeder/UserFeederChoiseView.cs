@@ -11,9 +11,9 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class FeederChoiseUserView : Form, IFeederChoiseUserView
+    public partial class UserFeederChoiseView : Form, IFeederChoiseUserView
     {
-        public FeederChoiseUserView()
+        public UserFeederChoiseView()
         {
             InitializeComponent();
         }

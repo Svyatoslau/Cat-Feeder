@@ -11,13 +11,13 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class FeedView : Form, IFeedVeiw
+    public partial class UserFeedView : Form, IFeedVeiw
     {
         public string timetableName => textBoxNameTimetable.Text;
 
         public string timetable => textBoxTimetable.Text;
 
-        public FeedView()
+        public UserFeedView()
         {
             InitializeComponent();
         }

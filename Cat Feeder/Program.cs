@@ -4,10 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ninject;
-using DAL;
-using Model;
-using Model.Entity;
-using Model.Service;
+
 using Presentation;
 
 namespace Cat_Feeder
@@ -24,15 +21,15 @@ namespace Cat_Feeder
             Ninject.StandardKernel kernel = new StandardKernel();
             kernel.Bind<ApplicationContext>().ToConstant(new ApplicationContext());
             kernel.Bind<IAdminPageView>().To<AdminPageView>();
-            kernel.Bind<IFeederChoiseUserView>().To<FeederChoiseUserView>();
-            kernel.Bind<IFeedVeiw>().To<FeedView>();
+            kernel.Bind<IFeederChoiseUserView>().To<UserFeederChoiseView>();
+            kernel.Bind<IFeedVeiw>().To<UserFeedView>();
             kernel.Bind<IFirstPageView>().To<FirstPageView>();
             kernel.Bind<ILogsFormView>().To<AdminLogsFormView>();
-            kernel.Bind<IMakeMarkFormView>().To<MakeMarkFormView>();
+            kernel.Bind<IMakeMarkFormView>().To<UserMakeMarkFormView>();
             kernel.Bind<IMonitorFeedAdminView>().To<AdminMonitorFeedView>();
             kernel.Bind<IRegFormView>().To<AdminRegFormView>();
             kernel.Bind<ITimetableAdminView>().To<AdminTimetableView>();
-            kernel.Bind<ITimetableView>().To<TimetableView>();
+            kernel.Bind<ITimetableView>().To<UserTimetableView>();
             kernel.Bind<IUserLogsFormVeiw>().To<UserLogsFormView>();
             kernel.Bind<IUserMainPageView>().To<UserMainPageView>();
 
