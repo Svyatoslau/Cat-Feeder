@@ -13,17 +13,20 @@ namespace Cat_Feeder
 {
     public partial class AdminMonitorFeedView : Form, IAdminMonitorFeedView
     {
-        public string name => throw new NotImplementedException();
-
-        public string typeOfFeeder => throw new NotImplementedException();
+        string typeFeeder = "sensor";
+        public string name => nameFeederTextBox.Text;
 
         public AdminMonitorFeedView()
         {
             InitializeComponent();
         }
 
-        public event Action ChoiseFeeder;
-        public event Action ChoiseUser;
+        public event Action ChooseSensorFeeder;
+        public event Action ChooseDispenserFeeder;
+        public event Action ChooseUser;
+        public event Action SaveFeedor;
+        public event Action RemoveFeedor;
+        public event Action ChooseFeeder;
 
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -45,9 +48,9 @@ namespace Cat_Feeder
 
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void sensorFeederRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            typeFeeder = "sensor";
         }
 
         private void splitContainer10_SplitterMoved(object sender, SplitterEventArgs e)
@@ -55,9 +58,9 @@ namespace Cat_Feeder
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void dispenserFeederRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            typeFeeder = "dispenser";
         }
 
         private void splitContainer12_Panel1_Paint(object sender, PaintEventArgs e)
@@ -68,6 +71,55 @@ namespace Cat_Feeder
         private void MonitorFeedAdminView_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ChooseFeeder?.Invoke();
+        }
+
+        private void userDomainUpDown_SelectedItemChanged(object sender, EventArgs e)
+        {
+            ChooseUser?.Invoke();
+        }
+
+        private void feedorButton1_Click(object sender, EventArgs e)
+        {
+            ChooseFeeder?.Invoke();
+        }
+
+        private void feedorButton4_Click(object sender, EventArgs e)
+        {
+            ChooseFeeder?.Invoke();
+        }
+
+        private void feedorButton5_Click(object sender, EventArgs e)
+        {
+            ChooseFeeder?.Invoke();
+        }
+
+        private void nameFeederTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            if (typeFeeder.Equals("dispenser"))
+            {
+                ChooseDispenserFeeder?.Invoke();
+
+            }
+            else
+            {
+                ChooseSensorFeeder?.Invoke();
+            }
+            SaveFeedor?.Invoke();
+        }
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+            RemoveFeedor?.Invoke();
         }
     }
 }

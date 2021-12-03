@@ -33,22 +33,23 @@ namespace Cat_Feeder
             this.splitContainer12 = new System.Windows.Forms.SplitContainer();
             this.label5 = new System.Windows.Forms.Label();
             this.splitContainer13 = new System.Windows.Forms.SplitContainer();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.userDomainUpDown = new System.Windows.Forms.DomainUpDown();
+            this.feedorButton6 = new System.Windows.Forms.Button();
+            this.feedorButton5 = new System.Windows.Forms.Button();
+            this.feedorButton4 = new System.Windows.Forms.Button();
+            this.feedorButton1 = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer11 = new System.Windows.Forms.SplitContainer();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nameFeederTextBox = new System.Windows.Forms.TextBox();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
             this.label2 = new System.Windows.Forms.Label();
             this.splitContainer10 = new System.Windows.Forms.SplitContainer();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.dispenserFeederRadioButton = new System.Windows.Forms.RadioButton();
+            this.sensorFeederRadioButton = new System.Windows.Forms.RadioButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
@@ -57,9 +58,8 @@ namespace Cat_Feeder
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.splitContainer9 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.removeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -171,11 +171,11 @@ namespace Cat_Feeder
             // 
             // splitContainer13.Panel1
             // 
-            this.splitContainer13.Panel1.Controls.Add(this.domainUpDown1);
-            this.splitContainer13.Panel1.Controls.Add(this.button6);
-            this.splitContainer13.Panel1.Controls.Add(this.button5);
-            this.splitContainer13.Panel1.Controls.Add(this.button4);
-            this.splitContainer13.Panel1.Controls.Add(this.button3);
+            this.splitContainer13.Panel1.Controls.Add(this.userDomainUpDown);
+            this.splitContainer13.Panel1.Controls.Add(this.feedorButton6);
+            this.splitContainer13.Panel1.Controls.Add(this.feedorButton5);
+            this.splitContainer13.Panel1.Controls.Add(this.feedorButton4);
+            this.splitContainer13.Panel1.Controls.Add(this.feedorButton1);
             // 
             // splitContainer13.Panel2
             // 
@@ -184,41 +184,54 @@ namespace Cat_Feeder
             this.splitContainer13.SplitterDistance = 249;
             this.splitContainer13.TabIndex = 0;
             // 
-            // button6
+            // userDomainUpDown
             // 
-            this.button6.Location = new System.Drawing.Point(11, 161);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(226, 29);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "User3: КОРМУШКА1";
-            this.button6.UseVisualStyleBackColor = true;
+            this.userDomainUpDown.Location = new System.Drawing.Point(11, 15);
+            this.userDomainUpDown.Name = "userDomainUpDown";
+            this.userDomainUpDown.Size = new System.Drawing.Size(226, 20);
+            this.userDomainUpDown.TabIndex = 4;
+            this.userDomainUpDown.Text = "domainUpDown1";
+            this.userDomainUpDown.SelectedItemChanged += new System.EventHandler(this.userDomainUpDown_SelectedItemChanged);
             // 
-            // button5
+            // feedorButton6
             // 
-            this.button5.Location = new System.Drawing.Point(11, 125);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(226, 29);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "User2: КОРМУШКА1";
-            this.button5.UseVisualStyleBackColor = true;
+            this.feedorButton6.Location = new System.Drawing.Point(11, 161);
+            this.feedorButton6.Name = "feedorButton6";
+            this.feedorButton6.Size = new System.Drawing.Size(226, 29);
+            this.feedorButton6.TabIndex = 3;
+            this.feedorButton6.Text = "User3: КОРМУШКА1";
+            this.feedorButton6.UseVisualStyleBackColor = true;
+            this.feedorButton6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button4
+            // feedorButton5
             // 
-            this.button4.Location = new System.Drawing.Point(11, 90);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(226, 29);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "User1: КОРМУШКА2";
-            this.button4.UseVisualStyleBackColor = true;
+            this.feedorButton5.Location = new System.Drawing.Point(11, 125);
+            this.feedorButton5.Name = "feedorButton5";
+            this.feedorButton5.Size = new System.Drawing.Size(226, 29);
+            this.feedorButton5.TabIndex = 2;
+            this.feedorButton5.Text = "User2: КОРМУШКА1";
+            this.feedorButton5.UseVisualStyleBackColor = true;
+            this.feedorButton5.Click += new System.EventHandler(this.feedorButton5_Click);
             // 
-            // button3
+            // feedorButton4
             // 
-            this.button3.Location = new System.Drawing.Point(11, 52);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(226, 29);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "User1: КОРМУШКА1";
-            this.button3.UseVisualStyleBackColor = true;
+            this.feedorButton4.Location = new System.Drawing.Point(11, 90);
+            this.feedorButton4.Name = "feedorButton4";
+            this.feedorButton4.Size = new System.Drawing.Size(226, 29);
+            this.feedorButton4.TabIndex = 1;
+            this.feedorButton4.Text = "User1: КОРМУШКА2";
+            this.feedorButton4.UseVisualStyleBackColor = true;
+            this.feedorButton4.Click += new System.EventHandler(this.feedorButton4_Click);
+            // 
+            // feedorButton1
+            // 
+            this.feedorButton1.Location = new System.Drawing.Point(11, 52);
+            this.feedorButton1.Name = "feedorButton1";
+            this.feedorButton1.Size = new System.Drawing.Size(226, 29);
+            this.feedorButton1.TabIndex = 0;
+            this.feedorButton1.Text = "User1: КОРМУШКА1";
+            this.feedorButton1.UseVisualStyleBackColor = true;
+            this.feedorButton1.Click += new System.EventHandler(this.feedorButton1_Click);
             // 
             // vScrollBar1
             // 
@@ -259,7 +272,7 @@ namespace Cat_Feeder
             // 
             // splitContainer11.Panel2
             // 
-            this.splitContainer11.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer11.Panel2.Controls.Add(this.nameFeederTextBox);
             this.splitContainer11.Size = new System.Drawing.Size(300, 80);
             this.splitContainer11.SplitterDistance = 101;
             this.splitContainer11.TabIndex = 0;
@@ -275,15 +288,16 @@ namespace Cat_Feeder
             this.label3.Text = "Name:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // nameFeederTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 24);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 45);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "User1: КОРМУШКА1";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nameFeederTextBox.Location = new System.Drawing.Point(13, 24);
+            this.nameFeederTextBox.Multiline = true;
+            this.nameFeederTextBox.Name = "nameFeederTextBox";
+            this.nameFeederTextBox.Size = new System.Drawing.Size(139, 45);
+            this.nameFeederTextBox.TabIndex = 0;
+            this.nameFeederTextBox.Text = "User1: КОРМУШКА1";
+            this.nameFeederTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nameFeederTextBox.TextChanged += new System.EventHandler(this.nameFeederTextBox_TextChanged);
             // 
             // splitContainer3
             // 
@@ -363,43 +377,44 @@ namespace Cat_Feeder
             // 
             // splitContainer10.Panel1
             // 
-            this.splitContainer10.Panel1.Controls.Add(this.radioButton1);
+            this.splitContainer10.Panel1.Controls.Add(this.dispenserFeederRadioButton);
             // 
             // splitContainer10.Panel2
             // 
-            this.splitContainer10.Panel2.Controls.Add(this.radioButton2);
+            this.splitContainer10.Panel2.Controls.Add(this.sensorFeederRadioButton);
             this.splitContainer10.Size = new System.Drawing.Size(300, 42);
             this.splitContainer10.SplitterDistance = 147;
             this.splitContainer10.TabIndex = 1;
             this.splitContainer10.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer10_SplitterMoved);
             // 
-            // radioButton1
+            // dispenserFeederRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton1.Location = new System.Drawing.Point(0, 0);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.radioButton1.Size = new System.Drawing.Size(147, 42);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = " С датчиком веса";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.dispenserFeederRadioButton.AutoSize = true;
+            this.dispenserFeederRadioButton.Checked = true;
+            this.dispenserFeederRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dispenserFeederRadioButton.Location = new System.Drawing.Point(0, 0);
+            this.dispenserFeederRadioButton.Name = "dispenserFeederRadioButton";
+            this.dispenserFeederRadioButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.dispenserFeederRadioButton.Size = new System.Drawing.Size(147, 42);
+            this.dispenserFeederRadioButton.TabIndex = 0;
+            this.dispenserFeederRadioButton.TabStop = true;
+            this.dispenserFeederRadioButton.Text = " С датчиком веса";
+            this.dispenserFeederRadioButton.UseVisualStyleBackColor = true;
+            this.dispenserFeederRadioButton.CheckedChanged += new System.EventHandler(this.dispenserFeederRadioButton_CheckedChanged);
             // 
-            // radioButton2
+            // sensorFeederRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton2.Location = new System.Drawing.Point(0, 0);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.radioButton2.Size = new System.Drawing.Size(149, 42);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = " С дозатором";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.sensorFeederRadioButton.AutoSize = true;
+            this.sensorFeederRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sensorFeederRadioButton.Location = new System.Drawing.Point(0, 0);
+            this.sensorFeederRadioButton.Name = "sensorFeederRadioButton";
+            this.sensorFeederRadioButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.sensorFeederRadioButton.Size = new System.Drawing.Size(149, 42);
+            this.sensorFeederRadioButton.TabIndex = 1;
+            this.sensorFeederRadioButton.TabStop = true;
+            this.sensorFeederRadioButton.Text = " С дозатором";
+            this.sensorFeederRadioButton.UseVisualStyleBackColor = true;
+            this.sensorFeederRadioButton.CheckedChanged += new System.EventHandler(this.sensorFeederRadioButton_CheckedChanged);
             // 
             // pictureBox4
             // 
@@ -502,46 +517,40 @@ namespace Cat_Feeder
             // 
             // splitContainer9.Panel1
             // 
-            this.splitContainer9.Panel1.Controls.Add(this.button1);
+            this.splitContainer9.Panel1.Controls.Add(this.saveButton);
             // 
             // splitContainer9.Panel2
             // 
-            this.splitContainer9.Panel2.Controls.Add(this.button2);
+            this.splitContainer9.Panel2.Controls.Add(this.removeButton);
             this.splitContainer9.Size = new System.Drawing.Size(300, 63);
             this.splitContainer9.SplitterDistance = 148;
             this.splitContainer9.TabIndex = 0;
             // 
-            // button1
+            // saveButton
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 63);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.saveButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveButton.Location = new System.Drawing.Point(0, 0);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(148, 63);
+            this.saveButton.TabIndex = 3;
+            this.saveButton.Text = "SAVE";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // button2
+            // removeButton
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 63);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "REMOVE";
-            this.button2.UseVisualStyleBackColor = true;
+            this.removeButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.removeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.removeButton.Location = new System.Drawing.Point(0, 0);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(148, 63);
+            this.removeButton.TabIndex = 3;
+            this.removeButton.Text = "REMOVE";
+            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Location = new System.Drawing.Point(11, 15);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(226, 20);
-            this.domainUpDown1.TabIndex = 4;
-            this.domainUpDown1.Text = "domainUpDown1";
-            // 
-            // MonitorFeedAdminView
+            // AdminMonitorFeedView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -549,7 +558,7 @@ namespace Cat_Feeder
             this.Controls.Add(this.splitContainer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "MonitorFeedAdminView";
+            this.Name = "AdminMonitorFeedView";
             this.Text = "MonitorFedorAdmin";
             this.Load += new System.EventHandler(this.MonitorFeedAdminView_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -620,8 +629,8 @@ namespace Cat_Feeder
         private System.Windows.Forms.SplitContainer splitContainer4;
         private System.Windows.Forms.SplitContainer splitContainer6;
         private System.Windows.Forms.SplitContainer splitContainer10;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton dispenserFeederRadioButton;
+        private System.Windows.Forms.RadioButton sensorFeederRadioButton;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.SplitContainer splitContainer5;
         private System.Windows.Forms.SplitContainer splitContainer7;
@@ -630,20 +639,20 @@ namespace Cat_Feeder
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.SplitContainer splitContainer9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button removeButton;
         private System.Windows.Forms.SplitContainer splitContainer12;
         private System.Windows.Forms.SplitContainer splitContainer11;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nameFeederTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.SplitContainer splitContainer13;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button feedorButton6;
+        private System.Windows.Forms.Button feedorButton5;
+        private System.Windows.Forms.Button feedorButton4;
+        private System.Windows.Forms.Button feedorButton1;
         private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
+        private System.Windows.Forms.DomainUpDown userDomainUpDown;
     }
 }

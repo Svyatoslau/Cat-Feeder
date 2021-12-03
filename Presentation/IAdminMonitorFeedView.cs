@@ -9,10 +9,13 @@ namespace Presentation
     public interface IAdminMonitorFeedView : IView
     {
         string name { get; }
-        string typeOfFeeder { get; }
 
-        event Action ChoiseFeeder;
-        event Action ChoiseUser;
+        event Action ChooseSensorFeeder;
+        event Action ChooseDispenserFeeder;
+        event Action ChooseUser;
+        event Action SaveFeedor;
+        event Action RemoveFeedor;
+        event Action ChooseFeeder;
 
     }
 }
