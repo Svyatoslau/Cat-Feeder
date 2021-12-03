@@ -23,13 +23,14 @@ namespace Model
 
        
 
+        private List<Note> notes;// Записи
+
+        public List<Note> Notes { get => notes; set => notes = value; }
         
 
-        
+        private Timetable timetable; // Прикрепленное расписсание
+        public Timetable Timetable { get => timetable; set => timetable = value; }
 
-
-
-        
     }
     class DispenserFeeder: Feeder
     {
