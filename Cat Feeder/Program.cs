@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ninject;
+using DAL;
+using Model;
+using Model.Entity;
+using Model.Service;
+using Presentation;
+using View;
 
 namespace Cat_Feeder
 {
