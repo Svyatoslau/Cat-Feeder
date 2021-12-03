@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ninject;
 using Presentation;
+using View;
+
 
 
 namespace Cat_Feeder
@@ -20,7 +22,8 @@ namespace Cat_Feeder
             
             Ninject.StandardKernel kernel = new StandardKernel();
             kernel.Bind<ApplicationContext>().ToConstant(new ApplicationContext());
-            kernel.Bind<IAdminPageView>.To<AdminPageView>;
+            kernel.Bind<IAdminPageView>().To<AdminPageView>();
+            
         }
     }
 }

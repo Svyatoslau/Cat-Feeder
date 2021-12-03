@@ -551,6 +551,7 @@ namespace Cat_Feeder
             this.MinimizeBox = false;
             this.Name = "MonitorFeedAdminView";
             this.Text = "MonitorFedorAdmin";
+            this.Load += new System.EventHandler(this.MonitorFeedAdminView_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

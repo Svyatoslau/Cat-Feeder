@@ -20,6 +20,8 @@ namespace Cat_Feeder
             InitializeComponent();
         }
 
+        public event Action<string> AddUser;
+
         private void loginBox_TextChanged(object sender, EventArgs e)
         {
             

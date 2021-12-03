@@ -7,15 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class FeedView : Form
+    public partial class FeedView : Form, IFeedVeiw
     {
+        public string timetableName => throw new NotImplementedException();
+
+        public string timetable => throw new NotImplementedException();
+
         public FeedView()
         {
             InitializeComponent();
         }
+
+        public event Action SaveTimetable;
+        public event Action ChooseFeeder;
 
         private void splitContainer2_SplitterMoved(object sender, SplitterEventArgs e)
         {
@@ -48,6 +56,11 @@ namespace Cat_Feeder
         }
 
         private void splitContainer3_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FeedView_Load(object sender, EventArgs e)
         {
 
         }
