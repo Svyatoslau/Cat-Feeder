@@ -29,6 +29,11 @@ namespace Cat_Feeder
             password = PasswordBox.Text;
         }
 
+        private void RegForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
             if (PasswordBox.Text.Length == 0 && loginBox.Text.Length == 0)
