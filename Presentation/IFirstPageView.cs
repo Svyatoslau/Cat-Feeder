@@ -10,6 +10,7 @@ namespace Presentation
     {
         string password { get; }
         string login { get; }
-        event Action<string> EnterCustomer;
+        event Action ShowUserMainPageView;
+        event Action ShowAdminPageView;
     }
 }
