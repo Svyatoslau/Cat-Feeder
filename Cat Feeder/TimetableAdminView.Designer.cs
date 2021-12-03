@@ -327,7 +327,7 @@ namespace Cat_Feeder
             this.NumberOtTimetableAdmin_TextOutput.Name = "NumberOtTimetableAdmin_TextOutput";
             this.NumberOtTimetableAdmin_TextOutput.Size = new System.Drawing.Size(247, 33);
             this.NumberOtTimetableAdmin_TextOutput.TabIndex = 45;
-            this.NumberOtTimetableAdmin_TextOutput.Text = "РАСПИСАНИ1:";
+            this.NumberOtTimetableAdmin_TextOutput.Text = "РАСПИСАНИЕ";
             this.NumberOtTimetableAdmin_TextOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // vScrollBar1
