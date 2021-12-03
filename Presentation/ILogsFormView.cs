@@ -8,8 +8,8 @@ namespace Presentation
 {
     public interface ILogsFormView : IView
     {
-        event Action<string> ShowAllLogs;
-        event Action<string> ExportLogs;
+        event Action ShowAllLogs;
+        event Action ExportLogs;
         event Action<string> ChooseLog;
     }
 }
