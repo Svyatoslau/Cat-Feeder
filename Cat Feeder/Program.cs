@@ -25,7 +25,7 @@ namespace Cat_Feeder
             //Application.Run(new AdminPage());
             //Application.Run(new LogsForm());
             //Application.Run(new MakeMarkForm());
-            Application.Run(new RegForm());
+            Application.Run(new RegFormView());
             //Application.Run(new UserLogsForm());
         }
     }

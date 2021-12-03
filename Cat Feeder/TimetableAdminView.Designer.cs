@@ -1,7 +1,7 @@
 ﻿
 namespace Cat_Feeder
 {
-    partial class TimetableAdmin
+    partial class TimetableAdminView
     {
         /// <summary>
         /// Required designer variable.

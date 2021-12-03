@@ -11,9 +11,9 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class MakeMarkForm : Form
+    public partial class MakeMarkFormView : Form
     {
-        public MakeMarkForm()
+        public MakeMarkFormView()
         {
             InitializeComponent();
         }

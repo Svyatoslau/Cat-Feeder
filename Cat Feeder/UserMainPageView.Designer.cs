@@ -1,7 +1,7 @@
 ﻿
 namespace Cat_Feeder
 {
-    partial class UserMainPage
+    partial class UserMainPageView
     {
         /// <summary>
         /// Required designer variable.

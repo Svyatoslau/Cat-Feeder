@@ -9,5 +9,6 @@ namespace Presentation
     class MakeMarkFormPresenter
     {
         private IMakeMarkFormView:
+
     }
 }

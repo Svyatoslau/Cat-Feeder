@@ -11,10 +11,10 @@ using Presentation;
 
 namespace Cat_Feeder
 {
-    public partial class FirstPage : Form, IFirstPageView
+    public partial class FirstPageView : Form, IFirstPageView
     {
         string login, password, status = "no status";
-        public FirstPage()
+        public FirstPageView()
         {
             InitializeComponent();
         }

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Cat_Feeder
 {
-    public partial class RegForm : Form
+    public partial class RegFormView : Form
     {
         string password, login;
-        public RegForm()
+        public RegFormView()
         {
             InitializeComponent();
         }

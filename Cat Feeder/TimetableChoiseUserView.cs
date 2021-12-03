@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cat_Feeder
 {
-    public partial class TimetableChoiseUser : Form
+    public partial class TimetableChoiseUserView : Form
     {
-        public TimetableChoiseUser()
+        public TimetableChoiseUserView()
         {
             InitializeComponent();
         }
