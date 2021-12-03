@@ -10,6 +10,6 @@ namespace Presentation
     {
         string Note { get; }
 
-        event Action AddInitiave
+        event Action 
     }
 }
