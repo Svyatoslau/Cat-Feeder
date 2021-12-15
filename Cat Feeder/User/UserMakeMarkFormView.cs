@@ -14,7 +14,7 @@ namespace Cat_Feeder
 {
     public partial class UserMakeMarkFormView : Form, IUserMakeMarkFormView
     {
-        public string Note => InfoKarmushkaField.Text;        //Альтернативно         ЧЕРНЕЦКИЙ   ВЛАДИМИР
+        public string Note => TextBoxOfTimeTables.Text;        //Альтернативно         ЧЕРНЕЦКИЙ   ВЛАДИМИР
         public UserMakeMarkFormView()
         {
             InitializeComponent();
@@ -115,6 +115,11 @@ namespace Cat_Feeder
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBoxOfTimeTables_TextChanged(object sender, EventArgs e)
         {
 
         }

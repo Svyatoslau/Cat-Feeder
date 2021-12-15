@@ -232,6 +232,7 @@ namespace Cat_Feeder
             this.TextBoxOfTimeTables.Size = new System.Drawing.Size(348, 282);
             this.TextBoxOfTimeTables.TabIndex = 38;
             this.TextBoxOfTimeTables.Text = "МЕТКА КОРМУШКИ";
+            this.TextBoxOfTimeTables.TextChanged += new System.EventHandler(this.TextBoxOfTimeTables_TextChanged);
             // 
             // UserMakeMarkFormView
             // 

@@ -16,7 +16,20 @@ namespace Presentation
         {
             _kernel = kernel;
 
-            _view = view; 
+            _view = view;
+            _view.SaveTimetable += SaveTimetable;
+            _view.ShowExistTimetable += ShowExistTimetable;
+            //_view.SaveTimetable += SaveTimetable
+        }
+
+        private void SaveTimetable()
+        {
+            
+        }
+
+        private void ShowExistTimetable()
+        {
+
         }
 
         public void Run()
