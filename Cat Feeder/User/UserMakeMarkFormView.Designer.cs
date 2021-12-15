@@ -44,8 +44,8 @@ namespace Cat_Feeder
             this.vScrollBarNuberOfKarmushka = new System.Windows.Forms.VScrollBar();
             this.Executebutton = new System.Windows.Forms.Button();
             this.Manuallybutton = new System.Windows.Forms.Button();
-            this.InfoKarmushkaField = new System.Windows.Forms.Label();
             this.VerhneiText = new System.Windows.Forms.Label();
+            this.TextBoxOfTimeTables = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // TextOfKormushka
@@ -212,16 +212,6 @@ namespace Cat_Feeder
             this.Manuallybutton.UseVisualStyleBackColor = true;
             this.Manuallybutton.Click += new System.EventHandler(this.NoteByHandButton_Click);
             // 
-            // InfoKarmushkaField
-            // 
-            this.InfoKarmushkaField.Location = new System.Drawing.Point(233, 30);
-            this.InfoKarmushkaField.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InfoKarmushkaField.Name = "InfoKarmushkaField";
-            this.InfoKarmushkaField.Size = new System.Drawing.Size(358, 280);
-            this.InfoKarmushkaField.TabIndex = 16;
-            this.InfoKarmushkaField.Text = "Информация для кормушки";
-            this.InfoKarmushkaField.Click += new System.EventHandler(this.InfoKarmushkaField_Click);
-            // 
             // VerhneiText
             // 
             this.VerhneiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -234,13 +224,22 @@ namespace Cat_Feeder
             this.VerhneiText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.VerhneiText.Click += new System.EventHandler(this.label1_Click);
             // 
+            // TextBoxOfTimeTables
+            // 
+            this.TextBoxOfTimeTables.Location = new System.Drawing.Point(240, 28);
+            this.TextBoxOfTimeTables.Multiline = true;
+            this.TextBoxOfTimeTables.Name = "TextBoxOfTimeTables";
+            this.TextBoxOfTimeTables.Size = new System.Drawing.Size(348, 282);
+            this.TextBoxOfTimeTables.TabIndex = 38;
+            this.TextBoxOfTimeTables.Text = "МЕТКА КОРМУШКИ";
+            // 
             // UserMakeMarkFormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.TextBoxOfTimeTables);
             this.Controls.Add(this.VerhneiText);
-            this.Controls.Add(this.InfoKarmushkaField);
             this.Controls.Add(this.Manuallybutton);
             this.Controls.Add(this.Executebutton);
             this.Controls.Add(this.vScrollBarNuberOfKarmushka);
@@ -262,6 +261,7 @@ namespace Cat_Feeder
             this.Text = "MakeMarkForm";
             this.Load += new System.EventHandler(this.MakeMarkForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -282,7 +282,7 @@ namespace Cat_Feeder
         private System.Windows.Forms.VScrollBar vScrollBarNuberOfKarmushka;
         private System.Windows.Forms.Button Executebutton;
         private System.Windows.Forms.Button Manuallybutton;
-        private System.Windows.Forms.Label InfoKarmushkaField;
         private System.Windows.Forms.Label VerhneiText;
+        private System.Windows.Forms.TextBox TextBoxOfTimeTables;
     }
 }

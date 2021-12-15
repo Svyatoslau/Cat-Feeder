@@ -27,22 +27,22 @@ namespace Presentation
 
         private void ShowFeedVeiw()
         {
-            //var presenter = _kernel.Get<UserMakeMarkFormPresenter>;
+            _kernel.Get<UserFeedPresenter>().Run();
 
         }
         private void ShowMakeMarkFormView()
         {
-            //var presenter = _kernel.Get<UserMakeMarkFormPresenter>;
+            _kernel.Get<UserMakeMarkFormPresenter>().Run();
 
         }
         private void ShowLogsFormView()
         {
-            //var presenter = _kernel.Get<UserMakeMarkFormPresenter>;
+            _kernel.Get<UserLogsFormPresenter>().Run();
 
         }
         private void ShowTimetableView()
         {
-            //var presenter = _kernel.Get<UserMakeMarkFormPresenter>;
+            _kernel.Get<UserTimetablePresenter>().Run();
 
         }
 

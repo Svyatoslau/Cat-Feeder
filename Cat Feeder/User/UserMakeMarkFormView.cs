@@ -113,5 +113,10 @@ namespace Cat_Feeder
         {
             ChoiseFeeder?.Invoke();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
