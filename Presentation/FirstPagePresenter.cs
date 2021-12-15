@@ -27,13 +27,13 @@ namespace Presentation
 
         private void ShowAdminPageView()
         {
-            var presenter = _kernel.Get<AdminPagePresenter>();
-            presenter.Run();
+            _kernel.Get<AdminPagePresenter>().Run();
+            _view.Close();
         }
         private void ShowUserMainPageView()
         {
-            var presenter = _kernel.Get<UserMainPagePresenter>();
-            presenter.Run();
+            _kernel.Get<UserMainPagePresenter>().Run();
+            _view.Close();
         }
 
         public void Run()
