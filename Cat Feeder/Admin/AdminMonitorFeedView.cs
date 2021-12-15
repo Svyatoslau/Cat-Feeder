@@ -121,5 +121,10 @@ namespace Cat_Feeder
         {
             RemoveFeedor?.Invoke();
         }
+
+        public new void Show()
+        {
+            base.Show();
+        }
     }
 }
