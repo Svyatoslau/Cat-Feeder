@@ -23,10 +23,13 @@ namespace Cat_Feeder
         {
             InitializeComponent();
         }
-        event Action ShowUserMainPageView;
-        event Action ShowAdminPageView;
+        public event Action ShowUserMainPageView;
+        public event Action ShowAdminPageView;
         
-
+        public new void Show()
+        {
+            base.Show();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             
