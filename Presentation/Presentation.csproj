@@ -44,32 +44,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminLogsFormPresenter.cs" />
-    <Compile Include="AdminMonitorFeedPresenter.cs" />
-    <Compile Include="AdminPagePresenter.cs" />
-    <Compile Include="AdminRegFormPresenter.cs" />
-    <Compile Include="AdminTimetablePresenter.cs" />
+    <Compile Include="Admin\Presentation\AdminLogsFormPresenter.cs" />
+    <Compile Include="Admin\Presentation\AdminMonitorFeedPresenter.cs" />
+    <Compile Include="Admin\Presentation\AdminPagePresenter.cs" />
+    <Compile Include="Admin\Presentation\AdminRegFormPresenter.cs" />
+    <Compile Include="Admin\Presentation\AdminTimetablePresenter.cs" />
     <Compile Include="FirstPagePresenter.cs" />
-    <Compile Include="IAdminPageView.cs" />
-    <Compile Include="IUserFeedView.cs" />
-    <Compile Include="IUserLogsFormView.cs" />
-    <Compile Include="IUserMakeMarkFormView.cs" />
+    <Compile Include="Admin\View\IAdminPageView.cs" />
+    <Compile Include="User\View\IUserFeedView.cs" />
+    <Compile Include="User\View\IUserLogsFormView.cs" />
+    <Compile Include="User\View\IUserMakeMarkFormView.cs" />
     <Compile Include="IFirstPageView.cs" />
-    <Compile Include="IAdminMonitorFeedView.cs" />
-    <Compile Include="IAdminRegFormView.cs" />
-    <Compile Include="IAdminTimetableView.cs" />
-    <Compile Include="IUserFeederChoiseView.cs" />
-    <Compile Include="IUserTimetableView.cs" />
-    <Compile Include="IAdminLogsFormView.cs" />
-    <Compile Include="IUserMainPageView.cs" />
+    <Compile Include="Admin\View\IAdminMonitorFeedView.cs" />
+    <Compile Include="Admin\View\IAdminRegFormView.cs" />
+    <Compile Include="Admin\View\IAdminTimetableView.cs" />
+    <Compile Include="User\View\IUserFeederChoiseView.cs" />
+    <Compile Include="User\View\IUserTimetableView.cs" />
+    <Compile Include="Admin\View\IAdminLogsFormView.cs" />
+    <Compile Include="User\View\IUserMainPageView.cs" />
     <Compile Include="IView.cs" />
-    <Compile Include="UserFeederChoisePresenter.cs" />
-    <Compile Include="UserFeedPresenter.cs" />
-    <Compile Include="UserLogsFormPresenter.cs" />
-    <Compile Include="UserMakeMarkFormPresenter.cs" />
+    <Compile Include="User\Presentation\UserFeederChoisePresenter.cs" />
+    <Compile Include="User\Presentation\UserFeedPresenter.cs" />
+    <Compile Include="User\Presentation\UserLogsFormPresenter.cs" />
+    <Compile Include="User\Presentation\UserMakeMarkFormPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserMainPagePresenter.cs" />
-    <Compile Include="UserTimetablePresenter.cs" />
+    <Compile Include="User\Presentation\UserMainPagePresenter.cs" />
+    <Compile Include="User\Presentation\UserTimetablePresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model1\Model.csproj">
