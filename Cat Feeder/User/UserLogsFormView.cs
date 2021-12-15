@@ -38,12 +38,12 @@ namespace Cat_Feeder
 
         private void ShowAllLogsButton_Click(object sender, EventArgs e)
         {
-            ShowAllLogs.Invoke();
+            ShowAllLogs?.Invoke();
         }
 
         private void ExportLogButton_Click(object sender, EventArgs e)
         {
-            ExportLogs.Invoke();
+            ExportLogs?.Invoke();
         }
 
         private void LogButton_Click(object sender, EventArgs e)

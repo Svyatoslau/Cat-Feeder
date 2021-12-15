@@ -17,7 +17,7 @@ namespace Presentation
             _kernel = kernel;
 
             _view = view;
-
+            
         }
 
         public void Run()
