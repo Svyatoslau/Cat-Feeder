@@ -54,5 +54,10 @@ namespace Cat_Feeder
         {
 
         }
+
+        public new void Show()
+        {
+            base.Show();
+        }
     }
 }

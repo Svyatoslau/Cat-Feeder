@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    public interface IUserFeederChoiseView
+    public interface IUserFeederChoiseView : IView
     {
         event Action ChoiseFeeder;
     }

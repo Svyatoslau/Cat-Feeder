@@ -25,6 +25,11 @@ namespace Cat_Feeder
         {
             InitializeComponent();
         }
+
+        public new void Show()
+        {
+            base.Show();
+        }
         
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
         {

@@ -25,6 +25,11 @@ namespace Cat_Feeder
         public event Action SaveTimetable;
         public event Action ShowExistTimetable;
 
+        public new void Show()
+        {
+            base.Show();
+        }
+
         private void splitContainer2_SplitterMoved(object sender, SplitterEventArgs e)
         {
 

@@ -24,6 +24,11 @@ namespace Cat_Feeder
         public event Action MakeNoteToFeeder;
         public event Action MakeNoteByHand;
 
+        public new void Show()
+        {
+            base.Show();
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             //  НЕ ПОНЯТНО ДЛЯ ЧЕГО             ЧЕРНЕЦКИЙ   ВЛАДИМИР

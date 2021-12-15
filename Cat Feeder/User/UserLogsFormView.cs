@@ -22,6 +22,10 @@ namespace Cat_Feeder
         public event Action ExportLogs;
         public event Action<string> ChooseLog;
 
+        public new void Show()
+        {
+            base.Show();
+        }
         private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
