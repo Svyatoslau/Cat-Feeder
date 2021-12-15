@@ -17,7 +17,22 @@ namespace Presentation
             _kernel = kernel;
 
             _view = view;
-            
+            _view.ShowAdminRegFormView += ShowAdminRegFormView;
+            _view.ShowAdminLogsFormView += ShowAdminLogsFormView;
+
+
+        }
+
+        private void ShowAdminRegFormView()
+        {
+            _kernel.Get<AdminRegFormPresenter>().Run();
+            _view.Close();
+        }
+
+        private void ShowAdminLogsFormView()
+        {
+            _kernel.Get<AdminLogsFormPresenter>().Run();
+            _view.Close();
         }
 
         public void Run()

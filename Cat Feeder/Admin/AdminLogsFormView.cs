@@ -25,8 +25,6 @@ namespace Cat_Feeder
             InitializeComponent();
         }
 
-        
-
         private void ShowAllLogsButton_Click(object sender, EventArgs e)
         {
             PrintAllLogs?.Invoke();
@@ -101,6 +99,11 @@ namespace Cat_Feeder
         private void logButton10_Click(object sender, EventArgs e)
         {
             ChooseLog?.Invoke();
+        }
+
+        public new void Show()
+        {
+            base.Show();
         }
     }
 }
