@@ -17,9 +17,14 @@ namespace Presentation
             _kernel = kernel;
 
             _view = view;
-            
+            _view.ChoiseFeeder += ChoiseFeeder;
         }
 
+        private void ChoiseFeeder()
+        {
+            // Выбрать кормушку
+            _view.Close();
+        }
         public void Run()
         {
             _view.Show();

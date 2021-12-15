@@ -29,6 +29,8 @@ namespace Presentation
 
         private void ShowExistTimetable()
         {
+            // STOOP
+            // ДОБАВИТЬ НОВУЮ ФОРМУ
             _kernel.Get<UserTimetablePresenter>().Run();
             _view.Close();
         }

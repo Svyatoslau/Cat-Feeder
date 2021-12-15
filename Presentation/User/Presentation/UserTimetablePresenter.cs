@@ -17,8 +17,37 @@ namespace Presentation
             _kernel = kernel;
 
             _view = view;
+            _view.ChooseFeed += ChooseFeed;
+            _view.ChooseTimetable += ChooseTimetable;
+            _view.ExportTimetable += ExportTimetable;
+            _view.ImportTimetable += ImportTimetable;
+            _view.SaveTimetable += SaveTimetable;
+          
+        }
+        public void ChooseFeed()
+        {
+            _kernel.Get<UserFeederChoisePresenter>().Run();
+
         }
 
+        public void ChooseTimetable()
+        {
+            // Обработка
+        }
+        public void ExportTimetable()
+        {
+
+        }
+
+        public void ImportTimetable()
+        {
+
+        }
+
+        public void SaveTimetable()
+        {
+
+        }
         public void Run()
         {
             _view.Show();

@@ -49,7 +49,7 @@ namespace Cat_Feeder
         private void LogButton_Click(object sender, EventArgs e)
         {
             string textLog = LogButton.Text;
-            ChooseLog.Invoke(textLog);
+            ChooseLog?.Invoke(textLog);
         }
     }
 }
