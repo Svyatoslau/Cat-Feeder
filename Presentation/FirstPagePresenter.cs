@@ -11,7 +11,7 @@ namespace Presentation
     public class FirstPagePresenter
     {
         private readonly IKernel _kernel;
-        public IFirstPageView _view;
+        private IFirstPageView _view;
         // Поле сервиса
 
         public FirstPagePresenter(IKernel kernel, IFirstPageView view)
@@ -28,11 +28,12 @@ namespace Presentation
         private void ShowAdminPageView()
         {
             var presenter = _kernel.Get<AdminPagePresenter>();
-            //presenter.Run();
+            presenter.Run();
         }
         private void ShowUserMainPageView()
         {
-
+            var presenter = _kernel.Get<UserMainPagePresenter>();
+            presenter.Run();
         }
 
         public void Run()

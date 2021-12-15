@@ -52,5 +52,10 @@ namespace Cat_Feeder
         {
             ShowAdminTimetableView?.Invoke();
         }
+
+        public new void Show()
+        {
+            base.Show();
+        }
     }
 }
