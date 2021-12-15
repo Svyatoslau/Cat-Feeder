@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presentation
 {
-    class UserFeederChoisePresenter
+    public class UserFeederChoisePresenter
     {
     }
 }

@@ -14,7 +14,7 @@ namespace Presentation
 
         private void ShowMakeMarkFormView()
         {
-            var presenter = _kernel.Get<UserMakeMarkFormPresenter>;
+            //var presenter = _kernel.Get<UserMakeMarkFormPresenter>;
 
         }
     }

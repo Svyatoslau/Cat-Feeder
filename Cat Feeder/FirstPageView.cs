@@ -14,9 +14,8 @@ namespace Cat_Feeder
     public partial class FirstPageView : Form, IFirstPageView
     {
         string status = "User";
+        
 
-        event Action ShowUserMainPageView;
-        event Action ShowAdminPageView;
         public string password => PasswordBox.Text;
         public string login => loginBox.Text;
 
@@ -24,10 +23,13 @@ namespace Cat_Feeder
         {
             InitializeComponent();
         }
+        event Action ShowUserMainPageView;
+        event Action ShowAdminPageView;
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,10 +48,10 @@ namespace Cat_Feeder
             } else {
                 if (status.Equals("User"))
                 {
-                    ShowUserMainPageView.Invoke();
+                    ShowUserMainPageView?.Invoke();
                 }
                 else {
-                    ShowAdminPageView.Invoke();
+                    ShowAdminPageView?.Invoke();
                 }
                 
             }

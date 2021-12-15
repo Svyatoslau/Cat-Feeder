@@ -36,8 +36,8 @@ namespace Cat_Feeder
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //kernel.Get<FirstPageView>().Run();
-            //Application.Run(kernel.Get<ApplicationContext>);
+            kernel.Get<FirstPagePresenter>().Run();
+            Application.Run(kernel.Get<ApplicationContext>());
         }
     }
 }

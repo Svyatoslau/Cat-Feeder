@@ -1,6 +1,8 @@
 ﻿
 namespace Cat_Feeder
 {
+
+
     partial class AdminMonitorFeedView
     {
         /// <summary>

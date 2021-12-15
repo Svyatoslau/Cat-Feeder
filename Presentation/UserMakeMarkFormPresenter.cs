@@ -8,7 +8,7 @@ namespace Presentation
 {
     public class UserMakeMarkFormPresenter
     {
-        private IUserMakeMarkFormView:
+        //private IUserMakeMarkFormView:
 
     }
 }

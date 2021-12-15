@@ -43,7 +43,7 @@ namespace Cat_Feeder
             // LogInButton
             // 
             this.LogInButton.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LogInButton.Location = new System.Drawing.Point(149, 244);
+            this.LogInButton.Location = new System.Drawing.Point(76, 184);
             this.LogInButton.Margin = new System.Windows.Forms.Padding(4);
             this.LogInButton.Name = "LogInButton";
             this.LogInButton.Size = new System.Drawing.Size(239, 63);
@@ -94,10 +94,10 @@ namespace Cat_Feeder
             // 
             this.UserRadioButton.AutoSize = true;
             this.UserRadioButton.Checked = true;
-            this.UserRadioButton.Location = new System.Drawing.Point(173, 199);
+            this.UserRadioButton.Location = new System.Drawing.Point(119, 159);
             this.UserRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.UserRadioButton.Name = "UserRadioButton";
-            this.UserRadioButton.Size = new System.Drawing.Size(59, 21);
+            this.UserRadioButton.Size = new System.Drawing.Size(47, 17);
             this.UserRadioButton.TabIndex = 6;
             this.UserRadioButton.TabStop = true;
             this.UserRadioButton.Text = "User";
@@ -107,10 +107,10 @@ namespace Cat_Feeder
             // AdminRadioButton
             // 
             this.AdminRadioButton.AutoSize = true;
-            this.AdminRadioButton.Location = new System.Drawing.Point(289, 199);
+            this.AdminRadioButton.Location = new System.Drawing.Point(235, 159);
             this.AdminRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.AdminRadioButton.Name = "AdminRadioButton";
-            this.AdminRadioButton.Size = new System.Drawing.Size(68, 21);
+            this.AdminRadioButton.Size = new System.Drawing.Size(54, 17);
             this.AdminRadioButton.TabIndex = 7;
             this.AdminRadioButton.Text = "Admin";
             this.AdminRadioButton.UseVisualStyleBackColor = true;
