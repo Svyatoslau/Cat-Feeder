@@ -19,7 +19,7 @@ namespace Presentation
             _view = view;
             _view.SaveTimetable += SaveTimetable;
             _view.ShowExistTimetable += ShowExistTimetable;
-            //_view.SaveTimetable += SaveTimetable
+            
         }
 
         private void SaveTimetable()
@@ -29,12 +29,15 @@ namespace Presentation
 
         private void ShowExistTimetable()
         {
-
+            _kernel.Get<UserTimetablePresenter>().Run();
+            _view.Close();
         }
 
         public void Run()
         {
             _view.Show();
         }
+        
+
     }
 }
