@@ -120,5 +120,10 @@ namespace Cat_Feeder
         {
             //TimetableText?.Invoke();                       ЧЕРНЕЦКИЙ   ВЛАДИМИР
         }
+
+        public new void Show()
+        {
+            base.Show();
+        }
     }
 }

@@ -20,6 +20,7 @@ namespace Presentation
             _view.ShowAdminRegFormView += ShowAdminRegFormView;
             _view.ShowAdminLogsFormView += ShowAdminLogsFormView;
             _view.ShowAdminMonitorFeedView += ShowAdminMonitorFeedView;
+            _view.ShowAdminTimetableView += ShowAdminTimetableView;
 
         }
 
@@ -36,6 +37,11 @@ namespace Presentation
         private void ShowAdminMonitorFeedView()
         {
             _kernel.Get<AdminMonitorFeedPresenter>().Run();
+        }
+
+        private void ShowAdminTimetableView()
+        {
+            _kernel.Get<AdminTimetablePresenter>().Run();
         }
 
         public void Run()
