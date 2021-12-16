@@ -17,8 +17,13 @@ namespace Presentation
             _kernel = kernel;
 
             _view = view;
+            _view.AddUser += AddUser;
         }
 
+        private void AddUser()
+        {
+            _view.Close();
+        }
 
         public void Run()
         {

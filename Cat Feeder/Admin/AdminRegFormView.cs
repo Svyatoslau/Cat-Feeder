@@ -50,10 +50,9 @@ namespace Cat_Feeder
             {
                 MessageBox.Show("Длинна пароля должна быть 8 символов");
             } else
-            {                
-                AddUser?.Invoke();
+            {
                 MessageBox.Show($"Пользователь зарегестрирован\nlogin: {login}\npassword: {password}");
-
+                AddUser?.Invoke();
             }
         }
 
