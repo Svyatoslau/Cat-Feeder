@@ -17,6 +17,30 @@ namespace Presentation
             _kernel = kernel;
 
             _view = view;
+            _view.TimetableExportAdmin += TimetableExportAdmin;
+            _view.TimetableImportAdmin += TimetableImportAdmin;
+            _view.TimetableСhoose += TimetableСhoose;
+            _view.TimetableText += TimetableText;
+        }
+
+        private void TimetableExportAdmin()
+        {
+
+        }
+
+        private void TimetableImportAdmin()
+        {
+
+        }
+
+        private void TimetableСhoose(int timetable)
+        {
+
+        }
+
+        private void TimetableText(string timetableText)
+        {
+
         }
 
         public void Run()
