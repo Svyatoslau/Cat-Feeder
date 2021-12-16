@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using Ninject;
 
 using Presentation;
+using Model1;
+using Model1.Service;
 
 namespace Cat_Feeder
 {
@@ -33,12 +35,14 @@ namespace Cat_Feeder
             kernel.Bind<IUserLogsFormView>().To<UserLogsFormView>();
             kernel.Bind<IUserMainPageView>().To<UserMainPageView>();
 
+            kernel.Bind<IAdminRegFormService>().To<AdminRegFormService>();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //kernel.Get<FirstPagePresenter>().Run();
+            kernel.Get<FirstPagePresenter>().Run();
 
-            kernel.Get<UserMainPagePresenter>().Run();
+            //kernel.Get<UserMainPagePresenter>().Run();
             Application.Run(kernel.Get<ApplicationContext>());
         }
     }
