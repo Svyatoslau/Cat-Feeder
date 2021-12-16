@@ -20,7 +20,7 @@ namespace Presentation
             _view.AddUser += AddUser;
         }
 
-        private void AddUser()
+        private void AddUser(string login, string password)
         {
             _view.Close();
         }

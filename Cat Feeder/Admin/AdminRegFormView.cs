@@ -17,7 +17,7 @@ namespace Cat_Feeder
         public string password => PasswordBox.Text;
         public string login => loginBox.Text;
 
-        public event Action AddUser;
+        public event Action<string, string> AddUser;
         public AdminRegFormView()
         {
             InitializeComponent();
@@ -52,7 +52,7 @@ namespace Cat_Feeder
             } else
             {
                 MessageBox.Show($"Пользователь зарегестрирован\nlogin: {login}\npassword: {password}");
-                AddUser?.Invoke();
+                AddUser?.Invoke(login, password);
             }
         }
 
