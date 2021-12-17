@@ -26,10 +26,8 @@ namespace Model1.Service
 
         public void createAdmin(string login, string password)
         {
-            Random random = new Random();
-            int ID = random.Next(0, 10000);
-
-            Customer customer = new Customer(ID, login, password, "admin");
+            UserRepository _repository = new UserRepository();
+            Customer PretenderCustomer = new Customer(login, password, "admin");
 
             UserEvent?.Invoke();
         }
