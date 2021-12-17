@@ -29,7 +29,6 @@ namespace Presentation
         private void AddUser(string login, string password)
         {
             _service.AddUser(login, password);
-            //_view.Close();
         }
 
         private void UserRegistered()

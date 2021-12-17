@@ -50,8 +50,10 @@
     <Compile Include="Ententity\Timetable.cs" />
     <Compile Include="Ententity\TumpleTimetable.cs" />
     <Compile Include="Ententity\User.cs" />
+    <Compile Include="IAdminLogsFormService.cs" />
     <Compile Include="IAdminRegFormService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AdminLogsFormService.cs" />
     <Compile Include="Service\AdminRegFormService.cs" />
   </ItemGroup>
   <ItemGroup />
