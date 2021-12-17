@@ -39,6 +39,10 @@ namespace Model1.Service
                     MessageBox.Show("Incorrect password");
                 }
             }
+            else
+            {
+                MessageBox.Show("No user yet");
+            }
         
         }
 
@@ -59,6 +63,10 @@ namespace Model1.Service
                 {
                     MessageBox.Show("Incorrect password");
                 }
+            }
+            else
+            {
+                MessageBox.Show("No admin yet");
             }
         }
 
