@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ninject;
+using Model1;
 
 namespace Presentation
 {
@@ -11,8 +12,9 @@ namespace Presentation
     {
         private readonly IKernel _kernel;
         private IAdminTimetableView _view;
+        private IAdminTimetableService _service;
 
-        public AdminTimetablePresenter(IKernel kernel, IAdminTimetableView view)
+        public AdminTimetablePresenter(IKernel kernel, IAdminTimetableView view, IAdminTimetableService service)
         {
             _kernel = kernel;
 
@@ -21,6 +23,9 @@ namespace Presentation
             _view.TimetableImportAdmin += TimetableImportAdmin;
             _view.TimetableСhoose += TimetableСhoose;
             _view.TimetableText += TimetableText;
+
+            _service = service;
+            _service.TimetableEvent += TimetableEvent;
         }
 
         private void TimetableExportAdmin()
@@ -39,6 +44,11 @@ namespace Presentation
         }
 
         private void TimetableText(string timetableText)
+        {
+
+        }
+
+        private void TimetableEvent()
         {
 
         }

@@ -52,9 +52,11 @@
     <Compile Include="Ententity\User.cs" />
     <Compile Include="IAdminLogsFormService.cs" />
     <Compile Include="IAdminRegFormService.cs" />
+    <Compile Include="IAdminTimetableService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\AdminLogsFormService.cs" />
     <Compile Include="Service\AdminRegFormService.cs" />
+    <Compile Include="Service\AdminTimetableService.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
