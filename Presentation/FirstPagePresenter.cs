@@ -24,23 +24,25 @@ namespace Presentation
             
 
             _service = service;
-
-        }
-
-        public void Connection()
-        {
-            
+            _service.UserEvent += UserEvent;
         }
 
         private void ShowAdminPageView()
         {
+            _service.createAdmin(_view.login, _view.password);
             _kernel.Get<AdminPagePresenter>().Run();
             _view.Close();
         }
         private void ShowUserMainPageView()
         {
+            _service.createCustormer(_view.login, _view.password);
             _kernel.Get<UserMainPagePresenter>().Run();
             _view.Close();
+        }
+
+        private void UserEvent()
+        {
+
         }
 
         public void Run()
