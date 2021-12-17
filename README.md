@@ -1,41 +1,48 @@
 Cat Feeder
 =====================================
 
-Основные требования к приложению
+РћСЃРЅРѕРІРЅС‹Рµ С‚СЂРµР±РѕРІР°РЅРёСЏ Рє СЃРёСЃС‚РµРјРµ СЃРёСЃС‚РµРјРµ СѓРїСЂР°РІР»РµРЅРёСЏ РєРѕСЂРјСѓС€РєР°РјРё РґР»СЏ РєРѕС‚РѕРІ
 --------------------------------
 
-Особое место в настольной ролевой игре Dungeons & Dragons занимают бои. Механика игры определяет бой как последовательность раудов, в течении которого каждый участник совершает один ход. Когда каждый участник драки совершил свой ход раунд заканчивается и начинается новый раунд. Очерёдность ходов определяется броском кубика с добавлением некоторого модификатора.
-Отслеживание количества раундов и правильной последовательности ходов персонажей, особенно в ходе насыщенного боя в условиях ограниченного времени (один из приёмов что бы добавить игрокам острых эмоций), является достаточно сложным процессом.
-Для помощи ведущему игры предлагается разработать ПО для отслеживания инициативы в бою.
+РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРёРµ РєРѕСЂРјСѓС€РєРё РїРѕР·РІРѕР»СЏСЋС‚ РєРѕСЂРјРёС‚СЊ РїРёС‚РѕРјС†РµРІ СЃСѓС…РёРј РєРѕСЂРјРѕРј СЃРѕРіР»Р°СЃРЅРѕ Р·Р°РґР°РЅРЅРѕРјСѓ СЂР°СЃРїРёСЃР°РЅРёСЋ. РћСЃРѕР±РµРЅРЅС‹Рј РѕР±СЂР°Р·РѕРј Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРёРµ РєРѕСЂРјСѓС€РєРё СЂР°СЃРєСЂС‹РІР°СЋС‚ СЃРµР±СЏ РІ СЃРѕС‡РµС‚Р°РЅРёРё СЃ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊСЋ СѓРґР°Р»С‘РЅРЅРѕРіРѕ СѓРїСЂР°РІР»РµРЅРёСЏ Рё РјРѕРЅРёС‚РѕСЂРёРЅРіР° СЃРѕСЃС‚РѕСЏРЅРёСЏ. Р’ СЃРѕРІРѕРєСѓРїРЅРѕСЃС‚Рё СЌС‚Рѕ РїРѕР·РІРѕР»СЏРµС‚ РєРѕС‚РѕРІРѕРґР°Рј РѕСЃС‚Р°РІР»СЏС‚СЊ РїРёС‚РѕРјС†РµРІ Р±РµР· РїСЂРёСЃРјРѕС‚СЂР° РЅР° РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ Р±СѓРґСѓС‡Рё РїРѕР»РЅРѕСЃС‚СЊСЋ СѓРІРµСЂРµРЅРЅС‹Рј С‡С‚Рѕ РєРѕС‚ РЅРµ РѕСЃС‚Р°РЅРµС‚СЃСЏ Р±РµР· РµРґС‹.
 
-Необходимая функциональность:
+
+РќРµРѕР±С…РѕРґРёРјР°СЏ С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅРѕСЃС‚СЊ:
 	User:
-	  - Мониторить состояние кормушки
-	  - Просмотреть логов
-	  - Создать расписание
-	  - Назначить расписание на кормушки(у)
-	  - Сохранить и редактировать расписание
-	  - Ставить метки на кормушки (add/edit/remove)
-	  - Экспортировать логи и экспорт/импорт расписания кормёжки 
+	  - РњРѕРЅРёС‚РѕСЂРёС‚СЊ СЃРѕСЃС‚РѕСЏРЅРёРµ РєРѕСЂРјСѓС€РєРё
+	  - РџСЂРѕСЃРјРѕС‚СЂРµС‚СЊ Р»РѕРіРѕРІ
+	  - РЎРѕР·РґР°С‚СЊ СЂР°СЃРїРёСЃР°РЅРёРµ
+	  - РќР°Р·РЅР°С‡РёС‚СЊ СЂР°СЃРїРёСЃР°РЅРёРµ РЅР° РєРѕСЂРјСѓС€РєРё(Сѓ)
+	  - РЎРѕС…СЂР°РЅРёС‚СЊ Рё СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ СЂР°СЃРїРёСЃР°РЅРёРµ
+	  - РЎС‚Р°РІРёС‚СЊ РјРµС‚РєРё РЅР° РєРѕСЂРјСѓС€РєРё (add/edit/remove)
+	  - Р­РєСЃРїРѕСЂС‚РёСЂРѕРІР°С‚СЊ Р»РѕРіРё Рё СЌРєСЃРїРѕСЂС‚/РёРјРїРѕСЂС‚ СЂР°СЃРїРёСЃР°РЅРёСЏ РєРѕСЂРјС‘Р¶РєРё 
 	Admin:
-	  - Зарегистрировать нового пользователя(add/edit/remove)
-	  - Добавление новой кормушки(add/edit/remove)
-	  - Мониторинг состояния всех кормушек
-	  - Просмотр админ логов
-	  - Экспортировать логов и экспорт/импорт расписания кормёжки 
+	  - Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊ РЅРѕРІРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ(add/edit/remove)
+	  - Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕР№ РєРѕСЂРјСѓС€РєРё(add/edit/remove)
+	  - РњРѕРЅРёС‚РѕСЂРёРЅРі СЃРѕСЃС‚РѕСЏРЅРёСЏ РІСЃРµС… РєРѕСЂРјСѓС€РµРє
+	  - РџСЂРѕСЃРјРѕС‚СЂ Р°РґРјРёРЅ Р»РѕРіРѕРІ
+	  - Р­РєСЃРїРѕСЂС‚РёСЂРѕРІР°С‚СЊ Р»РѕРіРѕРІ Рё СЌРєСЃРїРѕСЂС‚/РёРјРїРѕСЂС‚ СЂР°СЃРїРёСЃР°РЅРёСЏ РєРѕСЂРјС‘Р¶РєРё 
 
 
-Анализ требований
+РђРЅР°Р»РёР· С‚СЂРµР±РѕРІР°РЅРёР№
 -----------------
+![Use case diagram TP (5 semestr)](https://user-images.githubusercontent.com/70974206/146601654-b0f7818e-4fd4-403f-9456-ec25c94b597c.jpeg)
 
-![Use case diagram for 'Dungeons & Dragons Initiative Tracker'](/Data/Use case diagram TP (5 semestr).jpeg)
-
-Проектирование
+РџСЂРѕРµРєС‚РёСЂРѕРІР°РЅРёРµ
 --------------
+![Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ](https://user-images.githubusercontent.com/70974206/146601752-6b0d3da7-c55f-4a95-a70f-52435565911d.jpg)
+![РџСЂРѕСЃРјРѕС‚СЂ СЃРѕСЃС‚РѕСЏРЅРёРµ РєРѕСЂРјСѓС€РєРё](https://user-images.githubusercontent.com/70974206/146601768-4040bf94-963a-407d-b8f3-26cd01612f57.jpg)
+![РЎРѕР·РґР°РЅРёРµ СЂР°СЃРїРёСЃР°РЅРёСЏ](https://user-images.githubusercontent.com/70974206/146601797-bf111964-a2b6-4e83-bd0d-67bd4baefd19.jpg)
 
-![Class diagram for 'Dungeons & Dragons Initiative Tracker'](http://www.plantuml.com/plantuml/svg/rLZDRXit4BxpANYKKLiF81X674TDLHH1OQdjeIW2QdTgizcV1Kd9TbE_UycLbjmTaY8L98TS32_dcrdEns-6etqZ5HDgLrVaaPT0eUxK2wsXteAGXB2jL88LYYuRnTNBMoQ1VYQK_a1NvOBoHf5NGegAIKdl7fb1WZW2Fh0Qw89gVzuyQDWemlL_LrSEFmHODLnnflWUD5IyZCBOA6R1mOODeCWu424Q1k9lLW1TtKFNIgvQyNAzkJc-ulEGvIkzBSjPk_rdGJSNVNHi_wqhcO81WgttKBTxcF43DPvvpRJHM_sHDwLrqL6n_JseswgQQTDgsUng46nRWTuyUPqaPkbq6Pv8pwAJQJhejqZNHSzBsy9D-gF3r0S_dmT984wNz3g6mHB679ucBivMa2B7osaoSXYmJvWApu3g0DL8bcYGJr8wsE5R20Y_8qz6o2aefZX515cCi49uBAyKvscYq-mwIh4TYo-7o7psq1ecCseEzx0rY3qlmDSYxA5HJjpom8VEuRPGl6q82Ps-W-DC3jVA3V9QrLqhrCXB02j1BEXQwV_g-_xf0Zajdv7Ja-3AEVtHFs6dEsrIO9rcpUYomzZ-P6DOV0qZ3g-ei8ml9fUWQoSzJ8BWhEB_cet_BDjcRP-9EOeS_aC41mx28FE9pcStIMcAHr-51mdZvKZpdGUWKv6tzPQfbC9xqBkTO8PMp7BGPRCJZIvfBXzJI5UCE72WUzwtEzqcN0j2PlFMmHemJ_Cmm0slOTsn9XBh2w2_y9ghK_WrA6Cwu2hprs4leZaFuRscCRZUHFPrkzV01t2P8FTTPmlZajfWDw6Dk9EATYxKK2fWOkn5F38K4yTZqLRFs7OnsmTuFfuscZnD2Y8cv0qlFYteqlp_4slA2eItesLZCj8YtBPjXOqhyvuzgvp2S3AHD6RZdeXB3ZV4-FLaeCeak3WcsgyKVS2Fqhn-GTyn1SPsY6kq4xGeJLxSK1xbyX49j4Tmkx-XK_tvb-ygdPSs6r9okqcgXUJqZL2p27M8T5j8zeAi1f2k-dDB_MlKTsvHnohPBrzSizD2HTTDVvDDbawERdCFVQpsQsoOT0GzoBgWhko-mcK4DUEDvYWvqc7doPOcT_xbfBfq5gF64Kl4j02xWqNuDoMkspZF-ILsDWNdvkqTdLCDjYHce30SSv3Z5Fo5y3k7fvYathTlMV4fCGEXqND08_qWh-Np5tYPhAnBdWUQKR6JVmy-jayZFJXj1eLn4N9V2j6AMGrIiWUhaI3Ils_lgbQ2DnUuapnrM2RYvDXFdXlAr68ZODSi4r5D3qtZR6izYSAjExf9xmuRQ0-UxwYCNU7cd--nMokcTdBM3obzqL_s8qJ_Rz3DjFjPqVlQESFTevUqZnIqcBW1W_SMkp6Xe9n5pMtNOVEvWdGoIsWofaUCja947wdH18jdj--ZV8rKk5Iya66gffDJva-amFmaCyUditF1eyzyyXtgLm4IJBOai4RdynlCG1I76Xs9NQBU1UUsW9TTz81gYV-90drsS87z9HCKtQFa3JJbhgx-1m00)
 
-Зависимости между проектами
+
+
+Р—Р°РІРёСЃРёРјРѕСЃС‚Рё РјРµР¶РґСѓ РїСЂРѕРµРєС‚Р°РјРё
 ---------------------------
+![РђСЂС…РёС‚РµРєС‚СѓСЂР°](https://user-images.githubusercontent.com/70974206/146601902-506cec6e-addf-485e-88df-b3ecbbaaf63b.png)
 
-![Component diagram for 'Dungeons & Dragons Initiative Tracker'](http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuUAA3ijCBOzLqDEpKuWEA4ejJiqhIIp9pC-BHP7npKz9pK4LSd7q0GeWQq5L2rA0AiBba9gN0hGK0000)
+Р‘Р°Р·Р° РґР°РЅРЅС‹С…
+---------------------------
+![Р‘Р”](https://user-images.githubusercontent.com/70974206/146602090-1b62f490-dc00-4972-b776-53dc77206b35.png)
+
+
