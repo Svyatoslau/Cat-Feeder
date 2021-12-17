@@ -37,6 +37,7 @@ namespace Cat_Feeder
 
             kernel.Bind<IAdminRegFormService>().To<AdminRegFormService>();
             kernel.Bind<IAdminLogsFormService>().To<AdminLogsFormService>();
+            kernel.Bind<IAdminTimetableService>().To<AdminTimetableService>();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
