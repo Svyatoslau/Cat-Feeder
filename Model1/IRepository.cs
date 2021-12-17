@@ -12,7 +12,7 @@ namespace Model1
         void Update(T obj);
         void Remove(int id);
         void Save();
-        T Find(int id);
+        T Find(string name);
         IEnumerable<T> GetAll();
     }
 }

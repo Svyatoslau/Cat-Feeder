@@ -42,14 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Ententity\Admin.cs" />
     <Compile Include="Ententity\Customer.cs" />
     <Compile Include="Ententity\Feeder.cs" />
     <Compile Include="Ententity\Log.cs" />
     <Compile Include="Ententity\Note.cs" />
     <Compile Include="Ententity\Timetable.cs" />
     <Compile Include="Ententity\TumpleTimetable.cs" />
-    <Compile Include="Ententity\User.cs" />
     <Compile Include="IAdminLogsFormService.cs" />
     <Compile Include="IAdminRegFormService.cs" />
     <Compile Include="IAdminTimetableService.cs" />

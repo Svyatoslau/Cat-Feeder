@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Model1;
 using Model.Ententity;
+using MySql.Data.MySqlClient;
 
 namespace DAL
 {
@@ -15,9 +16,14 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public Customer Find(int id)
+        public Customer Find(string name)
         {
-            throw new NotImplementedException();
+            MySqlCommand cmd = null;
+            Customer customer = null;
+            string query = "SELECT * FROM signintutorial.users where userName = (@username) limit 1";
+            cmd = DBHelper.RunQuery(query, name);
+
+            return customer;
         }
 
         public IEnumerable<Customer> GetAll()
@@ -39,5 +45,7 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+        
     }
+
 }

@@ -4,12 +4,20 @@ using System.Text;
 
 namespace Model.Ententity
 {
-    public abstract class Customer
+    public class Customer
     {
         private string name;
         private string password;
         private string status;
+        private int ID;
 
+        public Customer(int ID,string name, string password, string status)
+        {
+            this.ID = ID;
+            this.name = name;
+            this.password = password;
+            this.status = status;
+        }
         public string Name { get => name; set => name = value; }
         public string Password { get => password; set => password = value; }
         public string Status { get => status; set => status = value; }
