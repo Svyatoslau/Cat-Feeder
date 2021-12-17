@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model.Ententity
 {
-    abstract class Customer
+    public abstract class Customer
     {
         private string name;
         private string password;

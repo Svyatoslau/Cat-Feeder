@@ -29,7 +29,7 @@ namespace Presentation
 
         public void Connection()
         {
-            _service.Connection();
+            
         }
 
         private void ShowAdminPageView()

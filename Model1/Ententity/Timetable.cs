@@ -2,7 +2,7 @@
 
 namespace Model.Ententity
 {
-    class Timetable
+    public class Timetable
     {
         private string name;
         private List<TumpleTimetable> data;

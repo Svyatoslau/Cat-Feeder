@@ -188,6 +188,10 @@
     <Content Include="images\Feet.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c1e41f9d-1e90-4743-bdd2-27d8c6343aa9}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model1\Model.csproj">
       <Project>{64f3214a-d2c2-4bed-8fde-4a250701d34c}</Project>
       <Name>Model</Name>

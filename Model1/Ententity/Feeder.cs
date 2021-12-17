@@ -5,8 +5,8 @@ using System.Text;
 namespace Model.Ententity
 {
 
-    
-    abstract class Feeder
+
+    public abstract class Feeder
     {
         private string name; // Имя
         public string Name

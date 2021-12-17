@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Presentation;
+using DAL;
 
 namespace Cat_Feeder
 {
@@ -23,7 +24,7 @@ namespace Cat_Feeder
         public FirstPageView()
         {
             InitializeComponent();
-            Connection?.Invoke();
+            DBHelper.EstablishConnection();
 
         }
         public event Action ShowUserMainPageView;

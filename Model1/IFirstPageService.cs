@@ -8,6 +8,6 @@ namespace Model1
 {
     public interface IFirstPageService
     {
-        void Connection();
+        
     }
 }

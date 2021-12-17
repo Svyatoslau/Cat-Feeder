@@ -8,6 +8,8 @@ using Ninject;
 using Presentation;
 using Model1;
 using Model1.Service;
+using Model.Ententity;
+using DAL;
 
 namespace Cat_Feeder
 {
@@ -40,11 +42,12 @@ namespace Cat_Feeder
             kernel.Bind<IAdminTimetableService>().To<AdminTimetableService>();
             kernel.Bind<IFirstPageService>().To<FirstPageService>();
 
+            kernel.Bind<IRepository<Customer>>().To<UserRepository>();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            kernel.Get<FirstPagePresenter>().Connection();
+            
             kernel.Get<FirstPagePresenter>().Run();
             
             //kernel.Get<UserMainPagePresenter>().Run();

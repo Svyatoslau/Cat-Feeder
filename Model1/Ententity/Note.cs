@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model.Ententity
 {
-    class Note
+    public class Note
     {
         private string text;
 

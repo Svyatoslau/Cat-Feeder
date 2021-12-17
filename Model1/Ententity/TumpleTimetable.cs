@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model.Ententity
 {
-    class TumpleTimetable
+    public class TumpleTimetable
     {
         private int weight;
         private DateTime time;

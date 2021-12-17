@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model.Ententity
 {
-    class Log
+    public class Log
     {
         private string occasion;
         private DateTime time;

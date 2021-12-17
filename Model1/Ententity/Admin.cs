@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model.Ententity
 {
-    class Admin: Customer
+    public class Admin: Customer
     {
 
     }
