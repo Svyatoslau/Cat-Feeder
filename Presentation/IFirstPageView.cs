@@ -13,6 +13,9 @@ namespace Presentation
 
         string password { get; }
         string login { get; }
-        
+
+        event Action EstablishConnection;
+
+
     }
 }

@@ -21,7 +21,12 @@ namespace Presentation
             _view = view;
             _view.ShowAdminPageView += ShowAdminPageView;
             _view.ShowUserMainPageView += ShowUserMainPageView;
+            _view.EstablishConnection += EstablishConnection;
 
+        }
+
+        private void EstablishConnection()
+        {
 
         }
 
