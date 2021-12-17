@@ -36,7 +36,7 @@ namespace DAL
             }
         }
 
-        public static MySqlCommand RunQuery(string query, string username)
+        public static MySqlCommand RunQuery(string query, string Name)
         {
             try
             {
@@ -46,7 +46,7 @@ namespace DAL
                     cmd = connection.CreateCommand();
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@Name", Name);
                     cmd.ExecuteNonQuery();
                     
                 }
