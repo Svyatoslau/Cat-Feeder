@@ -8,6 +8,8 @@ namespace Model1
 {
     public interface IFirstPageService
     {
-        
+        event Action UserEvent;
+        void createCustormer(string login, string password);
+        void createAdmin(string login, string password);
     }
 }
