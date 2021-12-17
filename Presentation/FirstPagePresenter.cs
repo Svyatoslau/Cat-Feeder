@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ninject;
-using Model;
+using Model1;
 
 namespace Presentation
 {
@@ -12,22 +12,24 @@ namespace Presentation
     {
         private readonly IKernel _kernel;
         private IFirstPageView _view;
-        // Поле сервиса
+        private IFirstPageService _service;
 
-        public FirstPagePresenter(IKernel kernel, IFirstPageView view)
+        public FirstPagePresenter(IKernel kernel, IFirstPageView view, IFirstPageService service)
         {
             _kernel = kernel;
 
             _view = view;
             _view.ShowAdminPageView += ShowAdminPageView;
             _view.ShowUserMainPageView += ShowUserMainPageView;
-            _view.EstablishConnection += EstablishConnection;
+            
+
+            _service = service;
 
         }
 
-        private void EstablishConnection()
+        public void Connection()
         {
-
+            _service.Connection();
         }
 
         private void ShowAdminPageView()

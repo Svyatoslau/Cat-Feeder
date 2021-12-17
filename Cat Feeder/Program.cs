@@ -38,12 +38,15 @@ namespace Cat_Feeder
             kernel.Bind<IAdminRegFormService>().To<AdminRegFormService>();
             kernel.Bind<IAdminLogsFormService>().To<AdminLogsFormService>();
             kernel.Bind<IAdminTimetableService>().To<AdminTimetableService>();
+            kernel.Bind<IFirstPageService>().To<FirstPageService>();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            kernel.Get<FirstPagePresenter>().Run();
 
+            kernel.Get<FirstPagePresenter>().Connection();
+            kernel.Get<FirstPagePresenter>().Run();
+            
             //kernel.Get<UserMainPagePresenter>().Run();
             Application.Run(kernel.Get<ApplicationContext>());
         }

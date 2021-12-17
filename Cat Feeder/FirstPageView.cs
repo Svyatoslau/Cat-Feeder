@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Presentation;
-using DAL;
 
 namespace Cat_Feeder
 {
@@ -20,11 +19,12 @@ namespace Cat_Feeder
         public string password => PasswordBox.Text;
         public string login => loginBox.Text;
 
-        public event Action EstablishConnection;
+        public event Action Connection;
         public FirstPageView()
         {
             InitializeComponent();
-            EstablishConnection?.Invoke();
+            Connection?.Invoke();
+
         }
         public event Action ShowUserMainPageView;
         public event Action ShowAdminPageView;

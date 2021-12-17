@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Model1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Model1\bin\Debug\Model1.dll</HintPath>
-    </Reference>
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
     </Reference>
@@ -192,9 +188,9 @@
     <Content Include="images\Feet.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{1390155a-a729-4326-bc53-36cbdfaac8b4}</Project>
-      <Name>DAL</Name>
+    <ProjectReference Include="..\Model1\Model.csproj">
+      <Project>{64f3214a-d2c2-4bed-8fde-4a250701d34c}</Project>
+      <Name>Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Presentation\Presentation.csproj">
       <Project>{798c91af-623f-4361-914d-87d8489c90e5}</Project>
