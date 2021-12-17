@@ -36,12 +36,10 @@ namespace Presentation
         private void ShowAdminPageView()
         {
             _service.createAdmin(_view.login, _view.password);
-            
         }
         private void ShowUserMainPageView()
         {
             _service.createCustormer(_view.login, _view.password);
-            
         }
 
         private void UserEvent()
