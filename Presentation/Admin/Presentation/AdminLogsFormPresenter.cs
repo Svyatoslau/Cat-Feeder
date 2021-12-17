@@ -17,6 +17,30 @@ namespace Presentation
             _kernel = kernel;
 
             _view = view;
+            _view.ChooseUser += ChooseUser;
+            _view.ChooseLog += ChooseLog;
+            _view.PrintAllLogs += PrintAllLogs;
+            _view.ExportLogs += ExportLogs;
+        }
+
+        private void ChooseUser()
+        {
+
+        }
+
+        private void ChooseLog()
+        {
+
+        }
+
+        private void PrintAllLogs()
+        {
+
+        }
+
+        private void ExportLogs()
+        {
+
         }
 
         public void Run()

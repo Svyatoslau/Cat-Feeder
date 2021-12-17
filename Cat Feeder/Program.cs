@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using Ninject;
 
 using Presentation;
+using Model1;
+using Model1.Service;
 
 namespace Cat_Feeder
 {
@@ -32,6 +34,8 @@ namespace Cat_Feeder
             kernel.Bind<IUserTimetableView>().To<UserTimetableView>();
             kernel.Bind<IUserLogsFormView>().To<UserLogsFormView>();
             kernel.Bind<IUserMainPageView>().To<UserMainPageView>();
+
+            kernel.Bind<IAdminRegFormService>().To<AdminRegFormService>();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

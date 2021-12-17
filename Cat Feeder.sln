@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "Cat Feeder\View.csproj", "{813995E5-1772-4C65-A15A-B05F75C1B03C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64F3214A-D2C2-4BED-8FDE-4A250701D34C} = {64F3214A-D2C2-4BED-8FDE-4A250701D34C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{1390155A-A729-4326-BC53-36CBDFAAC8B4}"
 EndProject
