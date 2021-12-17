@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Model1;
 using Model.Ententity;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace DAL
 {
@@ -19,10 +20,25 @@ namespace DAL
         public Customer Find(string name)
         {
             MySqlCommand cmd = null;
-            Customer customer = null;
-            string query = "SELECT * FROM signintutorial.users where userName = (@username) limit 1";
-            cmd = DBHelper.RunQuery(query, name);
+            DataTable dt;
+            MySqlDataAdapter sda;
 
+            Customer customer = null;
+            string query = "SELECT * FROM signintutorial.users where userName = (@name) limit 1";
+            cmd = DBHelper.RunQuery(query, name);
+            if(cmd != null)
+            {
+                dt = new DataTable();
+                sda = new MySqlDataAdapter(cmd);
+                sda.Fill(dt);
+                foreach(DataRow dr in dt.Rows)
+                {
+                    string uName = dr["Name"].ToString();
+                    string password = dr["password"].ToString();
+                    string status = dr["status"].ToString();
+                    customer = new Customer(uName, password, status);
+                }
+            }
             return customer;
         }
 
