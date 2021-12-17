@@ -24,7 +24,7 @@ namespace DAL
             MySqlDataAdapter sda;
 
             Customer customer = null;
-            string query = "SELECT * FROM signintutorial.users where userName = (@name) limit 1";
+            string query = "SELECT * FROM mydb.user WHERE Name = (@name) limit 1";
             cmd = DBHelper.RunQuery(query, name);
             if(cmd != null)
             {

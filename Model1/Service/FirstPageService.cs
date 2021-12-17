@@ -4,32 +4,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model.Ententity;
-using DAL;
+using System.Windows.Forms;
 
 namespace Model1.Service
 {
     public class FirstPageService : IFirstPageService
     {
         public event Action UserEvent;
-        
+        public event Action ShowAdminPage;
+        public IRepository<Customer> _customer;
+        private Customer customer;
+
+        public FirstPageService(IRepository<Customer> customer)
+        {
+            _customer = customer;
+        }
         public void createCustormer(string login, string password)
         {
-            UserRepository _repository = new UserRepository();
-            Customer PretenderCustomer = new Customer(login, password, "user");
 
-            
-
-
-
-            UserEvent?.Invoke();
+            customer = _customer.Find(login);
+            if(customer != null)
+            {
+                if (customer.Password.Equals(password))
+                {
+                    MessageBox.Show("Successfull");
+                    if (customer.Status.Equals("user"))
+                    {
+                        UserEvent?.Invoke();
+                    }
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect password");
+                }
+            }
+        
         }
 
         public void createAdmin(string login, string password)
         {
-            UserRepository _repository = new UserRepository();
-            Customer PretenderCustomer = new Customer(login, password, "admin");
-
-            UserEvent?.Invoke();
+            customer = _customer.Find(login);
+            if (customer != null)
+            {
+                if (customer.Password.Equals(password))
+                {
+                    MessageBox.Show("Successfull");
+                    if (customer.Status.Equals("admin"))
+                    {
+                        ShowAdminPage?.Invoke();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect password");
+                }
+            }
         }
 
 
