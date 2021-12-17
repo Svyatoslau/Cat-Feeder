@@ -9,11 +9,9 @@ namespace Model.Ententity
         private string name;
         private string password;
         private string status;
-        private int ID;
 
-        public Customer(int ID,string name, string password, string status)
+        public Customer(string name, string password, string status)
         {
-            this.ID = ID;
             this.name = name;
             this.password = password;
             this.status = status;
