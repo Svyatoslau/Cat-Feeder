@@ -48,7 +48,7 @@ namespace Cat_Feeder
 
 
             
-            kernel.Get<FirstPagePresenter>().Run();
+            kernel.Get<AdminPagePresenter>().Run();
             
             //kernel.Get<UserMainPagePresenter>().Run();
             Application.Run(kernel.Get<ApplicationContext>());
