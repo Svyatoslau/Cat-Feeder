@@ -61,5 +61,74 @@ namespace DAL
             }
             return cmd;
         }
+        public static int getCountRowUser()
+        {
+            string query = "SELECT COUNT(*) FROM mydb.user;";
+
+            int countRaw =-1;
+            try
+            {
+                if (connection != null)
+                {
+                    connection.Open();
+                    cmd = connection.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.ExecuteNonQuery();
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+            if (cmd != null)
+            {
+                dt = new DataTable();
+                sda = new MySqlDataAdapter(cmd);
+                sda.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    string count =  dr["COUNT(*)"].ToString();
+                    countRaw = Int32.Parse(count);
+                }
+            }
+            return countRaw;
+        }
+
+        public static void AddUser( string ID, string Name, string password, string status)
+        {
+            string query = "insert into mydb.user(ID, Name, password, status)"
+                + " values(@ID, @Name, @password, @status)";
+            try
+            {
+                if (connection != null)
+                {
+                    connection.Open();
+                    cmd = connection.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@ID", ID);
+                    cmd.Parameters.AddWithValue("@Name", Name);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.Parameters.AddWithValue("@status", status);
+                  
+                    cmd.ExecuteNonQuery();
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
     }
 }

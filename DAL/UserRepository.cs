@@ -12,9 +12,13 @@ namespace DAL
 {
     public class UserRepository : IRepository<Customer>
     {
-        public int Add(Customer obj)
+        public void Add(Customer customer)
         {
-            throw new NotImplementedException();
+            int id = 0;
+            int count_user = 0;
+            count_user = DBHelper.getCountRowUser();
+            if (count_user > 0) id = count_user + 1;
+            DBHelper.AddUser(id.ToString(), customer.Name, customer.Password, customer.Status);
         }
 
         public Customer Find(string name)

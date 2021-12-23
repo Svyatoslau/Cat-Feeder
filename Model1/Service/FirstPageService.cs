@@ -30,6 +30,7 @@ namespace Model1.Service
                     MessageBox.Show("Successfull");
                     if (customer.Status.Equals("user"))
                     {
+                        _customer.Add(new Customer("IVAN", "123321", "user"));
                         UserEvent?.Invoke();
                     }
                     
