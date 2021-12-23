@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model1
 {
-    public interface IFirstPageService
+    public interface ILoginServiece
     {
         event Action UserEvent;
         event Action ShowAdminPage;

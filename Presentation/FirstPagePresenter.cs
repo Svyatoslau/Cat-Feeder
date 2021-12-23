@@ -12,9 +12,9 @@ namespace Presentation
     {
         private readonly IKernel _kernel;
         private IFirstPageView _view;
-        private IFirstPageService _service;
+        private ILoginServiece _service;
 
-        public FirstPagePresenter(IKernel kernel, IFirstPageView view, IFirstPageService service)
+        public FirstPagePresenter(IKernel kernel, IFirstPageView view, ILoginServiece service)
         {
             _kernel = kernel;
 

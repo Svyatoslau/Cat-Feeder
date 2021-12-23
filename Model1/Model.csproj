@@ -44,21 +44,26 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Ententity\Customer.cs" />
-    <Compile Include="Ententity\Feeder.cs" />
+    <Compile Include="Ententity\Feeder\Developer.cs" />
+    <Compile Include="Ententity\Feeder\Dispenser\DispenserDeveloper.cs" />
+    <Compile Include="Ententity\Feeder\Dispenser\DispenserFeeder.cs" />
+    <Compile Include="Ententity\Feeder\Feeder.cs" />
     <Compile Include="Ententity\Log.cs" />
     <Compile Include="Ententity\Note.cs" />
+    <Compile Include="Ententity\Feeder\Sensor\SensorDeveloper.cs" />
+    <Compile Include="Ententity\Feeder\Sensor\SensorFeeder.cs" />
     <Compile Include="Ententity\Timetable.cs" />
     <Compile Include="Ententity\TumpleTimetable.cs" />
     <Compile Include="IAdminLogsFormService.cs" />
     <Compile Include="IAdminRegFormService.cs" />
     <Compile Include="IAdminTimetableService.cs" />
-    <Compile Include="IFirstPageService.cs" />
+    <Compile Include="ILoginServiece.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\AdminLogsFormService.cs" />
     <Compile Include="Service\AdminRegFormService.cs" />
     <Compile Include="Service\AdminTimetableService.cs" />
-    <Compile Include="Service\FirstPageService.cs" />
+    <Compile Include="Service\LoginService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

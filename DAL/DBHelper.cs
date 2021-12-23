@@ -17,6 +17,8 @@ namespace DAL
         private static DataTable dt;
         private static MySqlDataAdapter sda;
 
+        public static MySqlConnection Connection { get => connection; }
+
         public static void EstablishConnection()
         {
             try
@@ -36,6 +38,7 @@ namespace DAL
             }
         }
 
+        
         public static MySqlCommand RunQuery(string query, string Name)
         {
             try
@@ -61,10 +64,9 @@ namespace DAL
             }
             return cmd;
         }
-        public static int getCountRowUser()
+        public static int getCountRow(string table)
         {
-            string query = "SELECT COUNT(*) FROM mydb.user;";
-
+            string query = "SELECT COUNT(*) FROM "+ table + ";";
             int countRaw =-1;
             try
             {

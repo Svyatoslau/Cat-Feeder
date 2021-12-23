@@ -16,7 +16,7 @@ namespace DAL
         {
             int id = 0;
             int count_user = 0;
-            count_user = DBHelper.getCountRowUser();
+            count_user = DBHelper.getCountRow("user");
             if (count_user > 0) id = count_user + 1;
             DBHelper.AddUser(id.ToString(), customer.Name, customer.Password, customer.Status);
         }

@@ -8,14 +8,14 @@ using System.Windows.Forms;
 
 namespace Model1.Service
 {
-    public class FirstPageService : IFirstPageService
+    public class LoginService : ILoginServiece
     {
         public event Action UserEvent;
         public event Action ShowAdminPage;
         public IRepository<Customer> _customer;
         private Customer customer;
 
-        public FirstPageService(IRepository<Customer> customer)
+        public LoginService(IRepository<Customer> customer)
         {
             _customer = customer;
         }
@@ -30,7 +30,7 @@ namespace Model1.Service
                     MessageBox.Show("Successfull");
                     if (customer.Status.Equals("user"))
                     {
-                        _customer.Add(new Customer("IVAN", "123321", "user"));
+                        //_customer.Add(new Customer("IVAN", "123321", "user"));
                         UserEvent?.Invoke();
                     }
                     

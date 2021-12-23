@@ -32,40 +32,12 @@ namespace Model.Ententity
         public Timetable Timetable { get => timetable; set => timetable = value; }
 
     }
-    class DispenserFeeder: Feeder
-    {
-        public DispenserFeeder()
-        {
-            Console.WriteLine("Кормушка с дозатором");
-        }
-    }
+    
 
-    class SensorFeeder: Feeder
-    {
-        public SensorFeeder()
-        {
-            Console.WriteLine("Кормушка с сенсором");
-        }
-    }
+    
 
-    abstract class Developer
-    {   
-        
-        abstract public Feeder Create();
-    }
-    class SensorDeveloper : Developer
-    {
-        public override Feeder Create()
-        {
-            return new SensorFeeder();
-        }
-    }
+   
+    
 
-    class DispenserDeveloper : Developer
-    {
-        public override Feeder Create()
-        {
-            return new DispenserFeeder();
-        }
-    }
+    
 }

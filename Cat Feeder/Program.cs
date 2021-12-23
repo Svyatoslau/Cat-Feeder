@@ -40,7 +40,7 @@ namespace Cat_Feeder
             kernel.Bind<IAdminRegFormService>().To<AdminRegFormService>();
             kernel.Bind<IAdminLogsFormService>().To<AdminLogsFormService>();
             kernel.Bind<IAdminTimetableService>().To<AdminTimetableService>();
-            kernel.Bind<IFirstPageService>().To<FirstPageService>();
+            kernel.Bind<ILoginServiece>().To<LoginService>();
 
             kernel.Bind<IRepository<Customer>>().To<UserRepository>();
             Application.EnableVisualStyles();
