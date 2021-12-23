@@ -26,9 +26,9 @@ namespace Presentation
             _service.UserRegistered += UserRegistered;
         }
 
-        private void AddUser(string login, string password)
+        private void AddUser()
         {
-            _service.AddUser(login, password);
+            _service.AddUser(_view.login, _view.password);
         }
 
         private void UserRegistered()
