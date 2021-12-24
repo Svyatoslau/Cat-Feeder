@@ -7,9 +7,9 @@ using Model.Ententity;
 
 namespace Model1.Ententity
 {
-    abstract class Developer
+    public abstract class Developer
     {
 
-        abstract public Feeder Create();
+        abstract public Feeder Create(string name, int value);
     }
 }

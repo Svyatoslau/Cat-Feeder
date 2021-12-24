@@ -47,9 +47,9 @@ namespace Cat_Feeder
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            
-            kernel.Get<AdminPagePresenter>().Run();
-            
+
+            //kernel.Get<AdminPagePresenter>().Run();
+            kernel.Get<FirstPagePresenter>().Run();
             //kernel.Get<UserMainPagePresenter>().Run();
             Application.Run(kernel.Get<ApplicationContext>());
         }

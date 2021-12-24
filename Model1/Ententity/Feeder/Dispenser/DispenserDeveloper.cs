@@ -7,11 +7,11 @@ using Model.Ententity;
 
 namespace Model1.Ententity
 {
-    class DispenserDeveloper : Developer
+    public class DispenserDeveloper : Developer
     {
-        public override Feeder Create()
+        public override Feeder Create(string name, int value)
         {
-            return new DispenserFeeder();
+            return new DispenserFeeder(name,value);
         }
     }
 }

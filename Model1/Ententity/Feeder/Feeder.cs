@@ -21,7 +21,10 @@ namespace Model.Ententity
             set { this.value = value; }
         }
 
-       
+
+        private string type;
+        public string Type { get => type; set => type = value; }
+
 
         private List<Note> notes;// Записи
 

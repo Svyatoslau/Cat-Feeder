@@ -7,11 +7,13 @@ using Model.Ententity;
 
 namespace Model1.Ententity
 {
-    public class DispenserFeeder : Feeder
+    class DispenserFeeder : Feeder
     {
-        public DispenserFeeder()
+        public DispenserFeeder(string name, int value)
         {
-            Console.WriteLine("Кормушка с дозатором");
+            Value = value;
+            Name = name;
+            Type = "Dispenser";
         }
     }
 }

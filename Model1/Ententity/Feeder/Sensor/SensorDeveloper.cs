@@ -7,11 +7,11 @@ using Model.Ententity;
 
 namespace Model1.Ententity
 {
-    class SensorDeveloper : Developer
+    public class SensorDeveloper : Developer
     {
-        public override Feeder Create()
+        public override Feeder Create(string name, int value)
         {
-            return new SensorFeeder();
+            return new SensorFeeder(name, value);
         }
     }
 }

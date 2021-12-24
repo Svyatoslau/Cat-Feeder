@@ -25,9 +25,7 @@ namespace Model1.Service
             customer = _customer.Find(login);
             if(customer == null)
             {
-                customer.Name = login;
-                customer.Password = password;
-                customer.Status = "user";
+                customer = new Customer(login, password, "user");
                 //добавляем объект пользователя в бд
                 _customer.Add(customer);
 

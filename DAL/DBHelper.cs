@@ -132,5 +132,37 @@ namespace DAL
                 connection.Close();
             }
         }
+
+        public static void AddFeeder(string ID, string Name, string value, string type)
+        {
+            string query = "insert into mydb.feeder(ID, Name, value, type)"
+                + " values(@ID, @Name, @value, @type)";
+            try
+            {
+                if (connection != null)
+                {
+                    connection.Open();
+                    cmd = connection.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@ID", ID);
+                    cmd.Parameters.AddWithValue("@Name", Name);
+                    cmd.Parameters.AddWithValue("@value", value);
+                    cmd.Parameters.AddWithValue("@type", type);
+
+                    cmd.ExecuteNonQuery();
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
     }
 }

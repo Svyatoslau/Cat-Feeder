@@ -9,9 +9,11 @@ namespace Model1.Ententity
 {
     class SensorFeeder : Feeder
     {
-        public SensorFeeder()
+        public SensorFeeder(string name, int value)
         {
-            Console.WriteLine("Кормушка с сенсором");
+            Value = value;
+            Name = name;
+            Type = "Sensor";
         }
     }
 }
